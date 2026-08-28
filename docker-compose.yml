@@ -4,7 +4,7 @@ services:
       context: ./docker
       dockerfile: neo4j.Dockerfile
       args:
-        N10S_VERSION: ""        # empty = resolve latest n10s release
+        N10S_VERSION: "5.26.0"   # must match the Neo4j base image minor
     image: mantic/neo4j-n10s:5.26
     container_name: mantic-neo4j
     environment:
@@ -18,7 +18,7 @@ services:
       - "7687:7687"   # Bolt
     volumes:
       - neo4j_data:/data
-      - ./ontology:/var/lib/neo4j/import:ro   # ttl files reachable via file:/// URIs
+      - ./ontology:/var/lib/neo4j/import   # ttl files reachable via file:/// URIs
     healthcheck:
       test: ["CMD-SHELL", "cypher-shell -u neo4j -p manticpass 'RETURN 1' || exit 1"]
       interval: 10s

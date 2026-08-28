@@ -54,7 +54,7 @@ def init_schema(
     user: str,
     password: str,
     ontology_dir: Optional[Path] = None,
-    import_root: str = "/var/lib/neo4j/import",
+    import_root: str = "file:///var/lib/neo4j/import",
 ) -> bool:
     """Configure constraints, n10s graph config and import the ontology.
 
@@ -86,10 +86,15 @@ def init_schema(
 
             # 2. graph configuration -----------------------------------------
             try:
-                session.run("CALL n10s.graphconfig.init($config)", config=GRAPH_CONFIG)
+                # .consume() forces the lazy result so a guard exception
+                # ("already configured" / "graph is non-empty") surfaces HERE.
+                session.run(
+                    "CALL n10s.graphconfig.init($config)", config=GRAPH_CONFIG
+                ).consume()
                 log("n10s graphconfig initialized (SHORTEN / ARRAY).")
             except Exception as exc:  # already configured is fine
-                if "already" in str(exc).lower():
+                msg = str(exc).lower()
+                if "already" in msg or "non-empty" in msg:
                     log("graphconfig already initialized - keeping existing config.")
                 else:
                     raise
@@ -135,8 +140,9 @@ def main(argv: Optional[list[str]] = None) -> int:
     parser.add_argument("--ontology-dir", default=str(DEFAULT_ONTOLOGY_DIR))
     parser.add_argument(
         "--import-root",
-        default="/var/lib/neo4j/import",
-        help="in-container directory the ontology files are mounted at",
+        default="file:///var/lib/neo4j/import",
+        help="in-container URI root the ontology files are mounted at "
+             "(must include the file:// scheme)",
     )
     args = parser.parse_args(argv)
     ok = init_schema(

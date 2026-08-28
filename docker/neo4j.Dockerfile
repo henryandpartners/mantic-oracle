@@ -6,16 +6,21 @@
 # N10S_VERSION=5.20.0 for neo4j:5.20.
 FROM neo4j:5.26
 
-ARG N10S_VERSION=""
+# Pinned to the release line matching the base image (Neo4j 5.26).
+# Asset names are neosemantics-<version>.jar (NOT n10s-...jar).
+ARG N10S_VERSION="5.26.0"
 RUN apt-get update \
  && apt-get install -y --no-install-recommends curl ca-certificates \
  && rm -rf /var/lib/apt/lists/* \
  && if [ -n "$N10S_VERSION" ]; then \
-        URL="https://github.com/neo4j-labs/neosemantics/releases/download/${N10S_VERSION}/n10s-${N10S_VERSION}.jar"; \
+        URL="https://github.com/neo4j-labs/neosemantics/releases/download/${N10S_VERSION}/neosemantics-${N10S_VERSION}.jar"; \
     else \
-        URL="$(curl -fsSL https://api.github.com/repos/neo4j-labs/neosemantics/releases/latest \
-              | grep -oE 'https://[^"]+\.jar' | head -n 1)"; \
+        URL="https://github.com/neo4j-labs/neosemantics/releases/download/${N10S_VERSION}/neosemantics-${N10S_VERSION}.jar"; \
     fi \
  && echo "installing n10s from $URL" \
- && curl -fsSL "$URL" -o /plugins/n10s.jar \
- && ls -la /plugins/
+ && curl -fsSL "$URL" -o /tmp/n10s.jar \
+ && ls -la /tmp/n10s.jar \
+ && mkdir -p /var/lib/neo4j/plugins \
+ && install -m 0644 /tmp/n10s.jar /var/lib/neo4j/plugins/n10s.jar \
+ && rm -f /tmp/n10s.jar \
+ && ls -la /var/lib/neo4j/plugins/

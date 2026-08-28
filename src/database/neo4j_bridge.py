@@ -19,8 +19,16 @@ from neo4j import GraphDatabase
 
 
 def _short_key(key: str) -> str:
-    """Strip an n10s prefix ('ns0__', 'mantic__', 'mantic_') from a key."""
-    return re.sub(r"^[A-Za-z0-9]+__", "", re.sub(r"^[A-Za-z0-9]+_", "", key))
+    """Strip an n10s prefix ('ns0__', 'rdfs__', 'mantic_', 'mantic__') from a key."""
+    m = re.match(r"^[A-Za-z0-9]+__(.+)$", key) or re.match(r"^[A-Za-z0-9]+_(.+)$", key)
+    return m.group(1) if m else key
+
+
+def _scalar(value: Any) -> Any:
+    """Unwrap the single-element arrays n10s emits with handleMultival=ARRAY."""
+    if isinstance(value, list):
+        return value[0] if len(value) == 1 else value
+    return value
 
 
 class Neo4jManticBridge:
@@ -28,7 +36,8 @@ class Neo4jManticBridge:
 
     FIGURE_BY_VECTOR = """
     MATCH (f)
-    WHERE any(k IN keys(f) WHERE k ENDS WITH 'hasBinaryVector' AND f[k] = $vector)
+    WHERE any(k IN keys(f) WHERE k ENDS WITH 'hasBinaryVector'
+                        AND ($vector IN f[k] OR f[k] = $vector))
     OPTIONAL MATCH (f)-[r]-(c)
     WHERE type(r) ENDS WITH 'sharesArchetypeWith'
     RETURN properties(f) AS props, labels(f) AS labels,
@@ -41,7 +50,6 @@ class Neo4jManticBridge:
     MATCH (f)
     WHERE any(l IN labels(f) WHERE l ENDS WITH $suffix)
     RETURN properties(f) AS props, labels(f) AS labels
-    ORDER BY f.figureIndex
     """
 
     def __init__(self, uri: str, auth: tuple[str, str] | None = None) -> None:
@@ -76,7 +84,7 @@ class Neo4jManticBridge:
         counterparts: List[Dict[str, Any]],
         counterpart_labels: List[List[str]],
     ) -> Dict[str, Any]:
-        short = {_short_key(k): v for k, v in props.items()}
+        short = {_short_key(k): _scalar(v) for k, v in props.items()}
         kind = next(
             (
                 label
@@ -87,7 +95,7 @@ class Neo4jManticBridge:
         )
         archetypes: List[Dict[str, Any]] = []
         for cprops, clabels in zip(counterparts, counterpart_labels):
-            cshort = {_short_key(k): v for k, v in cprops.items()}
+            cshort = {_short_key(k): _scalar(v) for k, v in cprops.items()}
             archetypes.append(
                 {
                     "iri": cshort.get("uri"),
@@ -120,13 +128,14 @@ class Neo4jManticBridge:
             )
 
     def figures_of_kind(self, kind_suffix: str) -> List[Dict[str, Any]]:
-        """List all figures whose label ends with `kind_suffix`."""
+        """List all figures whose label ends with `kind_suffix` (index-ordered)."""
         with self.driver.session() as session:
             result = session.run(self.ALL_FIGURES, suffix=kind_suffix)
-            return [
+            figures = [
                 self._normalize_record(r["props"], r["labels"] or [], [], [])
                 for r in result
             ]
+        return sorted(figures, key=lambda f: (f.get("index") is None, f.get("index")))
 
     def close(self) -> None:
         if self._driver is not None:
