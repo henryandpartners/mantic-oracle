@@ -1,0 +1,18 @@
+# Core semantics & validation
+rdflib>=7.0
+pyshacl>=0.26
+
+# Modeling
+pydantic>=2.6
+
+# Knowledge-graph bridge
+neo4j>=5.20
+
+# Agent protocols (MCP + optional REST adapter)
+mcp>=1.2
+fastapi>=0.110
+uvicorn>=0.29
+
+# Test harness
+pytest>=8.0
+pytest-asyncio>=0.23

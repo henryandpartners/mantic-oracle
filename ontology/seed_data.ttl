@@ -1,0 +1,3281 @@
+@prefix mantic: <https://w3id.org/mantic/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+mantic:FigAcquisitio a mantic:GeomanticSign ;
+    rdfs:label "Acquisitio" ;
+    mantic:dominatesElement mantic:ElemAir ;
+    mantic:element "Air" ;
+    mantic:figureIndex 5 ;
+    mantic:hasBinaryVector "0011" ;
+    mantic:keyword "gain" ;
+    mantic:parable "The rising cup: gain gathers to the low and open hand; receive without gripping." ;
+    mantic:planet "Jupiter" ;
+    mantic:sharesArchetypeWith mantic:Hex14,
+        mantic:Odu154 .
+
+mantic:FigAlbus a mantic:GeomanticSign ;
+    rdfs:label "Albus" ;
+    mantic:dominatesElement mantic:ElemAir ;
+    mantic:element "Air" ;
+    mantic:figureIndex 11 ;
+    mantic:hasBinaryVector "1010" ;
+    mantic:keyword "clear thought" ;
+    mantic:parable "The clear goblet: thought purified - withdraw into counsel; do not act on heat." ;
+    mantic:planet "Mercury" ;
+    mantic:sharesArchetypeWith mantic:Hex20,
+        mantic:Odu188 .
+
+mantic:FigAmissio a mantic:GeomanticSign ;
+    rdfs:label "Amissio" ;
+    mantic:dominatesElement mantic:ElemWater ;
+    mantic:element "Water" ;
+    mantic:figureIndex 6 ;
+    mantic:hasBinaryVector "1100" ;
+    mantic:keyword "loss" ;
+    mantic:parable "The funnel: loss through the narrow top - release the perishable before it prices itself." ;
+    mantic:planet "Venus" ;
+    mantic:sharesArchetypeWith mantic:Hex41,
+        mantic:Odu137 .
+
+mantic:FigCaputDraconis a mantic:GeomanticSign ;
+    rdfs:label "Caput Draconis" ;
+    mantic:dominatesElement mantic:ElemAir ;
+    mantic:element "Air" ;
+    mantic:figureIndex 15 ;
+    mantic:hasBinaryVector "0010" ;
+    mantic:keyword "ingress" ;
+    mantic:parable "The door opening inward: beginnings permitted - enter with the tide." ;
+    mantic:planet "North Node" ;
+    mantic:sharesArchetypeWith mantic:Hex24,
+        mantic:Odu120 .
+
+mantic:FigCarcer a mantic:GeomanticSign ;
+    rdfs:label "Carcer" ;
+    mantic:dominatesElement mantic:ElemEarth ;
+    mantic:element "Earth" ;
+    mantic:figureIndex 14 ;
+    mantic:hasBinaryVector "0110" ;
+    mantic:keyword "containment" ;
+    mantic:parable "The cage of law: what encloses also defines - name the constraint precisely to unlock it." ;
+    mantic:planet "Saturn" ;
+    mantic:resolvesAmbiguity mantic:Deadlock ;
+    mantic:sharesArchetypeWith mantic:Hex60,
+        mantic:Odu052 .
+
+mantic:FigCaudaDraconis a mantic:GeomanticSign ;
+    rdfs:label "Cauda Draconis" ;
+    mantic:dominatesElement mantic:ElemEarth ;
+    mantic:element "Earth" ;
+    mantic:figureIndex 16 ;
+    mantic:hasBinaryVector "0100" ;
+    mantic:keyword "egress" ;
+    mantic:parable "The door opening outward: endings demanded - leave before you are left." ;
+    mantic:planet "South Node" ;
+    mantic:sharesArchetypeWith mantic:Hex33,
+        mantic:Odu103 .
+
+mantic:FigConjunctio a mantic:GeomanticSign ;
+    rdfs:label "Conjunctio" ;
+    mantic:dominatesElement mantic:ElemAir ;
+    mantic:element "Air" ;
+    mantic:figureIndex 13 ;
+    mantic:hasBinaryVector "1001" ;
+    mantic:keyword "union" ;
+    mantic:parable "The meeting of roads: union or negotiation; combine unequal halves in the open." ;
+    mantic:planet "Mercury" ;
+    mantic:sharesArchetypeWith mantic:Hex61,
+        mantic:Odu035 .
+
+mantic:FigFortunaMajor a mantic:GeomanticSign ;
+    rdfs:label "Fortuna Major" ;
+    mantic:dominatesElement mantic:ElemFire ;
+    mantic:element "Fire" ;
+    mantic:figureIndex 3 ;
+    mantic:hasBinaryVector "0111" ;
+    mantic:keyword "earned victory" ;
+    mantic:parable "Sun behind the wall: victory earned through patient strength - help arrives from what you cannot command." ;
+    mantic:planet "Sun" ;
+    mantic:sharesArchetypeWith mantic:Hex11,
+        mantic:Odu069 .
+
+mantic:FigFortunaMinor a mantic:GeomanticSign ;
+    rdfs:label "Fortuna Minor" ;
+    mantic:dominatesElement mantic:ElemFire ;
+    mantic:element "Fire" ;
+    mantic:figureIndex 4 ;
+    mantic:hasBinaryVector "1110" ;
+    mantic:keyword "swift luck" ;
+    mantic:parable "The swift flame: quick gain by cleverness - secure it now, it will not hold." ;
+    mantic:planet "Sun" ;
+    mantic:sharesArchetypeWith mantic:Hex12,
+        mantic:Odu086 .
+
+mantic:FigLaetitia a mantic:GeomanticSign ;
+    rdfs:label "Laetitia" ;
+    mantic:dominatesElement mantic:ElemAir ;
+    mantic:element "Air" ;
+    mantic:figureIndex 7 ;
+    mantic:hasBinaryVector "0001" ;
+    mantic:keyword "joy rising" ;
+    mantic:parable "A single spark at the base: joy rises like sap - protect the small fire and let it climb." ;
+    mantic:planet "Jupiter" ;
+    mantic:sharesArchetypeWith mantic:Hex46,
+        mantic:Odu239 .
+
+mantic:FigOsa mantic:resolvesAmbiguity mantic:OODSurprise .
+
+mantic:FigPopulus a mantic:GeomanticSign ;
+    rdfs:label "Populus" ;
+    mantic:dominatesElement mantic:ElemWater ;
+    mantic:element "Water" ;
+    mantic:figureIndex 2 ;
+    mantic:hasBinaryVector "0000" ;
+    mantic:keyword "assembly" ;
+    mantic:parable "The square full of faces: the outcome is collective and inert; wait a tide before reading the sea." ;
+    mantic:planet "Moon" ;
+    mantic:resolvesAmbiguity mantic:Deadlock ;
+    mantic:sharesArchetypeWith mantic:Hex02,
+        mantic:Odu018 .
+
+mantic:FigPuella a mantic:GeomanticSign ;
+    rdfs:label "Puella" ;
+    mantic:dominatesElement mantic:ElemWater ;
+    mantic:element "Water" ;
+    mantic:figureIndex 10 ;
+    mantic:hasBinaryVector "1101" ;
+    mantic:keyword "harmonious grace" ;
+    mantic:parable "The mirror of delight: harmony earned by grace; beauty binds only while sincere." ;
+    mantic:planet "Venus" ;
+    mantic:resolvesAmbiguity mantic:ParetoFlat ;
+    mantic:sharesArchetypeWith mantic:Hex58,
+        mantic:Odu205 .
+
+mantic:FigPuer a mantic:GeomanticSign ;
+    rdfs:label "Puer" ;
+    mantic:dominatesElement mantic:ElemFire ;
+    mantic:element "Fire" ;
+    mantic:figureIndex 9 ;
+    mantic:hasBinaryVector "1011" ;
+    mantic:keyword "impetuous strength" ;
+    mantic:parable "The drawn blade of youth: courage without patience; cut once, then sheath." ;
+    mantic:planet "Mars" ;
+    mantic:sharesArchetypeWith mantic:Hex34,
+        mantic:Odu222 .
+
+mantic:FigRubeus a mantic:GeomanticSign ;
+    rdfs:label "Rubeus" ;
+    mantic:dominatesElement mantic:ElemFire ;
+    mantic:element "Fire" ;
+    mantic:figureIndex 12 ;
+    mantic:hasBinaryVector "0101" ;
+    mantic:keyword "passion clouding" ;
+    mantic:parable "The red vapor: passion at the feet of reason - postpone the irreversible." ;
+    mantic:planet "Mars" ;
+    mantic:resolvesAmbiguity mantic:OODSurprise ;
+    mantic:sharesArchetypeWith mantic:Hex21,
+        mantic:Odu171 .
+
+mantic:FigTristitia a mantic:GeomanticSign ;
+    rdfs:label "Tristitia" ;
+    mantic:dominatesElement mantic:ElemEarth ;
+    mantic:element "Earth" ;
+    mantic:figureIndex 8 ;
+    mantic:hasBinaryVector "1000" ;
+    mantic:keyword "sorrow hanging" ;
+    mantic:parable "Weight at the crown: sorrow hangs the head - invert the figure and the seed becomes summit." ;
+    mantic:planet "Saturn" ;
+    mantic:sharesArchetypeWith mantic:Hex23,
+        mantic:Odu256 .
+
+mantic:FigVia a mantic:GeomanticSign ;
+    rdfs:label "Via" ;
+    mantic:dominatesElement mantic:ElemWater ;
+    mantic:element "Water" ;
+    mantic:figureIndex 1 ;
+    mantic:hasBinaryVector "1111" ;
+    mantic:keyword "passage" ;
+    mantic:parable "The straight road: pure momentum with nothing carried - move, but do not mistake speed for direction." ;
+    mantic:planet "Moon" ;
+    mantic:resolvesAmbiguity mantic:ParetoFlat ;
+    mantic:sharesArchetypeWith mantic:Hex01,
+        mantic:Odu001 .
+
+mantic:Odu002 a mantic:IfaOdu ;
+    rdfs:label "Ogbe-Oyeku" ;
+    mantic:figureIndex 2 ;
+    mantic:hasBinaryVector "11110000" ;
+    mantic:leftLeg "Ogbe" ;
+    mantic:parable "Left leg Ogbe leads: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride. || Right leg Oyeku modifies: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next." ;
+    mantic:rightLeg "Oyeku" .
+
+mantic:Odu003 a mantic:IfaOdu ;
+    rdfs:label "Ogbe-Iwori" ;
+    mantic:figureIndex 3 ;
+    mantic:hasBinaryVector "11111001" ;
+    mantic:leftLeg "Ogbe" ;
+    mantic:parable "Left leg Ogbe leads: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride. || Right leg Iwori modifies: The eye turned inward: verify the seer before the seeing; the answer observes the asker." ;
+    mantic:rightLeg "Iwori" .
+
+mantic:Odu004 a mantic:IfaOdu ;
+    rdfs:label "Ogbe-Odi" ;
+    mantic:figureIndex 4 ;
+    mantic:hasBinaryVector "11110110" ;
+    mantic:leftLeg "Ogbe" ;
+    mantic:parable "Left leg Ogbe leads: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride. || Right leg Odi modifies: The sealed calabash: what turns inward ripens or rots - tend the interior." ;
+    mantic:rightLeg "Odi" .
+
+mantic:Odu005 a mantic:IfaOdu ;
+    rdfs:label "Ogbe-Irosun" ;
+    mantic:figureIndex 5 ;
+    mantic:hasBinaryVector "11110111" ;
+    mantic:leftLeg "Ogbe" ;
+    mantic:parable "Left leg Ogbe leads: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride. || Right leg Irosun modifies: Blood on the imprint: legacies owed; settle the old account before new ventures." ;
+    mantic:rightLeg "Irosun" .
+
+mantic:Odu006 a mantic:IfaOdu ;
+    rdfs:label "Ogbe-Owonrin" ;
+    mantic:figureIndex 6 ;
+    mantic:hasBinaryVector "11111110" ;
+    mantic:leftLeg "Ogbe" ;
+    mantic:parable "Left leg Ogbe leads: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride. || Right leg Owonrin modifies: The scattered roof: sudden disorder - repair shelter first, plans second." ;
+    mantic:rightLeg "Owonrin" .
+
+mantic:Odu007 a mantic:IfaOdu ;
+    rdfs:label "Ogbe-Obara" ;
+    mantic:figureIndex 7 ;
+    mantic:hasBinaryVector "11110100" ;
+    mantic:leftLeg "Ogbe" ;
+    mantic:parable "Left leg Ogbe leads: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride. || Right leg Obara modifies: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift." ;
+    mantic:rightLeg "Obara" .
+
+mantic:Odu008 a mantic:IfaOdu ;
+    rdfs:label "Ogbe-Okanran" ;
+    mantic:figureIndex 8 ;
+    mantic:hasBinaryVector "11110010" ;
+    mantic:leftLeg "Ogbe" ;
+    mantic:parable "Left leg Ogbe leads: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride. || Right leg Okanran modifies: The urgent call: answer now; in delay the trap sets itself." ;
+    mantic:rightLeg "Okanran" .
+
+mantic:Odu009 a mantic:IfaOdu ;
+    rdfs:label "Ogbe-Ogunda" ;
+    mantic:figureIndex 9 ;
+    mantic:hasBinaryVector "11111100" ;
+    mantic:leftLeg "Ogbe" ;
+    mantic:parable "Left leg Ogbe leads: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride. || Right leg Ogunda modifies: The clearing cut: sever cleanly what obstructs - surgery, not demolition." ;
+    mantic:rightLeg "Ogunda" .
+
+mantic:Odu010 a mantic:IfaOdu ;
+    rdfs:label "Ogbe-Osa" ;
+    mantic:figureIndex 10 ;
+    mantic:hasBinaryVector "11110011" ;
+    mantic:leftLeg "Ogbe" ;
+    mantic:parable "Left leg Ogbe leads: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride. || Right leg Osa modifies: The multitude arrives at once: choose the emissary or be swept by the crowd." ;
+    mantic:rightLeg "Osa" .
+
+mantic:Odu011 a mantic:IfaOdu ;
+    rdfs:label "Ogbe-Ika" ;
+    mantic:figureIndex 11 ;
+    mantic:hasBinaryVector "11110101" ;
+    mantic:leftLeg "Ogbe" ;
+    mantic:parable "Left leg Ogbe leads: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride. || Right leg Ika modifies: The coiled serpent: delay woven into the path - unwind by patience, never by force." ;
+    mantic:rightLeg "Ika" .
+
+mantic:Odu012 a mantic:IfaOdu ;
+    rdfs:label "Ogbe-Oturupon" ;
+    mantic:figureIndex 12 ;
+    mantic:hasBinaryVector "11111010" ;
+    mantic:leftLeg "Ogbe" ;
+    mantic:parable "Left leg Ogbe leads: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride. || Right leg Oturupon modifies: The burdened back: endurance past fatigue; share the load or it shares you." ;
+    mantic:rightLeg "Oturupon" .
+
+mantic:Odu013 a mantic:IfaOdu ;
+    rdfs:label "Ogbe-Otura" ;
+    mantic:figureIndex 13 ;
+    mantic:hasBinaryVector "11111101" ;
+    mantic:leftLeg "Ogbe" ;
+    mantic:parable "Left leg Ogbe leads: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride. || Right leg Otura modifies: The calm sky: peace is earned and defended - protect the quiet deliberately." ;
+    mantic:rightLeg "Otura" .
+
+mantic:Odu014 a mantic:IfaOdu ;
+    rdfs:label "Ogbe-Irete" ;
+    mantic:figureIndex 14 ;
+    mantic:hasBinaryVector "11111011" ;
+    mantic:leftLeg "Ogbe" ;
+    mantic:parable "Left leg Ogbe leads: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride. || Right leg Irete modifies: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat." ;
+    mantic:rightLeg "Irete" .
+
+mantic:Odu015 a mantic:IfaOdu ;
+    rdfs:label "Ogbe-Ose" ;
+    mantic:figureIndex 15 ;
+    mantic:hasBinaryVector "11110001" ;
+    mantic:leftLeg "Ogbe" ;
+    mantic:parable "Left leg Ogbe leads: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride. || Right leg Ose modifies: The winning whisper: victory through the small - bless the source of the stream." ;
+    mantic:rightLeg "Ose" .
+
+mantic:Odu016 a mantic:IfaOdu ;
+    rdfs:label "Ogbe-Ofun" ;
+    mantic:figureIndex 16 ;
+    mantic:hasBinaryVector "11111000" ;
+    mantic:leftLeg "Ogbe" ;
+    mantic:parable "Left leg Ogbe leads: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride. || Right leg Ofun modifies: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own." ;
+    mantic:rightLeg "Ofun" .
+
+mantic:Odu017 a mantic:IfaOdu ;
+    rdfs:label "Oyeku-Ogbe" ;
+    mantic:figureIndex 17 ;
+    mantic:hasBinaryVector "00001111" ;
+    mantic:leftLeg "Oyeku" ;
+    mantic:parable "Left leg Oyeku leads: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next. || Right leg Ogbe modifies: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride." ;
+    mantic:rightLeg "Ogbe" .
+
+mantic:Odu019 a mantic:IfaOdu ;
+    rdfs:label "Oyeku-Iwori" ;
+    mantic:figureIndex 19 ;
+    mantic:hasBinaryVector "00001001" ;
+    mantic:leftLeg "Oyeku" ;
+    mantic:parable "Left leg Oyeku leads: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next. || Right leg Iwori modifies: The eye turned inward: verify the seer before the seeing; the answer observes the asker." ;
+    mantic:rightLeg "Iwori" .
+
+mantic:Odu020 a mantic:IfaOdu ;
+    rdfs:label "Oyeku-Odi" ;
+    mantic:figureIndex 20 ;
+    mantic:hasBinaryVector "00000110" ;
+    mantic:leftLeg "Oyeku" ;
+    mantic:parable "Left leg Oyeku leads: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next. || Right leg Odi modifies: The sealed calabash: what turns inward ripens or rots - tend the interior." ;
+    mantic:rightLeg "Odi" .
+
+mantic:Odu021 a mantic:IfaOdu ;
+    rdfs:label "Oyeku-Irosun" ;
+    mantic:figureIndex 21 ;
+    mantic:hasBinaryVector "00000111" ;
+    mantic:leftLeg "Oyeku" ;
+    mantic:parable "Left leg Oyeku leads: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next. || Right leg Irosun modifies: Blood on the imprint: legacies owed; settle the old account before new ventures." ;
+    mantic:rightLeg "Irosun" .
+
+mantic:Odu022 a mantic:IfaOdu ;
+    rdfs:label "Oyeku-Owonrin" ;
+    mantic:figureIndex 22 ;
+    mantic:hasBinaryVector "00001110" ;
+    mantic:leftLeg "Oyeku" ;
+    mantic:parable "Left leg Oyeku leads: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next. || Right leg Owonrin modifies: The scattered roof: sudden disorder - repair shelter first, plans second." ;
+    mantic:rightLeg "Owonrin" .
+
+mantic:Odu023 a mantic:IfaOdu ;
+    rdfs:label "Oyeku-Obara" ;
+    mantic:figureIndex 23 ;
+    mantic:hasBinaryVector "00000100" ;
+    mantic:leftLeg "Oyeku" ;
+    mantic:parable "Left leg Oyeku leads: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next. || Right leg Obara modifies: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift." ;
+    mantic:rightLeg "Obara" .
+
+mantic:Odu024 a mantic:IfaOdu ;
+    rdfs:label "Oyeku-Okanran" ;
+    mantic:figureIndex 24 ;
+    mantic:hasBinaryVector "00000010" ;
+    mantic:leftLeg "Oyeku" ;
+    mantic:parable "Left leg Oyeku leads: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next. || Right leg Okanran modifies: The urgent call: answer now; in delay the trap sets itself." ;
+    mantic:rightLeg "Okanran" .
+
+mantic:Odu025 a mantic:IfaOdu ;
+    rdfs:label "Oyeku-Ogunda" ;
+    mantic:figureIndex 25 ;
+    mantic:hasBinaryVector "00001100" ;
+    mantic:leftLeg "Oyeku" ;
+    mantic:parable "Left leg Oyeku leads: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next. || Right leg Ogunda modifies: The clearing cut: sever cleanly what obstructs - surgery, not demolition." ;
+    mantic:rightLeg "Ogunda" .
+
+mantic:Odu026 a mantic:IfaOdu ;
+    rdfs:label "Oyeku-Osa" ;
+    mantic:figureIndex 26 ;
+    mantic:hasBinaryVector "00000011" ;
+    mantic:leftLeg "Oyeku" ;
+    mantic:parable "Left leg Oyeku leads: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next. || Right leg Osa modifies: The multitude arrives at once: choose the emissary or be swept by the crowd." ;
+    mantic:rightLeg "Osa" .
+
+mantic:Odu027 a mantic:IfaOdu ;
+    rdfs:label "Oyeku-Ika" ;
+    mantic:figureIndex 27 ;
+    mantic:hasBinaryVector "00000101" ;
+    mantic:leftLeg "Oyeku" ;
+    mantic:parable "Left leg Oyeku leads: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next. || Right leg Ika modifies: The coiled serpent: delay woven into the path - unwind by patience, never by force." ;
+    mantic:rightLeg "Ika" .
+
+mantic:Odu028 a mantic:IfaOdu ;
+    rdfs:label "Oyeku-Oturupon" ;
+    mantic:figureIndex 28 ;
+    mantic:hasBinaryVector "00001010" ;
+    mantic:leftLeg "Oyeku" ;
+    mantic:parable "Left leg Oyeku leads: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next. || Right leg Oturupon modifies: The burdened back: endurance past fatigue; share the load or it shares you." ;
+    mantic:rightLeg "Oturupon" .
+
+mantic:Odu029 a mantic:IfaOdu ;
+    rdfs:label "Oyeku-Otura" ;
+    mantic:figureIndex 29 ;
+    mantic:hasBinaryVector "00001101" ;
+    mantic:leftLeg "Oyeku" ;
+    mantic:parable "Left leg Oyeku leads: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next. || Right leg Otura modifies: The calm sky: peace is earned and defended - protect the quiet deliberately." ;
+    mantic:rightLeg "Otura" .
+
+mantic:Odu030 a mantic:IfaOdu ;
+    rdfs:label "Oyeku-Irete" ;
+    mantic:figureIndex 30 ;
+    mantic:hasBinaryVector "00001011" ;
+    mantic:leftLeg "Oyeku" ;
+    mantic:parable "Left leg Oyeku leads: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next. || Right leg Irete modifies: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat." ;
+    mantic:rightLeg "Irete" .
+
+mantic:Odu031 a mantic:IfaOdu ;
+    rdfs:label "Oyeku-Ose" ;
+    mantic:figureIndex 31 ;
+    mantic:hasBinaryVector "00000001" ;
+    mantic:leftLeg "Oyeku" ;
+    mantic:parable "Left leg Oyeku leads: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next. || Right leg Ose modifies: The winning whisper: victory through the small - bless the source of the stream." ;
+    mantic:rightLeg "Ose" .
+
+mantic:Odu032 a mantic:IfaOdu ;
+    rdfs:label "Oyeku-Ofun" ;
+    mantic:figureIndex 32 ;
+    mantic:hasBinaryVector "00001000" ;
+    mantic:leftLeg "Oyeku" ;
+    mantic:parable "Left leg Oyeku leads: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next. || Right leg Ofun modifies: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own." ;
+    mantic:rightLeg "Ofun" .
+
+mantic:Odu033 a mantic:IfaOdu ;
+    rdfs:label "Iwori-Ogbe" ;
+    mantic:figureIndex 33 ;
+    mantic:hasBinaryVector "10011111" ;
+    mantic:leftLeg "Iwori" ;
+    mantic:parable "Left leg Iwori leads: The eye turned inward: verify the seer before the seeing; the answer observes the asker. || Right leg Ogbe modifies: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride." ;
+    mantic:rightLeg "Ogbe" .
+
+mantic:Odu034 a mantic:IfaOdu ;
+    rdfs:label "Iwori-Oyeku" ;
+    mantic:figureIndex 34 ;
+    mantic:hasBinaryVector "10010000" ;
+    mantic:leftLeg "Iwori" ;
+    mantic:parable "Left leg Iwori leads: The eye turned inward: verify the seer before the seeing; the answer observes the asker. || Right leg Oyeku modifies: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next." ;
+    mantic:rightLeg "Oyeku" .
+
+mantic:Odu036 a mantic:IfaOdu ;
+    rdfs:label "Iwori-Odi" ;
+    mantic:figureIndex 36 ;
+    mantic:hasBinaryVector "10010110" ;
+    mantic:leftLeg "Iwori" ;
+    mantic:parable "Left leg Iwori leads: The eye turned inward: verify the seer before the seeing; the answer observes the asker. || Right leg Odi modifies: The sealed calabash: what turns inward ripens or rots - tend the interior." ;
+    mantic:rightLeg "Odi" .
+
+mantic:Odu037 a mantic:IfaOdu ;
+    rdfs:label "Iwori-Irosun" ;
+    mantic:figureIndex 37 ;
+    mantic:hasBinaryVector "10010111" ;
+    mantic:leftLeg "Iwori" ;
+    mantic:parable "Left leg Iwori leads: The eye turned inward: verify the seer before the seeing; the answer observes the asker. || Right leg Irosun modifies: Blood on the imprint: legacies owed; settle the old account before new ventures." ;
+    mantic:rightLeg "Irosun" .
+
+mantic:Odu038 a mantic:IfaOdu ;
+    rdfs:label "Iwori-Owonrin" ;
+    mantic:figureIndex 38 ;
+    mantic:hasBinaryVector "10011110" ;
+    mantic:leftLeg "Iwori" ;
+    mantic:parable "Left leg Iwori leads: The eye turned inward: verify the seer before the seeing; the answer observes the asker. || Right leg Owonrin modifies: The scattered roof: sudden disorder - repair shelter first, plans second." ;
+    mantic:rightLeg "Owonrin" .
+
+mantic:Odu039 a mantic:IfaOdu ;
+    rdfs:label "Iwori-Obara" ;
+    mantic:figureIndex 39 ;
+    mantic:hasBinaryVector "10010100" ;
+    mantic:leftLeg "Iwori" ;
+    mantic:parable "Left leg Iwori leads: The eye turned inward: verify the seer before the seeing; the answer observes the asker. || Right leg Obara modifies: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift." ;
+    mantic:rightLeg "Obara" .
+
+mantic:Odu040 a mantic:IfaOdu ;
+    rdfs:label "Iwori-Okanran" ;
+    mantic:figureIndex 40 ;
+    mantic:hasBinaryVector "10010010" ;
+    mantic:leftLeg "Iwori" ;
+    mantic:parable "Left leg Iwori leads: The eye turned inward: verify the seer before the seeing; the answer observes the asker. || Right leg Okanran modifies: The urgent call: answer now; in delay the trap sets itself." ;
+    mantic:rightLeg "Okanran" .
+
+mantic:Odu041 a mantic:IfaOdu ;
+    rdfs:label "Iwori-Ogunda" ;
+    mantic:figureIndex 41 ;
+    mantic:hasBinaryVector "10011100" ;
+    mantic:leftLeg "Iwori" ;
+    mantic:parable "Left leg Iwori leads: The eye turned inward: verify the seer before the seeing; the answer observes the asker. || Right leg Ogunda modifies: The clearing cut: sever cleanly what obstructs - surgery, not demolition." ;
+    mantic:rightLeg "Ogunda" .
+
+mantic:Odu042 a mantic:IfaOdu ;
+    rdfs:label "Iwori-Osa" ;
+    mantic:figureIndex 42 ;
+    mantic:hasBinaryVector "10010011" ;
+    mantic:leftLeg "Iwori" ;
+    mantic:parable "Left leg Iwori leads: The eye turned inward: verify the seer before the seeing; the answer observes the asker. || Right leg Osa modifies: The multitude arrives at once: choose the emissary or be swept by the crowd." ;
+    mantic:rightLeg "Osa" .
+
+mantic:Odu043 a mantic:IfaOdu ;
+    rdfs:label "Iwori-Ika" ;
+    mantic:figureIndex 43 ;
+    mantic:hasBinaryVector "10010101" ;
+    mantic:leftLeg "Iwori" ;
+    mantic:parable "Left leg Iwori leads: The eye turned inward: verify the seer before the seeing; the answer observes the asker. || Right leg Ika modifies: The coiled serpent: delay woven into the path - unwind by patience, never by force." ;
+    mantic:rightLeg "Ika" .
+
+mantic:Odu044 a mantic:IfaOdu ;
+    rdfs:label "Iwori-Oturupon" ;
+    mantic:figureIndex 44 ;
+    mantic:hasBinaryVector "10011010" ;
+    mantic:leftLeg "Iwori" ;
+    mantic:parable "Left leg Iwori leads: The eye turned inward: verify the seer before the seeing; the answer observes the asker. || Right leg Oturupon modifies: The burdened back: endurance past fatigue; share the load or it shares you." ;
+    mantic:rightLeg "Oturupon" .
+
+mantic:Odu045 a mantic:IfaOdu ;
+    rdfs:label "Iwori-Otura" ;
+    mantic:figureIndex 45 ;
+    mantic:hasBinaryVector "10011101" ;
+    mantic:leftLeg "Iwori" ;
+    mantic:parable "Left leg Iwori leads: The eye turned inward: verify the seer before the seeing; the answer observes the asker. || Right leg Otura modifies: The calm sky: peace is earned and defended - protect the quiet deliberately." ;
+    mantic:rightLeg "Otura" .
+
+mantic:Odu046 a mantic:IfaOdu ;
+    rdfs:label "Iwori-Irete" ;
+    mantic:figureIndex 46 ;
+    mantic:hasBinaryVector "10011011" ;
+    mantic:leftLeg "Iwori" ;
+    mantic:parable "Left leg Iwori leads: The eye turned inward: verify the seer before the seeing; the answer observes the asker. || Right leg Irete modifies: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat." ;
+    mantic:rightLeg "Irete" .
+
+mantic:Odu047 a mantic:IfaOdu ;
+    rdfs:label "Iwori-Ose" ;
+    mantic:figureIndex 47 ;
+    mantic:hasBinaryVector "10010001" ;
+    mantic:leftLeg "Iwori" ;
+    mantic:parable "Left leg Iwori leads: The eye turned inward: verify the seer before the seeing; the answer observes the asker. || Right leg Ose modifies: The winning whisper: victory through the small - bless the source of the stream." ;
+    mantic:rightLeg "Ose" .
+
+mantic:Odu048 a mantic:IfaOdu ;
+    rdfs:label "Iwori-Ofun" ;
+    mantic:figureIndex 48 ;
+    mantic:hasBinaryVector "10011000" ;
+    mantic:leftLeg "Iwori" ;
+    mantic:parable "Left leg Iwori leads: The eye turned inward: verify the seer before the seeing; the answer observes the asker. || Right leg Ofun modifies: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own." ;
+    mantic:rightLeg "Ofun" .
+
+mantic:Odu049 a mantic:IfaOdu ;
+    rdfs:label "Odi-Ogbe" ;
+    mantic:figureIndex 49 ;
+    mantic:hasBinaryVector "01101111" ;
+    mantic:leftLeg "Odi" ;
+    mantic:parable "Left leg Odi leads: The sealed calabash: what turns inward ripens or rots - tend the interior. || Right leg Ogbe modifies: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride." ;
+    mantic:rightLeg "Ogbe" .
+
+mantic:Odu050 a mantic:IfaOdu ;
+    rdfs:label "Odi-Oyeku" ;
+    mantic:figureIndex 50 ;
+    mantic:hasBinaryVector "01100000" ;
+    mantic:leftLeg "Odi" ;
+    mantic:parable "Left leg Odi leads: The sealed calabash: what turns inward ripens or rots - tend the interior. || Right leg Oyeku modifies: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next." ;
+    mantic:rightLeg "Oyeku" .
+
+mantic:Odu051 a mantic:IfaOdu ;
+    rdfs:label "Odi-Iwori" ;
+    mantic:figureIndex 51 ;
+    mantic:hasBinaryVector "01101001" ;
+    mantic:leftLeg "Odi" ;
+    mantic:parable "Left leg Odi leads: The sealed calabash: what turns inward ripens or rots - tend the interior. || Right leg Iwori modifies: The eye turned inward: verify the seer before the seeing; the answer observes the asker." ;
+    mantic:rightLeg "Iwori" .
+
+mantic:Odu053 a mantic:IfaOdu ;
+    rdfs:label "Odi-Irosun" ;
+    mantic:figureIndex 53 ;
+    mantic:hasBinaryVector "01100111" ;
+    mantic:leftLeg "Odi" ;
+    mantic:parable "Left leg Odi leads: The sealed calabash: what turns inward ripens or rots - tend the interior. || Right leg Irosun modifies: Blood on the imprint: legacies owed; settle the old account before new ventures." ;
+    mantic:rightLeg "Irosun" .
+
+mantic:Odu054 a mantic:IfaOdu ;
+    rdfs:label "Odi-Owonrin" ;
+    mantic:figureIndex 54 ;
+    mantic:hasBinaryVector "01101110" ;
+    mantic:leftLeg "Odi" ;
+    mantic:parable "Left leg Odi leads: The sealed calabash: what turns inward ripens or rots - tend the interior. || Right leg Owonrin modifies: The scattered roof: sudden disorder - repair shelter first, plans second." ;
+    mantic:rightLeg "Owonrin" .
+
+mantic:Odu055 a mantic:IfaOdu ;
+    rdfs:label "Odi-Obara" ;
+    mantic:figureIndex 55 ;
+    mantic:hasBinaryVector "01100100" ;
+    mantic:leftLeg "Odi" ;
+    mantic:parable "Left leg Odi leads: The sealed calabash: what turns inward ripens or rots - tend the interior. || Right leg Obara modifies: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift." ;
+    mantic:rightLeg "Obara" .
+
+mantic:Odu056 a mantic:IfaOdu ;
+    rdfs:label "Odi-Okanran" ;
+    mantic:figureIndex 56 ;
+    mantic:hasBinaryVector "01100010" ;
+    mantic:leftLeg "Odi" ;
+    mantic:parable "Left leg Odi leads: The sealed calabash: what turns inward ripens or rots - tend the interior. || Right leg Okanran modifies: The urgent call: answer now; in delay the trap sets itself." ;
+    mantic:rightLeg "Okanran" .
+
+mantic:Odu057 a mantic:IfaOdu ;
+    rdfs:label "Odi-Ogunda" ;
+    mantic:figureIndex 57 ;
+    mantic:hasBinaryVector "01101100" ;
+    mantic:leftLeg "Odi" ;
+    mantic:parable "Left leg Odi leads: The sealed calabash: what turns inward ripens or rots - tend the interior. || Right leg Ogunda modifies: The clearing cut: sever cleanly what obstructs - surgery, not demolition." ;
+    mantic:rightLeg "Ogunda" .
+
+mantic:Odu058 a mantic:IfaOdu ;
+    rdfs:label "Odi-Osa" ;
+    mantic:figureIndex 58 ;
+    mantic:hasBinaryVector "01100011" ;
+    mantic:leftLeg "Odi" ;
+    mantic:parable "Left leg Odi leads: The sealed calabash: what turns inward ripens or rots - tend the interior. || Right leg Osa modifies: The multitude arrives at once: choose the emissary or be swept by the crowd." ;
+    mantic:rightLeg "Osa" .
+
+mantic:Odu059 a mantic:IfaOdu ;
+    rdfs:label "Odi-Ika" ;
+    mantic:figureIndex 59 ;
+    mantic:hasBinaryVector "01100101" ;
+    mantic:leftLeg "Odi" ;
+    mantic:parable "Left leg Odi leads: The sealed calabash: what turns inward ripens or rots - tend the interior. || Right leg Ika modifies: The coiled serpent: delay woven into the path - unwind by patience, never by force." ;
+    mantic:rightLeg "Ika" .
+
+mantic:Odu060 a mantic:IfaOdu ;
+    rdfs:label "Odi-Oturupon" ;
+    mantic:figureIndex 60 ;
+    mantic:hasBinaryVector "01101010" ;
+    mantic:leftLeg "Odi" ;
+    mantic:parable "Left leg Odi leads: The sealed calabash: what turns inward ripens or rots - tend the interior. || Right leg Oturupon modifies: The burdened back: endurance past fatigue; share the load or it shares you." ;
+    mantic:rightLeg "Oturupon" .
+
+mantic:Odu061 a mantic:IfaOdu ;
+    rdfs:label "Odi-Otura" ;
+    mantic:figureIndex 61 ;
+    mantic:hasBinaryVector "01101101" ;
+    mantic:leftLeg "Odi" ;
+    mantic:parable "Left leg Odi leads: The sealed calabash: what turns inward ripens or rots - tend the interior. || Right leg Otura modifies: The calm sky: peace is earned and defended - protect the quiet deliberately." ;
+    mantic:rightLeg "Otura" .
+
+mantic:Odu062 a mantic:IfaOdu ;
+    rdfs:label "Odi-Irete" ;
+    mantic:figureIndex 62 ;
+    mantic:hasBinaryVector "01101011" ;
+    mantic:leftLeg "Odi" ;
+    mantic:parable "Left leg Odi leads: The sealed calabash: what turns inward ripens or rots - tend the interior. || Right leg Irete modifies: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat." ;
+    mantic:rightLeg "Irete" .
+
+mantic:Odu063 a mantic:IfaOdu ;
+    rdfs:label "Odi-Ose" ;
+    mantic:figureIndex 63 ;
+    mantic:hasBinaryVector "01100001" ;
+    mantic:leftLeg "Odi" ;
+    mantic:parable "Left leg Odi leads: The sealed calabash: what turns inward ripens or rots - tend the interior. || Right leg Ose modifies: The winning whisper: victory through the small - bless the source of the stream." ;
+    mantic:rightLeg "Ose" .
+
+mantic:Odu064 a mantic:IfaOdu ;
+    rdfs:label "Odi-Ofun" ;
+    mantic:figureIndex 64 ;
+    mantic:hasBinaryVector "01101000" ;
+    mantic:leftLeg "Odi" ;
+    mantic:parable "Left leg Odi leads: The sealed calabash: what turns inward ripens or rots - tend the interior. || Right leg Ofun modifies: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own." ;
+    mantic:rightLeg "Ofun" .
+
+mantic:Odu065 a mantic:IfaOdu ;
+    rdfs:label "Irosun-Ogbe" ;
+    mantic:figureIndex 65 ;
+    mantic:hasBinaryVector "01111111" ;
+    mantic:leftLeg "Irosun" ;
+    mantic:parable "Left leg Irosun leads: Blood on the imprint: legacies owed; settle the old account before new ventures. || Right leg Ogbe modifies: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride." ;
+    mantic:rightLeg "Ogbe" .
+
+mantic:Odu066 a mantic:IfaOdu ;
+    rdfs:label "Irosun-Oyeku" ;
+    mantic:figureIndex 66 ;
+    mantic:hasBinaryVector "01110000" ;
+    mantic:leftLeg "Irosun" ;
+    mantic:parable "Left leg Irosun leads: Blood on the imprint: legacies owed; settle the old account before new ventures. || Right leg Oyeku modifies: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next." ;
+    mantic:rightLeg "Oyeku" .
+
+mantic:Odu067 a mantic:IfaOdu ;
+    rdfs:label "Irosun-Iwori" ;
+    mantic:figureIndex 67 ;
+    mantic:hasBinaryVector "01111001" ;
+    mantic:leftLeg "Irosun" ;
+    mantic:parable "Left leg Irosun leads: Blood on the imprint: legacies owed; settle the old account before new ventures. || Right leg Iwori modifies: The eye turned inward: verify the seer before the seeing; the answer observes the asker." ;
+    mantic:rightLeg "Iwori" .
+
+mantic:Odu068 a mantic:IfaOdu ;
+    rdfs:label "Irosun-Odi" ;
+    mantic:figureIndex 68 ;
+    mantic:hasBinaryVector "01110110" ;
+    mantic:leftLeg "Irosun" ;
+    mantic:parable "Left leg Irosun leads: Blood on the imprint: legacies owed; settle the old account before new ventures. || Right leg Odi modifies: The sealed calabash: what turns inward ripens or rots - tend the interior." ;
+    mantic:rightLeg "Odi" .
+
+mantic:Odu070 a mantic:IfaOdu ;
+    rdfs:label "Irosun-Owonrin" ;
+    mantic:figureIndex 70 ;
+    mantic:hasBinaryVector "01111110" ;
+    mantic:leftLeg "Irosun" ;
+    mantic:parable "Left leg Irosun leads: Blood on the imprint: legacies owed; settle the old account before new ventures. || Right leg Owonrin modifies: The scattered roof: sudden disorder - repair shelter first, plans second." ;
+    mantic:rightLeg "Owonrin" .
+
+mantic:Odu071 a mantic:IfaOdu ;
+    rdfs:label "Irosun-Obara" ;
+    mantic:figureIndex 71 ;
+    mantic:hasBinaryVector "01110100" ;
+    mantic:leftLeg "Irosun" ;
+    mantic:parable "Left leg Irosun leads: Blood on the imprint: legacies owed; settle the old account before new ventures. || Right leg Obara modifies: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift." ;
+    mantic:rightLeg "Obara" .
+
+mantic:Odu072 a mantic:IfaOdu ;
+    rdfs:label "Irosun-Okanran" ;
+    mantic:figureIndex 72 ;
+    mantic:hasBinaryVector "01110010" ;
+    mantic:leftLeg "Irosun" ;
+    mantic:parable "Left leg Irosun leads: Blood on the imprint: legacies owed; settle the old account before new ventures. || Right leg Okanran modifies: The urgent call: answer now; in delay the trap sets itself." ;
+    mantic:rightLeg "Okanran" .
+
+mantic:Odu073 a mantic:IfaOdu ;
+    rdfs:label "Irosun-Ogunda" ;
+    mantic:figureIndex 73 ;
+    mantic:hasBinaryVector "01111100" ;
+    mantic:leftLeg "Irosun" ;
+    mantic:parable "Left leg Irosun leads: Blood on the imprint: legacies owed; settle the old account before new ventures. || Right leg Ogunda modifies: The clearing cut: sever cleanly what obstructs - surgery, not demolition." ;
+    mantic:rightLeg "Ogunda" .
+
+mantic:Odu074 a mantic:IfaOdu ;
+    rdfs:label "Irosun-Osa" ;
+    mantic:figureIndex 74 ;
+    mantic:hasBinaryVector "01110011" ;
+    mantic:leftLeg "Irosun" ;
+    mantic:parable "Left leg Irosun leads: Blood on the imprint: legacies owed; settle the old account before new ventures. || Right leg Osa modifies: The multitude arrives at once: choose the emissary or be swept by the crowd." ;
+    mantic:rightLeg "Osa" .
+
+mantic:Odu075 a mantic:IfaOdu ;
+    rdfs:label "Irosun-Ika" ;
+    mantic:figureIndex 75 ;
+    mantic:hasBinaryVector "01110101" ;
+    mantic:leftLeg "Irosun" ;
+    mantic:parable "Left leg Irosun leads: Blood on the imprint: legacies owed; settle the old account before new ventures. || Right leg Ika modifies: The coiled serpent: delay woven into the path - unwind by patience, never by force." ;
+    mantic:rightLeg "Ika" .
+
+mantic:Odu076 a mantic:IfaOdu ;
+    rdfs:label "Irosun-Oturupon" ;
+    mantic:figureIndex 76 ;
+    mantic:hasBinaryVector "01111010" ;
+    mantic:leftLeg "Irosun" ;
+    mantic:parable "Left leg Irosun leads: Blood on the imprint: legacies owed; settle the old account before new ventures. || Right leg Oturupon modifies: The burdened back: endurance past fatigue; share the load or it shares you." ;
+    mantic:rightLeg "Oturupon" .
+
+mantic:Odu077 a mantic:IfaOdu ;
+    rdfs:label "Irosun-Otura" ;
+    mantic:figureIndex 77 ;
+    mantic:hasBinaryVector "01111101" ;
+    mantic:leftLeg "Irosun" ;
+    mantic:parable "Left leg Irosun leads: Blood on the imprint: legacies owed; settle the old account before new ventures. || Right leg Otura modifies: The calm sky: peace is earned and defended - protect the quiet deliberately." ;
+    mantic:rightLeg "Otura" .
+
+mantic:Odu078 a mantic:IfaOdu ;
+    rdfs:label "Irosun-Irete" ;
+    mantic:figureIndex 78 ;
+    mantic:hasBinaryVector "01111011" ;
+    mantic:leftLeg "Irosun" ;
+    mantic:parable "Left leg Irosun leads: Blood on the imprint: legacies owed; settle the old account before new ventures. || Right leg Irete modifies: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat." ;
+    mantic:rightLeg "Irete" .
+
+mantic:Odu079 a mantic:IfaOdu ;
+    rdfs:label "Irosun-Ose" ;
+    mantic:figureIndex 79 ;
+    mantic:hasBinaryVector "01110001" ;
+    mantic:leftLeg "Irosun" ;
+    mantic:parable "Left leg Irosun leads: Blood on the imprint: legacies owed; settle the old account before new ventures. || Right leg Ose modifies: The winning whisper: victory through the small - bless the source of the stream." ;
+    mantic:rightLeg "Ose" .
+
+mantic:Odu080 a mantic:IfaOdu ;
+    rdfs:label "Irosun-Ofun" ;
+    mantic:figureIndex 80 ;
+    mantic:hasBinaryVector "01111000" ;
+    mantic:leftLeg "Irosun" ;
+    mantic:parable "Left leg Irosun leads: Blood on the imprint: legacies owed; settle the old account before new ventures. || Right leg Ofun modifies: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own." ;
+    mantic:rightLeg "Ofun" .
+
+mantic:Odu081 a mantic:IfaOdu ;
+    rdfs:label "Owonrin-Ogbe" ;
+    mantic:figureIndex 81 ;
+    mantic:hasBinaryVector "11101111" ;
+    mantic:leftLeg "Owonrin" ;
+    mantic:parable "Left leg Owonrin leads: The scattered roof: sudden disorder - repair shelter first, plans second. || Right leg Ogbe modifies: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride." ;
+    mantic:rightLeg "Ogbe" .
+
+mantic:Odu082 a mantic:IfaOdu ;
+    rdfs:label "Owonrin-Oyeku" ;
+    mantic:figureIndex 82 ;
+    mantic:hasBinaryVector "11100000" ;
+    mantic:leftLeg "Owonrin" ;
+    mantic:parable "Left leg Owonrin leads: The scattered roof: sudden disorder - repair shelter first, plans second. || Right leg Oyeku modifies: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next." ;
+    mantic:rightLeg "Oyeku" .
+
+mantic:Odu083 a mantic:IfaOdu ;
+    rdfs:label "Owonrin-Iwori" ;
+    mantic:figureIndex 83 ;
+    mantic:hasBinaryVector "11101001" ;
+    mantic:leftLeg "Owonrin" ;
+    mantic:parable "Left leg Owonrin leads: The scattered roof: sudden disorder - repair shelter first, plans second. || Right leg Iwori modifies: The eye turned inward: verify the seer before the seeing; the answer observes the asker." ;
+    mantic:rightLeg "Iwori" .
+
+mantic:Odu084 a mantic:IfaOdu ;
+    rdfs:label "Owonrin-Odi" ;
+    mantic:figureIndex 84 ;
+    mantic:hasBinaryVector "11100110" ;
+    mantic:leftLeg "Owonrin" ;
+    mantic:parable "Left leg Owonrin leads: The scattered roof: sudden disorder - repair shelter first, plans second. || Right leg Odi modifies: The sealed calabash: what turns inward ripens or rots - tend the interior." ;
+    mantic:rightLeg "Odi" .
+
+mantic:Odu085 a mantic:IfaOdu ;
+    rdfs:label "Owonrin-Irosun" ;
+    mantic:figureIndex 85 ;
+    mantic:hasBinaryVector "11100111" ;
+    mantic:leftLeg "Owonrin" ;
+    mantic:parable "Left leg Owonrin leads: The scattered roof: sudden disorder - repair shelter first, plans second. || Right leg Irosun modifies: Blood on the imprint: legacies owed; settle the old account before new ventures." ;
+    mantic:rightLeg "Irosun" .
+
+mantic:Odu087 a mantic:IfaOdu ;
+    rdfs:label "Owonrin-Obara" ;
+    mantic:figureIndex 87 ;
+    mantic:hasBinaryVector "11100100" ;
+    mantic:leftLeg "Owonrin" ;
+    mantic:parable "Left leg Owonrin leads: The scattered roof: sudden disorder - repair shelter first, plans second. || Right leg Obara modifies: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift." ;
+    mantic:rightLeg "Obara" .
+
+mantic:Odu088 a mantic:IfaOdu ;
+    rdfs:label "Owonrin-Okanran" ;
+    mantic:figureIndex 88 ;
+    mantic:hasBinaryVector "11100010" ;
+    mantic:leftLeg "Owonrin" ;
+    mantic:parable "Left leg Owonrin leads: The scattered roof: sudden disorder - repair shelter first, plans second. || Right leg Okanran modifies: The urgent call: answer now; in delay the trap sets itself." ;
+    mantic:rightLeg "Okanran" .
+
+mantic:Odu089 a mantic:IfaOdu ;
+    rdfs:label "Owonrin-Ogunda" ;
+    mantic:figureIndex 89 ;
+    mantic:hasBinaryVector "11101100" ;
+    mantic:leftLeg "Owonrin" ;
+    mantic:parable "Left leg Owonrin leads: The scattered roof: sudden disorder - repair shelter first, plans second. || Right leg Ogunda modifies: The clearing cut: sever cleanly what obstructs - surgery, not demolition." ;
+    mantic:rightLeg "Ogunda" .
+
+mantic:Odu090 a mantic:IfaOdu ;
+    rdfs:label "Owonrin-Osa" ;
+    mantic:figureIndex 90 ;
+    mantic:hasBinaryVector "11100011" ;
+    mantic:leftLeg "Owonrin" ;
+    mantic:parable "Left leg Owonrin leads: The scattered roof: sudden disorder - repair shelter first, plans second. || Right leg Osa modifies: The multitude arrives at once: choose the emissary or be swept by the crowd." ;
+    mantic:rightLeg "Osa" .
+
+mantic:Odu091 a mantic:IfaOdu ;
+    rdfs:label "Owonrin-Ika" ;
+    mantic:figureIndex 91 ;
+    mantic:hasBinaryVector "11100101" ;
+    mantic:leftLeg "Owonrin" ;
+    mantic:parable "Left leg Owonrin leads: The scattered roof: sudden disorder - repair shelter first, plans second. || Right leg Ika modifies: The coiled serpent: delay woven into the path - unwind by patience, never by force." ;
+    mantic:rightLeg "Ika" .
+
+mantic:Odu092 a mantic:IfaOdu ;
+    rdfs:label "Owonrin-Oturupon" ;
+    mantic:figureIndex 92 ;
+    mantic:hasBinaryVector "11101010" ;
+    mantic:leftLeg "Owonrin" ;
+    mantic:parable "Left leg Owonrin leads: The scattered roof: sudden disorder - repair shelter first, plans second. || Right leg Oturupon modifies: The burdened back: endurance past fatigue; share the load or it shares you." ;
+    mantic:rightLeg "Oturupon" .
+
+mantic:Odu093 a mantic:IfaOdu ;
+    rdfs:label "Owonrin-Otura" ;
+    mantic:figureIndex 93 ;
+    mantic:hasBinaryVector "11101101" ;
+    mantic:leftLeg "Owonrin" ;
+    mantic:parable "Left leg Owonrin leads: The scattered roof: sudden disorder - repair shelter first, plans second. || Right leg Otura modifies: The calm sky: peace is earned and defended - protect the quiet deliberately." ;
+    mantic:rightLeg "Otura" .
+
+mantic:Odu094 a mantic:IfaOdu ;
+    rdfs:label "Owonrin-Irete" ;
+    mantic:figureIndex 94 ;
+    mantic:hasBinaryVector "11101011" ;
+    mantic:leftLeg "Owonrin" ;
+    mantic:parable "Left leg Owonrin leads: The scattered roof: sudden disorder - repair shelter first, plans second. || Right leg Irete modifies: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat." ;
+    mantic:rightLeg "Irete" .
+
+mantic:Odu095 a mantic:IfaOdu ;
+    rdfs:label "Owonrin-Ose" ;
+    mantic:figureIndex 95 ;
+    mantic:hasBinaryVector "11100001" ;
+    mantic:leftLeg "Owonrin" ;
+    mantic:parable "Left leg Owonrin leads: The scattered roof: sudden disorder - repair shelter first, plans second. || Right leg Ose modifies: The winning whisper: victory through the small - bless the source of the stream." ;
+    mantic:rightLeg "Ose" .
+
+mantic:Odu096 a mantic:IfaOdu ;
+    rdfs:label "Owonrin-Ofun" ;
+    mantic:figureIndex 96 ;
+    mantic:hasBinaryVector "11101000" ;
+    mantic:leftLeg "Owonrin" ;
+    mantic:parable "Left leg Owonrin leads: The scattered roof: sudden disorder - repair shelter first, plans second. || Right leg Ofun modifies: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own." ;
+    mantic:rightLeg "Ofun" .
+
+mantic:Odu097 a mantic:IfaOdu ;
+    rdfs:label "Obara-Ogbe" ;
+    mantic:figureIndex 97 ;
+    mantic:hasBinaryVector "01001111" ;
+    mantic:leftLeg "Obara" ;
+    mantic:parable "Left leg Obara leads: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift. || Right leg Ogbe modifies: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride." ;
+    mantic:rightLeg "Ogbe" .
+
+mantic:Odu098 a mantic:IfaOdu ;
+    rdfs:label "Obara-Oyeku" ;
+    mantic:figureIndex 98 ;
+    mantic:hasBinaryVector "01000000" ;
+    mantic:leftLeg "Obara" ;
+    mantic:parable "Left leg Obara leads: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift. || Right leg Oyeku modifies: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next." ;
+    mantic:rightLeg "Oyeku" .
+
+mantic:Odu099 a mantic:IfaOdu ;
+    rdfs:label "Obara-Iwori" ;
+    mantic:figureIndex 99 ;
+    mantic:hasBinaryVector "01001001" ;
+    mantic:leftLeg "Obara" ;
+    mantic:parable "Left leg Obara leads: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift. || Right leg Iwori modifies: The eye turned inward: verify the seer before the seeing; the answer observes the asker." ;
+    mantic:rightLeg "Iwori" .
+
+mantic:Odu100 a mantic:IfaOdu ;
+    rdfs:label "Obara-Odi" ;
+    mantic:figureIndex 100 ;
+    mantic:hasBinaryVector "01000110" ;
+    mantic:leftLeg "Obara" ;
+    mantic:parable "Left leg Obara leads: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift. || Right leg Odi modifies: The sealed calabash: what turns inward ripens or rots - tend the interior." ;
+    mantic:rightLeg "Odi" .
+
+mantic:Odu101 a mantic:IfaOdu ;
+    rdfs:label "Obara-Irosun" ;
+    mantic:figureIndex 101 ;
+    mantic:hasBinaryVector "01000111" ;
+    mantic:leftLeg "Obara" ;
+    mantic:parable "Left leg Obara leads: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift. || Right leg Irosun modifies: Blood on the imprint: legacies owed; settle the old account before new ventures." ;
+    mantic:rightLeg "Irosun" .
+
+mantic:Odu102 a mantic:IfaOdu ;
+    rdfs:label "Obara-Owonrin" ;
+    mantic:figureIndex 102 ;
+    mantic:hasBinaryVector "01001110" ;
+    mantic:leftLeg "Obara" ;
+    mantic:parable "Left leg Obara leads: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift. || Right leg Owonrin modifies: The scattered roof: sudden disorder - repair shelter first, plans second." ;
+    mantic:rightLeg "Owonrin" .
+
+mantic:Odu104 a mantic:IfaOdu ;
+    rdfs:label "Obara-Okanran" ;
+    mantic:figureIndex 104 ;
+    mantic:hasBinaryVector "01000010" ;
+    mantic:leftLeg "Obara" ;
+    mantic:parable "Left leg Obara leads: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift. || Right leg Okanran modifies: The urgent call: answer now; in delay the trap sets itself." ;
+    mantic:rightLeg "Okanran" .
+
+mantic:Odu105 a mantic:IfaOdu ;
+    rdfs:label "Obara-Ogunda" ;
+    mantic:figureIndex 105 ;
+    mantic:hasBinaryVector "01001100" ;
+    mantic:leftLeg "Obara" ;
+    mantic:parable "Left leg Obara leads: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift. || Right leg Ogunda modifies: The clearing cut: sever cleanly what obstructs - surgery, not demolition." ;
+    mantic:rightLeg "Ogunda" .
+
+mantic:Odu106 a mantic:IfaOdu ;
+    rdfs:label "Obara-Osa" ;
+    mantic:figureIndex 106 ;
+    mantic:hasBinaryVector "01000011" ;
+    mantic:leftLeg "Obara" ;
+    mantic:parable "Left leg Obara leads: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift. || Right leg Osa modifies: The multitude arrives at once: choose the emissary or be swept by the crowd." ;
+    mantic:rightLeg "Osa" .
+
+mantic:Odu107 a mantic:IfaOdu ;
+    rdfs:label "Obara-Ika" ;
+    mantic:figureIndex 107 ;
+    mantic:hasBinaryVector "01000101" ;
+    mantic:leftLeg "Obara" ;
+    mantic:parable "Left leg Obara leads: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift. || Right leg Ika modifies: The coiled serpent: delay woven into the path - unwind by patience, never by force." ;
+    mantic:rightLeg "Ika" .
+
+mantic:Odu108 a mantic:IfaOdu ;
+    rdfs:label "Obara-Oturupon" ;
+    mantic:figureIndex 108 ;
+    mantic:hasBinaryVector "01001010" ;
+    mantic:leftLeg "Obara" ;
+    mantic:parable "Left leg Obara leads: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift. || Right leg Oturupon modifies: The burdened back: endurance past fatigue; share the load or it shares you." ;
+    mantic:rightLeg "Oturupon" .
+
+mantic:Odu109 a mantic:IfaOdu ;
+    rdfs:label "Obara-Otura" ;
+    mantic:figureIndex 109 ;
+    mantic:hasBinaryVector "01001101" ;
+    mantic:leftLeg "Obara" ;
+    mantic:parable "Left leg Obara leads: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift. || Right leg Otura modifies: The calm sky: peace is earned and defended - protect the quiet deliberately." ;
+    mantic:rightLeg "Otura" .
+
+mantic:Odu110 a mantic:IfaOdu ;
+    rdfs:label "Obara-Irete" ;
+    mantic:figureIndex 110 ;
+    mantic:hasBinaryVector "01001011" ;
+    mantic:leftLeg "Obara" ;
+    mantic:parable "Left leg Obara leads: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift. || Right leg Irete modifies: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat." ;
+    mantic:rightLeg "Irete" .
+
+mantic:Odu111 a mantic:IfaOdu ;
+    rdfs:label "Obara-Ose" ;
+    mantic:figureIndex 111 ;
+    mantic:hasBinaryVector "01000001" ;
+    mantic:leftLeg "Obara" ;
+    mantic:parable "Left leg Obara leads: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift. || Right leg Ose modifies: The winning whisper: victory through the small - bless the source of the stream." ;
+    mantic:rightLeg "Ose" .
+
+mantic:Odu112 a mantic:IfaOdu ;
+    rdfs:label "Obara-Ofun" ;
+    mantic:figureIndex 112 ;
+    mantic:hasBinaryVector "01001000" ;
+    mantic:leftLeg "Obara" ;
+    mantic:parable "Left leg Obara leads: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift. || Right leg Ofun modifies: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own." ;
+    mantic:rightLeg "Ofun" .
+
+mantic:Odu113 a mantic:IfaOdu ;
+    rdfs:label "Okanran-Ogbe" ;
+    mantic:figureIndex 113 ;
+    mantic:hasBinaryVector "00101111" ;
+    mantic:leftLeg "Okanran" ;
+    mantic:parable "Left leg Okanran leads: The urgent call: answer now; in delay the trap sets itself. || Right leg Ogbe modifies: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride." ;
+    mantic:rightLeg "Ogbe" .
+
+mantic:Odu114 a mantic:IfaOdu ;
+    rdfs:label "Okanran-Oyeku" ;
+    mantic:figureIndex 114 ;
+    mantic:hasBinaryVector "00100000" ;
+    mantic:leftLeg "Okanran" ;
+    mantic:parable "Left leg Okanran leads: The urgent call: answer now; in delay the trap sets itself. || Right leg Oyeku modifies: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next." ;
+    mantic:rightLeg "Oyeku" .
+
+mantic:Odu115 a mantic:IfaOdu ;
+    rdfs:label "Okanran-Iwori" ;
+    mantic:figureIndex 115 ;
+    mantic:hasBinaryVector "00101001" ;
+    mantic:leftLeg "Okanran" ;
+    mantic:parable "Left leg Okanran leads: The urgent call: answer now; in delay the trap sets itself. || Right leg Iwori modifies: The eye turned inward: verify the seer before the seeing; the answer observes the asker." ;
+    mantic:rightLeg "Iwori" .
+
+mantic:Odu116 a mantic:IfaOdu ;
+    rdfs:label "Okanran-Odi" ;
+    mantic:figureIndex 116 ;
+    mantic:hasBinaryVector "00100110" ;
+    mantic:leftLeg "Okanran" ;
+    mantic:parable "Left leg Okanran leads: The urgent call: answer now; in delay the trap sets itself. || Right leg Odi modifies: The sealed calabash: what turns inward ripens or rots - tend the interior." ;
+    mantic:rightLeg "Odi" .
+
+mantic:Odu117 a mantic:IfaOdu ;
+    rdfs:label "Okanran-Irosun" ;
+    mantic:figureIndex 117 ;
+    mantic:hasBinaryVector "00100111" ;
+    mantic:leftLeg "Okanran" ;
+    mantic:parable "Left leg Okanran leads: The urgent call: answer now; in delay the trap sets itself. || Right leg Irosun modifies: Blood on the imprint: legacies owed; settle the old account before new ventures." ;
+    mantic:rightLeg "Irosun" .
+
+mantic:Odu118 a mantic:IfaOdu ;
+    rdfs:label "Okanran-Owonrin" ;
+    mantic:figureIndex 118 ;
+    mantic:hasBinaryVector "00101110" ;
+    mantic:leftLeg "Okanran" ;
+    mantic:parable "Left leg Okanran leads: The urgent call: answer now; in delay the trap sets itself. || Right leg Owonrin modifies: The scattered roof: sudden disorder - repair shelter first, plans second." ;
+    mantic:rightLeg "Owonrin" .
+
+mantic:Odu119 a mantic:IfaOdu ;
+    rdfs:label "Okanran-Obara" ;
+    mantic:figureIndex 119 ;
+    mantic:hasBinaryVector "00100100" ;
+    mantic:leftLeg "Okanran" ;
+    mantic:parable "Left leg Okanran leads: The urgent call: answer now; in delay the trap sets itself. || Right leg Obara modifies: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift." ;
+    mantic:rightLeg "Obara" .
+
+mantic:Odu121 a mantic:IfaOdu ;
+    rdfs:label "Okanran-Ogunda" ;
+    mantic:figureIndex 121 ;
+    mantic:hasBinaryVector "00101100" ;
+    mantic:leftLeg "Okanran" ;
+    mantic:parable "Left leg Okanran leads: The urgent call: answer now; in delay the trap sets itself. || Right leg Ogunda modifies: The clearing cut: sever cleanly what obstructs - surgery, not demolition." ;
+    mantic:rightLeg "Ogunda" .
+
+mantic:Odu122 a mantic:IfaOdu ;
+    rdfs:label "Okanran-Osa" ;
+    mantic:figureIndex 122 ;
+    mantic:hasBinaryVector "00100011" ;
+    mantic:leftLeg "Okanran" ;
+    mantic:parable "Left leg Okanran leads: The urgent call: answer now; in delay the trap sets itself. || Right leg Osa modifies: The multitude arrives at once: choose the emissary or be swept by the crowd." ;
+    mantic:rightLeg "Osa" .
+
+mantic:Odu123 a mantic:IfaOdu ;
+    rdfs:label "Okanran-Ika" ;
+    mantic:figureIndex 123 ;
+    mantic:hasBinaryVector "00100101" ;
+    mantic:leftLeg "Okanran" ;
+    mantic:parable "Left leg Okanran leads: The urgent call: answer now; in delay the trap sets itself. || Right leg Ika modifies: The coiled serpent: delay woven into the path - unwind by patience, never by force." ;
+    mantic:rightLeg "Ika" .
+
+mantic:Odu124 a mantic:IfaOdu ;
+    rdfs:label "Okanran-Oturupon" ;
+    mantic:figureIndex 124 ;
+    mantic:hasBinaryVector "00101010" ;
+    mantic:leftLeg "Okanran" ;
+    mantic:parable "Left leg Okanran leads: The urgent call: answer now; in delay the trap sets itself. || Right leg Oturupon modifies: The burdened back: endurance past fatigue; share the load or it shares you." ;
+    mantic:rightLeg "Oturupon" .
+
+mantic:Odu125 a mantic:IfaOdu ;
+    rdfs:label "Okanran-Otura" ;
+    mantic:figureIndex 125 ;
+    mantic:hasBinaryVector "00101101" ;
+    mantic:leftLeg "Okanran" ;
+    mantic:parable "Left leg Okanran leads: The urgent call: answer now; in delay the trap sets itself. || Right leg Otura modifies: The calm sky: peace is earned and defended - protect the quiet deliberately." ;
+    mantic:rightLeg "Otura" .
+
+mantic:Odu126 a mantic:IfaOdu ;
+    rdfs:label "Okanran-Irete" ;
+    mantic:figureIndex 126 ;
+    mantic:hasBinaryVector "00101011" ;
+    mantic:leftLeg "Okanran" ;
+    mantic:parable "Left leg Okanran leads: The urgent call: answer now; in delay the trap sets itself. || Right leg Irete modifies: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat." ;
+    mantic:rightLeg "Irete" .
+
+mantic:Odu127 a mantic:IfaOdu ;
+    rdfs:label "Okanran-Ose" ;
+    mantic:figureIndex 127 ;
+    mantic:hasBinaryVector "00100001" ;
+    mantic:leftLeg "Okanran" ;
+    mantic:parable "Left leg Okanran leads: The urgent call: answer now; in delay the trap sets itself. || Right leg Ose modifies: The winning whisper: victory through the small - bless the source of the stream." ;
+    mantic:rightLeg "Ose" .
+
+mantic:Odu128 a mantic:IfaOdu ;
+    rdfs:label "Okanran-Ofun" ;
+    mantic:figureIndex 128 ;
+    mantic:hasBinaryVector "00101000" ;
+    mantic:leftLeg "Okanran" ;
+    mantic:parable "Left leg Okanran leads: The urgent call: answer now; in delay the trap sets itself. || Right leg Ofun modifies: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own." ;
+    mantic:rightLeg "Ofun" .
+
+mantic:Odu129 a mantic:IfaOdu ;
+    rdfs:label "Ogunda-Ogbe" ;
+    mantic:figureIndex 129 ;
+    mantic:hasBinaryVector "11001111" ;
+    mantic:leftLeg "Ogunda" ;
+    mantic:parable "Left leg Ogunda leads: The clearing cut: sever cleanly what obstructs - surgery, not demolition. || Right leg Ogbe modifies: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride." ;
+    mantic:rightLeg "Ogbe" .
+
+mantic:Odu130 a mantic:IfaOdu ;
+    rdfs:label "Ogunda-Oyeku" ;
+    mantic:figureIndex 130 ;
+    mantic:hasBinaryVector "11000000" ;
+    mantic:leftLeg "Ogunda" ;
+    mantic:parable "Left leg Ogunda leads: The clearing cut: sever cleanly what obstructs - surgery, not demolition. || Right leg Oyeku modifies: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next." ;
+    mantic:rightLeg "Oyeku" .
+
+mantic:Odu131 a mantic:IfaOdu ;
+    rdfs:label "Ogunda-Iwori" ;
+    mantic:figureIndex 131 ;
+    mantic:hasBinaryVector "11001001" ;
+    mantic:leftLeg "Ogunda" ;
+    mantic:parable "Left leg Ogunda leads: The clearing cut: sever cleanly what obstructs - surgery, not demolition. || Right leg Iwori modifies: The eye turned inward: verify the seer before the seeing; the answer observes the asker." ;
+    mantic:rightLeg "Iwori" .
+
+mantic:Odu132 a mantic:IfaOdu ;
+    rdfs:label "Ogunda-Odi" ;
+    mantic:figureIndex 132 ;
+    mantic:hasBinaryVector "11000110" ;
+    mantic:leftLeg "Ogunda" ;
+    mantic:parable "Left leg Ogunda leads: The clearing cut: sever cleanly what obstructs - surgery, not demolition. || Right leg Odi modifies: The sealed calabash: what turns inward ripens or rots - tend the interior." ;
+    mantic:rightLeg "Odi" .
+
+mantic:Odu133 a mantic:IfaOdu ;
+    rdfs:label "Ogunda-Irosun" ;
+    mantic:figureIndex 133 ;
+    mantic:hasBinaryVector "11000111" ;
+    mantic:leftLeg "Ogunda" ;
+    mantic:parable "Left leg Ogunda leads: The clearing cut: sever cleanly what obstructs - surgery, not demolition. || Right leg Irosun modifies: Blood on the imprint: legacies owed; settle the old account before new ventures." ;
+    mantic:rightLeg "Irosun" .
+
+mantic:Odu134 a mantic:IfaOdu ;
+    rdfs:label "Ogunda-Owonrin" ;
+    mantic:figureIndex 134 ;
+    mantic:hasBinaryVector "11001110" ;
+    mantic:leftLeg "Ogunda" ;
+    mantic:parable "Left leg Ogunda leads: The clearing cut: sever cleanly what obstructs - surgery, not demolition. || Right leg Owonrin modifies: The scattered roof: sudden disorder - repair shelter first, plans second." ;
+    mantic:rightLeg "Owonrin" .
+
+mantic:Odu135 a mantic:IfaOdu ;
+    rdfs:label "Ogunda-Obara" ;
+    mantic:figureIndex 135 ;
+    mantic:hasBinaryVector "11000100" ;
+    mantic:leftLeg "Ogunda" ;
+    mantic:parable "Left leg Ogunda leads: The clearing cut: sever cleanly what obstructs - surgery, not demolition. || Right leg Obara modifies: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift." ;
+    mantic:rightLeg "Obara" .
+
+mantic:Odu136 a mantic:IfaOdu ;
+    rdfs:label "Ogunda-Okanran" ;
+    mantic:figureIndex 136 ;
+    mantic:hasBinaryVector "11000010" ;
+    mantic:leftLeg "Ogunda" ;
+    mantic:parable "Left leg Ogunda leads: The clearing cut: sever cleanly what obstructs - surgery, not demolition. || Right leg Okanran modifies: The urgent call: answer now; in delay the trap sets itself." ;
+    mantic:rightLeg "Okanran" .
+
+mantic:Odu138 a mantic:IfaOdu ;
+    rdfs:label "Ogunda-Osa" ;
+    mantic:figureIndex 138 ;
+    mantic:hasBinaryVector "11000011" ;
+    mantic:leftLeg "Ogunda" ;
+    mantic:parable "Left leg Ogunda leads: The clearing cut: sever cleanly what obstructs - surgery, not demolition. || Right leg Osa modifies: The multitude arrives at once: choose the emissary or be swept by the crowd." ;
+    mantic:rightLeg "Osa" .
+
+mantic:Odu139 a mantic:IfaOdu ;
+    rdfs:label "Ogunda-Ika" ;
+    mantic:figureIndex 139 ;
+    mantic:hasBinaryVector "11000101" ;
+    mantic:leftLeg "Ogunda" ;
+    mantic:parable "Left leg Ogunda leads: The clearing cut: sever cleanly what obstructs - surgery, not demolition. || Right leg Ika modifies: The coiled serpent: delay woven into the path - unwind by patience, never by force." ;
+    mantic:rightLeg "Ika" .
+
+mantic:Odu140 a mantic:IfaOdu ;
+    rdfs:label "Ogunda-Oturupon" ;
+    mantic:figureIndex 140 ;
+    mantic:hasBinaryVector "11001010" ;
+    mantic:leftLeg "Ogunda" ;
+    mantic:parable "Left leg Ogunda leads: The clearing cut: sever cleanly what obstructs - surgery, not demolition. || Right leg Oturupon modifies: The burdened back: endurance past fatigue; share the load or it shares you." ;
+    mantic:rightLeg "Oturupon" .
+
+mantic:Odu141 a mantic:IfaOdu ;
+    rdfs:label "Ogunda-Otura" ;
+    mantic:figureIndex 141 ;
+    mantic:hasBinaryVector "11001101" ;
+    mantic:leftLeg "Ogunda" ;
+    mantic:parable "Left leg Ogunda leads: The clearing cut: sever cleanly what obstructs - surgery, not demolition. || Right leg Otura modifies: The calm sky: peace is earned and defended - protect the quiet deliberately." ;
+    mantic:rightLeg "Otura" .
+
+mantic:Odu142 a mantic:IfaOdu ;
+    rdfs:label "Ogunda-Irete" ;
+    mantic:figureIndex 142 ;
+    mantic:hasBinaryVector "11001011" ;
+    mantic:leftLeg "Ogunda" ;
+    mantic:parable "Left leg Ogunda leads: The clearing cut: sever cleanly what obstructs - surgery, not demolition. || Right leg Irete modifies: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat." ;
+    mantic:rightLeg "Irete" .
+
+mantic:Odu143 a mantic:IfaOdu ;
+    rdfs:label "Ogunda-Ose" ;
+    mantic:figureIndex 143 ;
+    mantic:hasBinaryVector "11000001" ;
+    mantic:leftLeg "Ogunda" ;
+    mantic:parable "Left leg Ogunda leads: The clearing cut: sever cleanly what obstructs - surgery, not demolition. || Right leg Ose modifies: The winning whisper: victory through the small - bless the source of the stream." ;
+    mantic:rightLeg "Ose" .
+
+mantic:Odu144 a mantic:IfaOdu ;
+    rdfs:label "Ogunda-Ofun" ;
+    mantic:figureIndex 144 ;
+    mantic:hasBinaryVector "11001000" ;
+    mantic:leftLeg "Ogunda" ;
+    mantic:parable "Left leg Ogunda leads: The clearing cut: sever cleanly what obstructs - surgery, not demolition. || Right leg Ofun modifies: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own." ;
+    mantic:rightLeg "Ofun" .
+
+mantic:Odu145 a mantic:IfaOdu ;
+    rdfs:label "Osa-Ogbe" ;
+    mantic:figureIndex 145 ;
+    mantic:hasBinaryVector "00111111" ;
+    mantic:leftLeg "Osa" ;
+    mantic:parable "Left leg Osa leads: The multitude arrives at once: choose the emissary or be swept by the crowd. || Right leg Ogbe modifies: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride." ;
+    mantic:rightLeg "Ogbe" .
+
+mantic:Odu146 a mantic:IfaOdu ;
+    rdfs:label "Osa-Oyeku" ;
+    mantic:figureIndex 146 ;
+    mantic:hasBinaryVector "00110000" ;
+    mantic:leftLeg "Osa" ;
+    mantic:parable "Left leg Osa leads: The multitude arrives at once: choose the emissary or be swept by the crowd. || Right leg Oyeku modifies: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next." ;
+    mantic:rightLeg "Oyeku" .
+
+mantic:Odu147 a mantic:IfaOdu ;
+    rdfs:label "Osa-Iwori" ;
+    mantic:figureIndex 147 ;
+    mantic:hasBinaryVector "00111001" ;
+    mantic:leftLeg "Osa" ;
+    mantic:parable "Left leg Osa leads: The multitude arrives at once: choose the emissary or be swept by the crowd. || Right leg Iwori modifies: The eye turned inward: verify the seer before the seeing; the answer observes the asker." ;
+    mantic:rightLeg "Iwori" .
+
+mantic:Odu148 a mantic:IfaOdu ;
+    rdfs:label "Osa-Odi" ;
+    mantic:figureIndex 148 ;
+    mantic:hasBinaryVector "00110110" ;
+    mantic:leftLeg "Osa" ;
+    mantic:parable "Left leg Osa leads: The multitude arrives at once: choose the emissary or be swept by the crowd. || Right leg Odi modifies: The sealed calabash: what turns inward ripens or rots - tend the interior." ;
+    mantic:rightLeg "Odi" .
+
+mantic:Odu149 a mantic:IfaOdu ;
+    rdfs:label "Osa-Irosun" ;
+    mantic:figureIndex 149 ;
+    mantic:hasBinaryVector "00110111" ;
+    mantic:leftLeg "Osa" ;
+    mantic:parable "Left leg Osa leads: The multitude arrives at once: choose the emissary or be swept by the crowd. || Right leg Irosun modifies: Blood on the imprint: legacies owed; settle the old account before new ventures." ;
+    mantic:rightLeg "Irosun" .
+
+mantic:Odu150 a mantic:IfaOdu ;
+    rdfs:label "Osa-Owonrin" ;
+    mantic:figureIndex 150 ;
+    mantic:hasBinaryVector "00111110" ;
+    mantic:leftLeg "Osa" ;
+    mantic:parable "Left leg Osa leads: The multitude arrives at once: choose the emissary or be swept by the crowd. || Right leg Owonrin modifies: The scattered roof: sudden disorder - repair shelter first, plans second." ;
+    mantic:rightLeg "Owonrin" .
+
+mantic:Odu151 a mantic:IfaOdu ;
+    rdfs:label "Osa-Obara" ;
+    mantic:figureIndex 151 ;
+    mantic:hasBinaryVector "00110100" ;
+    mantic:leftLeg "Osa" ;
+    mantic:parable "Left leg Osa leads: The multitude arrives at once: choose the emissary or be swept by the crowd. || Right leg Obara modifies: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift." ;
+    mantic:rightLeg "Obara" .
+
+mantic:Odu152 a mantic:IfaOdu ;
+    rdfs:label "Osa-Okanran" ;
+    mantic:figureIndex 152 ;
+    mantic:hasBinaryVector "00110010" ;
+    mantic:leftLeg "Osa" ;
+    mantic:parable "Left leg Osa leads: The multitude arrives at once: choose the emissary or be swept by the crowd. || Right leg Okanran modifies: The urgent call: answer now; in delay the trap sets itself." ;
+    mantic:rightLeg "Okanran" .
+
+mantic:Odu153 a mantic:IfaOdu ;
+    rdfs:label "Osa-Ogunda" ;
+    mantic:figureIndex 153 ;
+    mantic:hasBinaryVector "00111100" ;
+    mantic:leftLeg "Osa" ;
+    mantic:parable "Left leg Osa leads: The multitude arrives at once: choose the emissary or be swept by the crowd. || Right leg Ogunda modifies: The clearing cut: sever cleanly what obstructs - surgery, not demolition." ;
+    mantic:rightLeg "Ogunda" .
+
+mantic:Odu155 a mantic:IfaOdu ;
+    rdfs:label "Osa-Ika" ;
+    mantic:figureIndex 155 ;
+    mantic:hasBinaryVector "00110101" ;
+    mantic:leftLeg "Osa" ;
+    mantic:parable "Left leg Osa leads: The multitude arrives at once: choose the emissary or be swept by the crowd. || Right leg Ika modifies: The coiled serpent: delay woven into the path - unwind by patience, never by force." ;
+    mantic:rightLeg "Ika" .
+
+mantic:Odu156 a mantic:IfaOdu ;
+    rdfs:label "Osa-Oturupon" ;
+    mantic:figureIndex 156 ;
+    mantic:hasBinaryVector "00111010" ;
+    mantic:leftLeg "Osa" ;
+    mantic:parable "Left leg Osa leads: The multitude arrives at once: choose the emissary or be swept by the crowd. || Right leg Oturupon modifies: The burdened back: endurance past fatigue; share the load or it shares you." ;
+    mantic:rightLeg "Oturupon" .
+
+mantic:Odu157 a mantic:IfaOdu ;
+    rdfs:label "Osa-Otura" ;
+    mantic:figureIndex 157 ;
+    mantic:hasBinaryVector "00111101" ;
+    mantic:leftLeg "Osa" ;
+    mantic:parable "Left leg Osa leads: The multitude arrives at once: choose the emissary or be swept by the crowd. || Right leg Otura modifies: The calm sky: peace is earned and defended - protect the quiet deliberately." ;
+    mantic:rightLeg "Otura" .
+
+mantic:Odu158 a mantic:IfaOdu ;
+    rdfs:label "Osa-Irete" ;
+    mantic:figureIndex 158 ;
+    mantic:hasBinaryVector "00111011" ;
+    mantic:leftLeg "Osa" ;
+    mantic:parable "Left leg Osa leads: The multitude arrives at once: choose the emissary or be swept by the crowd. || Right leg Irete modifies: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat." ;
+    mantic:rightLeg "Irete" .
+
+mantic:Odu159 a mantic:IfaOdu ;
+    rdfs:label "Osa-Ose" ;
+    mantic:figureIndex 159 ;
+    mantic:hasBinaryVector "00110001" ;
+    mantic:leftLeg "Osa" ;
+    mantic:parable "Left leg Osa leads: The multitude arrives at once: choose the emissary or be swept by the crowd. || Right leg Ose modifies: The winning whisper: victory through the small - bless the source of the stream." ;
+    mantic:rightLeg "Ose" .
+
+mantic:Odu160 a mantic:IfaOdu ;
+    rdfs:label "Osa-Ofun" ;
+    mantic:figureIndex 160 ;
+    mantic:hasBinaryVector "00111000" ;
+    mantic:leftLeg "Osa" ;
+    mantic:parable "Left leg Osa leads: The multitude arrives at once: choose the emissary or be swept by the crowd. || Right leg Ofun modifies: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own." ;
+    mantic:rightLeg "Ofun" .
+
+mantic:Odu161 a mantic:IfaOdu ;
+    rdfs:label "Ika-Ogbe" ;
+    mantic:figureIndex 161 ;
+    mantic:hasBinaryVector "01011111" ;
+    mantic:leftLeg "Ika" ;
+    mantic:parable "Left leg Ika leads: The coiled serpent: delay woven into the path - unwind by patience, never by force. || Right leg Ogbe modifies: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride." ;
+    mantic:rightLeg "Ogbe" .
+
+mantic:Odu162 a mantic:IfaOdu ;
+    rdfs:label "Ika-Oyeku" ;
+    mantic:figureIndex 162 ;
+    mantic:hasBinaryVector "01010000" ;
+    mantic:leftLeg "Ika" ;
+    mantic:parable "Left leg Ika leads: The coiled serpent: delay woven into the path - unwind by patience, never by force. || Right leg Oyeku modifies: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next." ;
+    mantic:rightLeg "Oyeku" .
+
+mantic:Odu163 a mantic:IfaOdu ;
+    rdfs:label "Ika-Iwori" ;
+    mantic:figureIndex 163 ;
+    mantic:hasBinaryVector "01011001" ;
+    mantic:leftLeg "Ika" ;
+    mantic:parable "Left leg Ika leads: The coiled serpent: delay woven into the path - unwind by patience, never by force. || Right leg Iwori modifies: The eye turned inward: verify the seer before the seeing; the answer observes the asker." ;
+    mantic:rightLeg "Iwori" .
+
+mantic:Odu164 a mantic:IfaOdu ;
+    rdfs:label "Ika-Odi" ;
+    mantic:figureIndex 164 ;
+    mantic:hasBinaryVector "01010110" ;
+    mantic:leftLeg "Ika" ;
+    mantic:parable "Left leg Ika leads: The coiled serpent: delay woven into the path - unwind by patience, never by force. || Right leg Odi modifies: The sealed calabash: what turns inward ripens or rots - tend the interior." ;
+    mantic:rightLeg "Odi" .
+
+mantic:Odu165 a mantic:IfaOdu ;
+    rdfs:label "Ika-Irosun" ;
+    mantic:figureIndex 165 ;
+    mantic:hasBinaryVector "01010111" ;
+    mantic:leftLeg "Ika" ;
+    mantic:parable "Left leg Ika leads: The coiled serpent: delay woven into the path - unwind by patience, never by force. || Right leg Irosun modifies: Blood on the imprint: legacies owed; settle the old account before new ventures." ;
+    mantic:rightLeg "Irosun" .
+
+mantic:Odu166 a mantic:IfaOdu ;
+    rdfs:label "Ika-Owonrin" ;
+    mantic:figureIndex 166 ;
+    mantic:hasBinaryVector "01011110" ;
+    mantic:leftLeg "Ika" ;
+    mantic:parable "Left leg Ika leads: The coiled serpent: delay woven into the path - unwind by patience, never by force. || Right leg Owonrin modifies: The scattered roof: sudden disorder - repair shelter first, plans second." ;
+    mantic:rightLeg "Owonrin" .
+
+mantic:Odu167 a mantic:IfaOdu ;
+    rdfs:label "Ika-Obara" ;
+    mantic:figureIndex 167 ;
+    mantic:hasBinaryVector "01010100" ;
+    mantic:leftLeg "Ika" ;
+    mantic:parable "Left leg Ika leads: The coiled serpent: delay woven into the path - unwind by patience, never by force. || Right leg Obara modifies: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift." ;
+    mantic:rightLeg "Obara" .
+
+mantic:Odu168 a mantic:IfaOdu ;
+    rdfs:label "Ika-Okanran" ;
+    mantic:figureIndex 168 ;
+    mantic:hasBinaryVector "01010010" ;
+    mantic:leftLeg "Ika" ;
+    mantic:parable "Left leg Ika leads: The coiled serpent: delay woven into the path - unwind by patience, never by force. || Right leg Okanran modifies: The urgent call: answer now; in delay the trap sets itself." ;
+    mantic:rightLeg "Okanran" .
+
+mantic:Odu169 a mantic:IfaOdu ;
+    rdfs:label "Ika-Ogunda" ;
+    mantic:figureIndex 169 ;
+    mantic:hasBinaryVector "01011100" ;
+    mantic:leftLeg "Ika" ;
+    mantic:parable "Left leg Ika leads: The coiled serpent: delay woven into the path - unwind by patience, never by force. || Right leg Ogunda modifies: The clearing cut: sever cleanly what obstructs - surgery, not demolition." ;
+    mantic:rightLeg "Ogunda" .
+
+mantic:Odu170 a mantic:IfaOdu ;
+    rdfs:label "Ika-Osa" ;
+    mantic:figureIndex 170 ;
+    mantic:hasBinaryVector "01010011" ;
+    mantic:leftLeg "Ika" ;
+    mantic:parable "Left leg Ika leads: The coiled serpent: delay woven into the path - unwind by patience, never by force. || Right leg Osa modifies: The multitude arrives at once: choose the emissary or be swept by the crowd." ;
+    mantic:rightLeg "Osa" .
+
+mantic:Odu172 a mantic:IfaOdu ;
+    rdfs:label "Ika-Oturupon" ;
+    mantic:figureIndex 172 ;
+    mantic:hasBinaryVector "01011010" ;
+    mantic:leftLeg "Ika" ;
+    mantic:parable "Left leg Ika leads: The coiled serpent: delay woven into the path - unwind by patience, never by force. || Right leg Oturupon modifies: The burdened back: endurance past fatigue; share the load or it shares you." ;
+    mantic:rightLeg "Oturupon" .
+
+mantic:Odu173 a mantic:IfaOdu ;
+    rdfs:label "Ika-Otura" ;
+    mantic:figureIndex 173 ;
+    mantic:hasBinaryVector "01011101" ;
+    mantic:leftLeg "Ika" ;
+    mantic:parable "Left leg Ika leads: The coiled serpent: delay woven into the path - unwind by patience, never by force. || Right leg Otura modifies: The calm sky: peace is earned and defended - protect the quiet deliberately." ;
+    mantic:rightLeg "Otura" .
+
+mantic:Odu174 a mantic:IfaOdu ;
+    rdfs:label "Ika-Irete" ;
+    mantic:figureIndex 174 ;
+    mantic:hasBinaryVector "01011011" ;
+    mantic:leftLeg "Ika" ;
+    mantic:parable "Left leg Ika leads: The coiled serpent: delay woven into the path - unwind by patience, never by force. || Right leg Irete modifies: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat." ;
+    mantic:rightLeg "Irete" .
+
+mantic:Odu175 a mantic:IfaOdu ;
+    rdfs:label "Ika-Ose" ;
+    mantic:figureIndex 175 ;
+    mantic:hasBinaryVector "01010001" ;
+    mantic:leftLeg "Ika" ;
+    mantic:parable "Left leg Ika leads: The coiled serpent: delay woven into the path - unwind by patience, never by force. || Right leg Ose modifies: The winning whisper: victory through the small - bless the source of the stream." ;
+    mantic:rightLeg "Ose" .
+
+mantic:Odu176 a mantic:IfaOdu ;
+    rdfs:label "Ika-Ofun" ;
+    mantic:figureIndex 176 ;
+    mantic:hasBinaryVector "01011000" ;
+    mantic:leftLeg "Ika" ;
+    mantic:parable "Left leg Ika leads: The coiled serpent: delay woven into the path - unwind by patience, never by force. || Right leg Ofun modifies: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own." ;
+    mantic:rightLeg "Ofun" .
+
+mantic:Odu177 a mantic:IfaOdu ;
+    rdfs:label "Oturupon-Ogbe" ;
+    mantic:figureIndex 177 ;
+    mantic:hasBinaryVector "10101111" ;
+    mantic:leftLeg "Oturupon" ;
+    mantic:parable "Left leg Oturupon leads: The burdened back: endurance past fatigue; share the load or it shares you. || Right leg Ogbe modifies: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride." ;
+    mantic:rightLeg "Ogbe" .
+
+mantic:Odu178 a mantic:IfaOdu ;
+    rdfs:label "Oturupon-Oyeku" ;
+    mantic:figureIndex 178 ;
+    mantic:hasBinaryVector "10100000" ;
+    mantic:leftLeg "Oturupon" ;
+    mantic:parable "Left leg Oturupon leads: The burdened back: endurance past fatigue; share the load or it shares you. || Right leg Oyeku modifies: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next." ;
+    mantic:rightLeg "Oyeku" .
+
+mantic:Odu179 a mantic:IfaOdu ;
+    rdfs:label "Oturupon-Iwori" ;
+    mantic:figureIndex 179 ;
+    mantic:hasBinaryVector "10101001" ;
+    mantic:leftLeg "Oturupon" ;
+    mantic:parable "Left leg Oturupon leads: The burdened back: endurance past fatigue; share the load or it shares you. || Right leg Iwori modifies: The eye turned inward: verify the seer before the seeing; the answer observes the asker." ;
+    mantic:rightLeg "Iwori" .
+
+mantic:Odu180 a mantic:IfaOdu ;
+    rdfs:label "Oturupon-Odi" ;
+    mantic:figureIndex 180 ;
+    mantic:hasBinaryVector "10100110" ;
+    mantic:leftLeg "Oturupon" ;
+    mantic:parable "Left leg Oturupon leads: The burdened back: endurance past fatigue; share the load or it shares you. || Right leg Odi modifies: The sealed calabash: what turns inward ripens or rots - tend the interior." ;
+    mantic:rightLeg "Odi" .
+
+mantic:Odu181 a mantic:IfaOdu ;
+    rdfs:label "Oturupon-Irosun" ;
+    mantic:figureIndex 181 ;
+    mantic:hasBinaryVector "10100111" ;
+    mantic:leftLeg "Oturupon" ;
+    mantic:parable "Left leg Oturupon leads: The burdened back: endurance past fatigue; share the load or it shares you. || Right leg Irosun modifies: Blood on the imprint: legacies owed; settle the old account before new ventures." ;
+    mantic:rightLeg "Irosun" .
+
+mantic:Odu182 a mantic:IfaOdu ;
+    rdfs:label "Oturupon-Owonrin" ;
+    mantic:figureIndex 182 ;
+    mantic:hasBinaryVector "10101110" ;
+    mantic:leftLeg "Oturupon" ;
+    mantic:parable "Left leg Oturupon leads: The burdened back: endurance past fatigue; share the load or it shares you. || Right leg Owonrin modifies: The scattered roof: sudden disorder - repair shelter first, plans second." ;
+    mantic:rightLeg "Owonrin" .
+
+mantic:Odu183 a mantic:IfaOdu ;
+    rdfs:label "Oturupon-Obara" ;
+    mantic:figureIndex 183 ;
+    mantic:hasBinaryVector "10100100" ;
+    mantic:leftLeg "Oturupon" ;
+    mantic:parable "Left leg Oturupon leads: The burdened back: endurance past fatigue; share the load or it shares you. || Right leg Obara modifies: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift." ;
+    mantic:rightLeg "Obara" .
+
+mantic:Odu184 a mantic:IfaOdu ;
+    rdfs:label "Oturupon-Okanran" ;
+    mantic:figureIndex 184 ;
+    mantic:hasBinaryVector "10100010" ;
+    mantic:leftLeg "Oturupon" ;
+    mantic:parable "Left leg Oturupon leads: The burdened back: endurance past fatigue; share the load or it shares you. || Right leg Okanran modifies: The urgent call: answer now; in delay the trap sets itself." ;
+    mantic:rightLeg "Okanran" .
+
+mantic:Odu185 a mantic:IfaOdu ;
+    rdfs:label "Oturupon-Ogunda" ;
+    mantic:figureIndex 185 ;
+    mantic:hasBinaryVector "10101100" ;
+    mantic:leftLeg "Oturupon" ;
+    mantic:parable "Left leg Oturupon leads: The burdened back: endurance past fatigue; share the load or it shares you. || Right leg Ogunda modifies: The clearing cut: sever cleanly what obstructs - surgery, not demolition." ;
+    mantic:rightLeg "Ogunda" .
+
+mantic:Odu186 a mantic:IfaOdu ;
+    rdfs:label "Oturupon-Osa" ;
+    mantic:figureIndex 186 ;
+    mantic:hasBinaryVector "10100011" ;
+    mantic:leftLeg "Oturupon" ;
+    mantic:parable "Left leg Oturupon leads: The burdened back: endurance past fatigue; share the load or it shares you. || Right leg Osa modifies: The multitude arrives at once: choose the emissary or be swept by the crowd." ;
+    mantic:rightLeg "Osa" .
+
+mantic:Odu187 a mantic:IfaOdu ;
+    rdfs:label "Oturupon-Ika" ;
+    mantic:figureIndex 187 ;
+    mantic:hasBinaryVector "10100101" ;
+    mantic:leftLeg "Oturupon" ;
+    mantic:parable "Left leg Oturupon leads: The burdened back: endurance past fatigue; share the load or it shares you. || Right leg Ika modifies: The coiled serpent: delay woven into the path - unwind by patience, never by force." ;
+    mantic:rightLeg "Ika" .
+
+mantic:Odu189 a mantic:IfaOdu ;
+    rdfs:label "Oturupon-Otura" ;
+    mantic:figureIndex 189 ;
+    mantic:hasBinaryVector "10101101" ;
+    mantic:leftLeg "Oturupon" ;
+    mantic:parable "Left leg Oturupon leads: The burdened back: endurance past fatigue; share the load or it shares you. || Right leg Otura modifies: The calm sky: peace is earned and defended - protect the quiet deliberately." ;
+    mantic:rightLeg "Otura" .
+
+mantic:Odu190 a mantic:IfaOdu ;
+    rdfs:label "Oturupon-Irete" ;
+    mantic:figureIndex 190 ;
+    mantic:hasBinaryVector "10101011" ;
+    mantic:leftLeg "Oturupon" ;
+    mantic:parable "Left leg Oturupon leads: The burdened back: endurance past fatigue; share the load or it shares you. || Right leg Irete modifies: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat." ;
+    mantic:rightLeg "Irete" .
+
+mantic:Odu191 a mantic:IfaOdu ;
+    rdfs:label "Oturupon-Ose" ;
+    mantic:figureIndex 191 ;
+    mantic:hasBinaryVector "10100001" ;
+    mantic:leftLeg "Oturupon" ;
+    mantic:parable "Left leg Oturupon leads: The burdened back: endurance past fatigue; share the load or it shares you. || Right leg Ose modifies: The winning whisper: victory through the small - bless the source of the stream." ;
+    mantic:rightLeg "Ose" .
+
+mantic:Odu192 a mantic:IfaOdu ;
+    rdfs:label "Oturupon-Ofun" ;
+    mantic:figureIndex 192 ;
+    mantic:hasBinaryVector "10101000" ;
+    mantic:leftLeg "Oturupon" ;
+    mantic:parable "Left leg Oturupon leads: The burdened back: endurance past fatigue; share the load or it shares you. || Right leg Ofun modifies: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own." ;
+    mantic:rightLeg "Ofun" .
+
+mantic:Odu193 a mantic:IfaOdu ;
+    rdfs:label "Otura-Ogbe" ;
+    mantic:figureIndex 193 ;
+    mantic:hasBinaryVector "11011111" ;
+    mantic:leftLeg "Otura" ;
+    mantic:parable "Left leg Otura leads: The calm sky: peace is earned and defended - protect the quiet deliberately. || Right leg Ogbe modifies: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride." ;
+    mantic:rightLeg "Ogbe" .
+
+mantic:Odu194 a mantic:IfaOdu ;
+    rdfs:label "Otura-Oyeku" ;
+    mantic:figureIndex 194 ;
+    mantic:hasBinaryVector "11010000" ;
+    mantic:leftLeg "Otura" ;
+    mantic:parable "Left leg Otura leads: The calm sky: peace is earned and defended - protect the quiet deliberately. || Right leg Oyeku modifies: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next." ;
+    mantic:rightLeg "Oyeku" .
+
+mantic:Odu195 a mantic:IfaOdu ;
+    rdfs:label "Otura-Iwori" ;
+    mantic:figureIndex 195 ;
+    mantic:hasBinaryVector "11011001" ;
+    mantic:leftLeg "Otura" ;
+    mantic:parable "Left leg Otura leads: The calm sky: peace is earned and defended - protect the quiet deliberately. || Right leg Iwori modifies: The eye turned inward: verify the seer before the seeing; the answer observes the asker." ;
+    mantic:rightLeg "Iwori" .
+
+mantic:Odu196 a mantic:IfaOdu ;
+    rdfs:label "Otura-Odi" ;
+    mantic:figureIndex 196 ;
+    mantic:hasBinaryVector "11010110" ;
+    mantic:leftLeg "Otura" ;
+    mantic:parable "Left leg Otura leads: The calm sky: peace is earned and defended - protect the quiet deliberately. || Right leg Odi modifies: The sealed calabash: what turns inward ripens or rots - tend the interior." ;
+    mantic:rightLeg "Odi" .
+
+mantic:Odu197 a mantic:IfaOdu ;
+    rdfs:label "Otura-Irosun" ;
+    mantic:figureIndex 197 ;
+    mantic:hasBinaryVector "11010111" ;
+    mantic:leftLeg "Otura" ;
+    mantic:parable "Left leg Otura leads: The calm sky: peace is earned and defended - protect the quiet deliberately. || Right leg Irosun modifies: Blood on the imprint: legacies owed; settle the old account before new ventures." ;
+    mantic:rightLeg "Irosun" .
+
+mantic:Odu198 a mantic:IfaOdu ;
+    rdfs:label "Otura-Owonrin" ;
+    mantic:figureIndex 198 ;
+    mantic:hasBinaryVector "11011110" ;
+    mantic:leftLeg "Otura" ;
+    mantic:parable "Left leg Otura leads: The calm sky: peace is earned and defended - protect the quiet deliberately. || Right leg Owonrin modifies: The scattered roof: sudden disorder - repair shelter first, plans second." ;
+    mantic:rightLeg "Owonrin" .
+
+mantic:Odu199 a mantic:IfaOdu ;
+    rdfs:label "Otura-Obara" ;
+    mantic:figureIndex 199 ;
+    mantic:hasBinaryVector "11010100" ;
+    mantic:leftLeg "Otura" ;
+    mantic:parable "Left leg Otura leads: The calm sky: peace is earned and defended - protect the quiet deliberately. || Right leg Obara modifies: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift." ;
+    mantic:rightLeg "Obara" .
+
+mantic:Odu200 a mantic:IfaOdu ;
+    rdfs:label "Otura-Okanran" ;
+    mantic:figureIndex 200 ;
+    mantic:hasBinaryVector "11010010" ;
+    mantic:leftLeg "Otura" ;
+    mantic:parable "Left leg Otura leads: The calm sky: peace is earned and defended - protect the quiet deliberately. || Right leg Okanran modifies: The urgent call: answer now; in delay the trap sets itself." ;
+    mantic:rightLeg "Okanran" .
+
+mantic:Odu201 a mantic:IfaOdu ;
+    rdfs:label "Otura-Ogunda" ;
+    mantic:figureIndex 201 ;
+    mantic:hasBinaryVector "11011100" ;
+    mantic:leftLeg "Otura" ;
+    mantic:parable "Left leg Otura leads: The calm sky: peace is earned and defended - protect the quiet deliberately. || Right leg Ogunda modifies: The clearing cut: sever cleanly what obstructs - surgery, not demolition." ;
+    mantic:rightLeg "Ogunda" .
+
+mantic:Odu202 a mantic:IfaOdu ;
+    rdfs:label "Otura-Osa" ;
+    mantic:figureIndex 202 ;
+    mantic:hasBinaryVector "11010011" ;
+    mantic:leftLeg "Otura" ;
+    mantic:parable "Left leg Otura leads: The calm sky: peace is earned and defended - protect the quiet deliberately. || Right leg Osa modifies: The multitude arrives at once: choose the emissary or be swept by the crowd." ;
+    mantic:rightLeg "Osa" .
+
+mantic:Odu203 a mantic:IfaOdu ;
+    rdfs:label "Otura-Ika" ;
+    mantic:figureIndex 203 ;
+    mantic:hasBinaryVector "11010101" ;
+    mantic:leftLeg "Otura" ;
+    mantic:parable "Left leg Otura leads: The calm sky: peace is earned and defended - protect the quiet deliberately. || Right leg Ika modifies: The coiled serpent: delay woven into the path - unwind by patience, never by force." ;
+    mantic:rightLeg "Ika" .
+
+mantic:Odu204 a mantic:IfaOdu ;
+    rdfs:label "Otura-Oturupon" ;
+    mantic:figureIndex 204 ;
+    mantic:hasBinaryVector "11011010" ;
+    mantic:leftLeg "Otura" ;
+    mantic:parable "Left leg Otura leads: The calm sky: peace is earned and defended - protect the quiet deliberately. || Right leg Oturupon modifies: The burdened back: endurance past fatigue; share the load or it shares you." ;
+    mantic:rightLeg "Oturupon" .
+
+mantic:Odu206 a mantic:IfaOdu ;
+    rdfs:label "Otura-Irete" ;
+    mantic:figureIndex 206 ;
+    mantic:hasBinaryVector "11011011" ;
+    mantic:leftLeg "Otura" ;
+    mantic:parable "Left leg Otura leads: The calm sky: peace is earned and defended - protect the quiet deliberately. || Right leg Irete modifies: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat." ;
+    mantic:rightLeg "Irete" .
+
+mantic:Odu207 a mantic:IfaOdu ;
+    rdfs:label "Otura-Ose" ;
+    mantic:figureIndex 207 ;
+    mantic:hasBinaryVector "11010001" ;
+    mantic:leftLeg "Otura" ;
+    mantic:parable "Left leg Otura leads: The calm sky: peace is earned and defended - protect the quiet deliberately. || Right leg Ose modifies: The winning whisper: victory through the small - bless the source of the stream." ;
+    mantic:rightLeg "Ose" .
+
+mantic:Odu208 a mantic:IfaOdu ;
+    rdfs:label "Otura-Ofun" ;
+    mantic:figureIndex 208 ;
+    mantic:hasBinaryVector "11011000" ;
+    mantic:leftLeg "Otura" ;
+    mantic:parable "Left leg Otura leads: The calm sky: peace is earned and defended - protect the quiet deliberately. || Right leg Ofun modifies: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own." ;
+    mantic:rightLeg "Ofun" .
+
+mantic:Odu209 a mantic:IfaOdu ;
+    rdfs:label "Irete-Ogbe" ;
+    mantic:figureIndex 209 ;
+    mantic:hasBinaryVector "10111111" ;
+    mantic:leftLeg "Irete" ;
+    mantic:parable "Left leg Irete leads: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat. || Right leg Ogbe modifies: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride." ;
+    mantic:rightLeg "Ogbe" .
+
+mantic:Odu210 a mantic:IfaOdu ;
+    rdfs:label "Irete-Oyeku" ;
+    mantic:figureIndex 210 ;
+    mantic:hasBinaryVector "10110000" ;
+    mantic:leftLeg "Irete" ;
+    mantic:parable "Left leg Irete leads: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat. || Right leg Oyeku modifies: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next." ;
+    mantic:rightLeg "Oyeku" .
+
+mantic:Odu211 a mantic:IfaOdu ;
+    rdfs:label "Irete-Iwori" ;
+    mantic:figureIndex 211 ;
+    mantic:hasBinaryVector "10111001" ;
+    mantic:leftLeg "Irete" ;
+    mantic:parable "Left leg Irete leads: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat. || Right leg Iwori modifies: The eye turned inward: verify the seer before the seeing; the answer observes the asker." ;
+    mantic:rightLeg "Iwori" .
+
+mantic:Odu212 a mantic:IfaOdu ;
+    rdfs:label "Irete-Odi" ;
+    mantic:figureIndex 212 ;
+    mantic:hasBinaryVector "10110110" ;
+    mantic:leftLeg "Irete" ;
+    mantic:parable "Left leg Irete leads: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat. || Right leg Odi modifies: The sealed calabash: what turns inward ripens or rots - tend the interior." ;
+    mantic:rightLeg "Odi" .
+
+mantic:Odu213 a mantic:IfaOdu ;
+    rdfs:label "Irete-Irosun" ;
+    mantic:figureIndex 213 ;
+    mantic:hasBinaryVector "10110111" ;
+    mantic:leftLeg "Irete" ;
+    mantic:parable "Left leg Irete leads: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat. || Right leg Irosun modifies: Blood on the imprint: legacies owed; settle the old account before new ventures." ;
+    mantic:rightLeg "Irosun" .
+
+mantic:Odu214 a mantic:IfaOdu ;
+    rdfs:label "Irete-Owonrin" ;
+    mantic:figureIndex 214 ;
+    mantic:hasBinaryVector "10111110" ;
+    mantic:leftLeg "Irete" ;
+    mantic:parable "Left leg Irete leads: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat. || Right leg Owonrin modifies: The scattered roof: sudden disorder - repair shelter first, plans second." ;
+    mantic:rightLeg "Owonrin" .
+
+mantic:Odu215 a mantic:IfaOdu ;
+    rdfs:label "Irete-Obara" ;
+    mantic:figureIndex 215 ;
+    mantic:hasBinaryVector "10110100" ;
+    mantic:leftLeg "Irete" ;
+    mantic:parable "Left leg Irete leads: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat. || Right leg Obara modifies: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift." ;
+    mantic:rightLeg "Obara" .
+
+mantic:Odu216 a mantic:IfaOdu ;
+    rdfs:label "Irete-Okanran" ;
+    mantic:figureIndex 216 ;
+    mantic:hasBinaryVector "10110010" ;
+    mantic:leftLeg "Irete" ;
+    mantic:parable "Left leg Irete leads: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat. || Right leg Okanran modifies: The urgent call: answer now; in delay the trap sets itself." ;
+    mantic:rightLeg "Okanran" .
+
+mantic:Odu217 a mantic:IfaOdu ;
+    rdfs:label "Irete-Ogunda" ;
+    mantic:figureIndex 217 ;
+    mantic:hasBinaryVector "10111100" ;
+    mantic:leftLeg "Irete" ;
+    mantic:parable "Left leg Irete leads: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat. || Right leg Ogunda modifies: The clearing cut: sever cleanly what obstructs - surgery, not demolition." ;
+    mantic:rightLeg "Ogunda" .
+
+mantic:Odu218 a mantic:IfaOdu ;
+    rdfs:label "Irete-Osa" ;
+    mantic:figureIndex 218 ;
+    mantic:hasBinaryVector "10110011" ;
+    mantic:leftLeg "Irete" ;
+    mantic:parable "Left leg Irete leads: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat. || Right leg Osa modifies: The multitude arrives at once: choose the emissary or be swept by the crowd." ;
+    mantic:rightLeg "Osa" .
+
+mantic:Odu219 a mantic:IfaOdu ;
+    rdfs:label "Irete-Ika" ;
+    mantic:figureIndex 219 ;
+    mantic:hasBinaryVector "10110101" ;
+    mantic:leftLeg "Irete" ;
+    mantic:parable "Left leg Irete leads: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat. || Right leg Ika modifies: The coiled serpent: delay woven into the path - unwind by patience, never by force." ;
+    mantic:rightLeg "Ika" .
+
+mantic:Odu220 a mantic:IfaOdu ;
+    rdfs:label "Irete-Oturupon" ;
+    mantic:figureIndex 220 ;
+    mantic:hasBinaryVector "10111010" ;
+    mantic:leftLeg "Irete" ;
+    mantic:parable "Left leg Irete leads: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat. || Right leg Oturupon modifies: The burdened back: endurance past fatigue; share the load or it shares you." ;
+    mantic:rightLeg "Oturupon" .
+
+mantic:Odu221 a mantic:IfaOdu ;
+    rdfs:label "Irete-Otura" ;
+    mantic:figureIndex 221 ;
+    mantic:hasBinaryVector "10111101" ;
+    mantic:leftLeg "Irete" ;
+    mantic:parable "Left leg Irete leads: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat. || Right leg Otura modifies: The calm sky: peace is earned and defended - protect the quiet deliberately." ;
+    mantic:rightLeg "Otura" .
+
+mantic:Odu223 a mantic:IfaOdu ;
+    rdfs:label "Irete-Ose" ;
+    mantic:figureIndex 223 ;
+    mantic:hasBinaryVector "10110001" ;
+    mantic:leftLeg "Irete" ;
+    mantic:parable "Left leg Irete leads: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat. || Right leg Ose modifies: The winning whisper: victory through the small - bless the source of the stream." ;
+    mantic:rightLeg "Ose" .
+
+mantic:Odu224 a mantic:IfaOdu ;
+    rdfs:label "Irete-Ofun" ;
+    mantic:figureIndex 224 ;
+    mantic:hasBinaryVector "10111000" ;
+    mantic:leftLeg "Irete" ;
+    mantic:parable "Left leg Irete leads: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat. || Right leg Ofun modifies: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own." ;
+    mantic:rightLeg "Ofun" .
+
+mantic:Odu225 a mantic:IfaOdu ;
+    rdfs:label "Ose-Ogbe" ;
+    mantic:figureIndex 225 ;
+    mantic:hasBinaryVector "00011111" ;
+    mantic:leftLeg "Ose" ;
+    mantic:parable "Left leg Ose leads: The winning whisper: victory through the small - bless the source of the stream. || Right leg Ogbe modifies: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride." ;
+    mantic:rightLeg "Ogbe" .
+
+mantic:Odu226 a mantic:IfaOdu ;
+    rdfs:label "Ose-Oyeku" ;
+    mantic:figureIndex 226 ;
+    mantic:hasBinaryVector "00010000" ;
+    mantic:leftLeg "Ose" ;
+    mantic:parable "Left leg Ose leads: The winning whisper: victory through the small - bless the source of the stream. || Right leg Oyeku modifies: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next." ;
+    mantic:rightLeg "Oyeku" .
+
+mantic:Odu227 a mantic:IfaOdu ;
+    rdfs:label "Ose-Iwori" ;
+    mantic:figureIndex 227 ;
+    mantic:hasBinaryVector "00011001" ;
+    mantic:leftLeg "Ose" ;
+    mantic:parable "Left leg Ose leads: The winning whisper: victory through the small - bless the source of the stream. || Right leg Iwori modifies: The eye turned inward: verify the seer before the seeing; the answer observes the asker." ;
+    mantic:rightLeg "Iwori" .
+
+mantic:Odu228 a mantic:IfaOdu ;
+    rdfs:label "Ose-Odi" ;
+    mantic:figureIndex 228 ;
+    mantic:hasBinaryVector "00010110" ;
+    mantic:leftLeg "Ose" ;
+    mantic:parable "Left leg Ose leads: The winning whisper: victory through the small - bless the source of the stream. || Right leg Odi modifies: The sealed calabash: what turns inward ripens or rots - tend the interior." ;
+    mantic:rightLeg "Odi" .
+
+mantic:Odu229 a mantic:IfaOdu ;
+    rdfs:label "Ose-Irosun" ;
+    mantic:figureIndex 229 ;
+    mantic:hasBinaryVector "00010111" ;
+    mantic:leftLeg "Ose" ;
+    mantic:parable "Left leg Ose leads: The winning whisper: victory through the small - bless the source of the stream. || Right leg Irosun modifies: Blood on the imprint: legacies owed; settle the old account before new ventures." ;
+    mantic:rightLeg "Irosun" .
+
+mantic:Odu230 a mantic:IfaOdu ;
+    rdfs:label "Ose-Owonrin" ;
+    mantic:figureIndex 230 ;
+    mantic:hasBinaryVector "00011110" ;
+    mantic:leftLeg "Ose" ;
+    mantic:parable "Left leg Ose leads: The winning whisper: victory through the small - bless the source of the stream. || Right leg Owonrin modifies: The scattered roof: sudden disorder - repair shelter first, plans second." ;
+    mantic:rightLeg "Owonrin" .
+
+mantic:Odu231 a mantic:IfaOdu ;
+    rdfs:label "Ose-Obara" ;
+    mantic:figureIndex 231 ;
+    mantic:hasBinaryVector "00010100" ;
+    mantic:leftLeg "Ose" ;
+    mantic:parable "Left leg Ose leads: The winning whisper: victory through the small - bless the source of the stream. || Right leg Obara modifies: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift." ;
+    mantic:rightLeg "Obara" .
+
+mantic:Odu232 a mantic:IfaOdu ;
+    rdfs:label "Ose-Okanran" ;
+    mantic:figureIndex 232 ;
+    mantic:hasBinaryVector "00010010" ;
+    mantic:leftLeg "Ose" ;
+    mantic:parable "Left leg Ose leads: The winning whisper: victory through the small - bless the source of the stream. || Right leg Okanran modifies: The urgent call: answer now; in delay the trap sets itself." ;
+    mantic:rightLeg "Okanran" .
+
+mantic:Odu233 a mantic:IfaOdu ;
+    rdfs:label "Ose-Ogunda" ;
+    mantic:figureIndex 233 ;
+    mantic:hasBinaryVector "00011100" ;
+    mantic:leftLeg "Ose" ;
+    mantic:parable "Left leg Ose leads: The winning whisper: victory through the small - bless the source of the stream. || Right leg Ogunda modifies: The clearing cut: sever cleanly what obstructs - surgery, not demolition." ;
+    mantic:rightLeg "Ogunda" .
+
+mantic:Odu234 a mantic:IfaOdu ;
+    rdfs:label "Ose-Osa" ;
+    mantic:figureIndex 234 ;
+    mantic:hasBinaryVector "00010011" ;
+    mantic:leftLeg "Ose" ;
+    mantic:parable "Left leg Ose leads: The winning whisper: victory through the small - bless the source of the stream. || Right leg Osa modifies: The multitude arrives at once: choose the emissary or be swept by the crowd." ;
+    mantic:rightLeg "Osa" .
+
+mantic:Odu235 a mantic:IfaOdu ;
+    rdfs:label "Ose-Ika" ;
+    mantic:figureIndex 235 ;
+    mantic:hasBinaryVector "00010101" ;
+    mantic:leftLeg "Ose" ;
+    mantic:parable "Left leg Ose leads: The winning whisper: victory through the small - bless the source of the stream. || Right leg Ika modifies: The coiled serpent: delay woven into the path - unwind by patience, never by force." ;
+    mantic:rightLeg "Ika" .
+
+mantic:Odu236 a mantic:IfaOdu ;
+    rdfs:label "Ose-Oturupon" ;
+    mantic:figureIndex 236 ;
+    mantic:hasBinaryVector "00011010" ;
+    mantic:leftLeg "Ose" ;
+    mantic:parable "Left leg Ose leads: The winning whisper: victory through the small - bless the source of the stream. || Right leg Oturupon modifies: The burdened back: endurance past fatigue; share the load or it shares you." ;
+    mantic:rightLeg "Oturupon" .
+
+mantic:Odu237 a mantic:IfaOdu ;
+    rdfs:label "Ose-Otura" ;
+    mantic:figureIndex 237 ;
+    mantic:hasBinaryVector "00011101" ;
+    mantic:leftLeg "Ose" ;
+    mantic:parable "Left leg Ose leads: The winning whisper: victory through the small - bless the source of the stream. || Right leg Otura modifies: The calm sky: peace is earned and defended - protect the quiet deliberately." ;
+    mantic:rightLeg "Otura" .
+
+mantic:Odu238 a mantic:IfaOdu ;
+    rdfs:label "Ose-Irete" ;
+    mantic:figureIndex 238 ;
+    mantic:hasBinaryVector "00011011" ;
+    mantic:leftLeg "Ose" ;
+    mantic:parable "Left leg Ose leads: The winning whisper: victory through the small - bless the source of the stream. || Right leg Irete modifies: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat." ;
+    mantic:rightLeg "Irete" .
+
+mantic:Odu240 a mantic:IfaOdu ;
+    rdfs:label "Ose-Ofun" ;
+    mantic:figureIndex 240 ;
+    mantic:hasBinaryVector "00011000" ;
+    mantic:leftLeg "Ose" ;
+    mantic:parable "Left leg Ose leads: The winning whisper: victory through the small - bless the source of the stream. || Right leg Ofun modifies: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own." ;
+    mantic:rightLeg "Ofun" .
+
+mantic:Odu241 a mantic:IfaOdu ;
+    rdfs:label "Ofun-Ogbe" ;
+    mantic:figureIndex 241 ;
+    mantic:hasBinaryVector "10001111" ;
+    mantic:leftLeg "Ofun" ;
+    mantic:parable "Left leg Ofun leads: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own. || Right leg Ogbe modifies: Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride." ;
+    mantic:rightLeg "Ogbe" .
+
+mantic:Odu242 a mantic:IfaOdu ;
+    rdfs:label "Ofun-Oyeku" ;
+    mantic:figureIndex 242 ;
+    mantic:hasBinaryVector "10000000" ;
+    mantic:leftLeg "Ofun" ;
+    mantic:parable "Left leg Ofun leads: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own. || Right leg Oyeku modifies: Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next." ;
+    mantic:rightLeg "Oyeku" .
+
+mantic:Odu243 a mantic:IfaOdu ;
+    rdfs:label "Ofun-Iwori" ;
+    mantic:figureIndex 243 ;
+    mantic:hasBinaryVector "10001001" ;
+    mantic:leftLeg "Ofun" ;
+    mantic:parable "Left leg Ofun leads: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own. || Right leg Iwori modifies: The eye turned inward: verify the seer before the seeing; the answer observes the asker." ;
+    mantic:rightLeg "Iwori" .
+
+mantic:Odu244 a mantic:IfaOdu ;
+    rdfs:label "Ofun-Odi" ;
+    mantic:figureIndex 244 ;
+    mantic:hasBinaryVector "10000110" ;
+    mantic:leftLeg "Ofun" ;
+    mantic:parable "Left leg Ofun leads: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own. || Right leg Odi modifies: The sealed calabash: what turns inward ripens or rots - tend the interior." ;
+    mantic:rightLeg "Odi" .
+
+mantic:Odu245 a mantic:IfaOdu ;
+    rdfs:label "Ofun-Irosun" ;
+    mantic:figureIndex 245 ;
+    mantic:hasBinaryVector "10000111" ;
+    mantic:leftLeg "Ofun" ;
+    mantic:parable "Left leg Ofun leads: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own. || Right leg Irosun modifies: Blood on the imprint: legacies owed; settle the old account before new ventures." ;
+    mantic:rightLeg "Irosun" .
+
+mantic:Odu246 a mantic:IfaOdu ;
+    rdfs:label "Ofun-Owonrin" ;
+    mantic:figureIndex 246 ;
+    mantic:hasBinaryVector "10001110" ;
+    mantic:leftLeg "Ofun" ;
+    mantic:parable "Left leg Ofun leads: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own. || Right leg Owonrin modifies: The scattered roof: sudden disorder - repair shelter first, plans second." ;
+    mantic:rightLeg "Owonrin" .
+
+mantic:Odu247 a mantic:IfaOdu ;
+    rdfs:label "Ofun-Obara" ;
+    mantic:figureIndex 247 ;
+    mantic:hasBinaryVector "10000100" ;
+    mantic:leftLeg "Ofun" ;
+    mantic:parable "Left leg Ofun leads: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own. || Right leg Obara modifies: The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift." ;
+    mantic:rightLeg "Obara" .
+
+mantic:Odu248 a mantic:IfaOdu ;
+    rdfs:label "Ofun-Okanran" ;
+    mantic:figureIndex 248 ;
+    mantic:hasBinaryVector "10000010" ;
+    mantic:leftLeg "Ofun" ;
+    mantic:parable "Left leg Ofun leads: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own. || Right leg Okanran modifies: The urgent call: answer now; in delay the trap sets itself." ;
+    mantic:rightLeg "Okanran" .
+
+mantic:Odu249 a mantic:IfaOdu ;
+    rdfs:label "Ofun-Ogunda" ;
+    mantic:figureIndex 249 ;
+    mantic:hasBinaryVector "10001100" ;
+    mantic:leftLeg "Ofun" ;
+    mantic:parable "Left leg Ofun leads: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own. || Right leg Ogunda modifies: The clearing cut: sever cleanly what obstructs - surgery, not demolition." ;
+    mantic:rightLeg "Ogunda" .
+
+mantic:Odu250 a mantic:IfaOdu ;
+    rdfs:label "Ofun-Osa" ;
+    mantic:figureIndex 250 ;
+    mantic:hasBinaryVector "10000011" ;
+    mantic:leftLeg "Ofun" ;
+    mantic:parable "Left leg Ofun leads: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own. || Right leg Osa modifies: The multitude arrives at once: choose the emissary or be swept by the crowd." ;
+    mantic:rightLeg "Osa" .
+
+mantic:Odu251 a mantic:IfaOdu ;
+    rdfs:label "Ofun-Ika" ;
+    mantic:figureIndex 251 ;
+    mantic:hasBinaryVector "10000101" ;
+    mantic:leftLeg "Ofun" ;
+    mantic:parable "Left leg Ofun leads: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own. || Right leg Ika modifies: The coiled serpent: delay woven into the path - unwind by patience, never by force." ;
+    mantic:rightLeg "Ika" .
+
+mantic:Odu252 a mantic:IfaOdu ;
+    rdfs:label "Ofun-Oturupon" ;
+    mantic:figureIndex 252 ;
+    mantic:hasBinaryVector "10001010" ;
+    mantic:leftLeg "Ofun" ;
+    mantic:parable "Left leg Ofun leads: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own. || Right leg Oturupon modifies: The burdened back: endurance past fatigue; share the load or it shares you." ;
+    mantic:rightLeg "Oturupon" .
+
+mantic:Odu253 a mantic:IfaOdu ;
+    rdfs:label "Ofun-Otura" ;
+    mantic:figureIndex 253 ;
+    mantic:hasBinaryVector "10001101" ;
+    mantic:leftLeg "Ofun" ;
+    mantic:parable "Left leg Ofun leads: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own. || Right leg Otura modifies: The calm sky: peace is earned and defended - protect the quiet deliberately." ;
+    mantic:rightLeg "Otura" .
+
+mantic:Odu254 a mantic:IfaOdu ;
+    rdfs:label "Ofun-Irete" ;
+    mantic:figureIndex 254 ;
+    mantic:hasBinaryVector "10001011" ;
+    mantic:leftLeg "Ofun" ;
+    mantic:parable "Left leg Ofun leads: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own. || Right leg Irete modifies: The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat." ;
+    mantic:rightLeg "Irete" .
+
+mantic:Odu255 a mantic:IfaOdu ;
+    rdfs:label "Ofun-Ose" ;
+    mantic:figureIndex 255 ;
+    mantic:hasBinaryVector "10000001" ;
+    mantic:leftLeg "Ofun" ;
+    mantic:parable "Left leg Ofun leads: The full gourd poured: abundance in circulation; give the stream its bed or it digs its own. || Right leg Ose modifies: The winning whisper: victory through the small - bless the source of the stream." ;
+    mantic:rightLeg "Ose" .
+
+mantic:Odu052 a mantic:IfaOdu ;
+    rdfs:label "Odi Meji" ;
+    mantic:figureIndex 52 ;
+    mantic:hasBinaryVector "01100110" ;
+    mantic:leftLeg "Odi" ;
+    mantic:parable "The sealed calabash: what turns inward ripens or rots - tend the interior." ;
+    mantic:rightLeg "Odi" .
+
+mantic:Odu069 a mantic:IfaOdu ;
+    rdfs:label "Irosun Meji" ;
+    mantic:figureIndex 69 ;
+    mantic:hasBinaryVector "01110111" ;
+    mantic:leftLeg "Irosun" ;
+    mantic:parable "Blood on the imprint: legacies owed; settle the old account before new ventures." ;
+    mantic:rightLeg "Irosun" .
+
+mantic:Odu086 a mantic:IfaOdu ;
+    rdfs:label "Owonrin Meji" ;
+    mantic:figureIndex 86 ;
+    mantic:hasBinaryVector "11101110" ;
+    mantic:leftLeg "Owonrin" ;
+    mantic:parable "The scattered roof: sudden disorder - repair shelter first, plans second." ;
+    mantic:rightLeg "Owonrin" .
+
+mantic:Odu103 a mantic:IfaOdu ;
+    rdfs:label "Obara Meji" ;
+    mantic:figureIndex 103 ;
+    mantic:hasBinaryVector "01000100" ;
+    mantic:leftLeg "Obara" ;
+    mantic:parable "The lone strong mark: wealth arrives disguised as the strange; do not refuse the plain gift." ;
+    mantic:rightLeg "Obara" .
+
+mantic:Odu120 a mantic:IfaOdu ;
+    rdfs:label "Okanran Meji" ;
+    mantic:figureIndex 120 ;
+    mantic:hasBinaryVector "00100010" ;
+    mantic:leftLeg "Okanran" ;
+    mantic:parable "The urgent call: answer now; in delay the trap sets itself." ;
+    mantic:rightLeg "Okanran" .
+
+mantic:Odu137 a mantic:IfaOdu ;
+    rdfs:label "Ogunda Meji" ;
+    mantic:figureIndex 137 ;
+    mantic:hasBinaryVector "11001100" ;
+    mantic:leftLeg "Ogunda" ;
+    mantic:parable "The clearing cut: sever cleanly what obstructs - surgery, not demolition." ;
+    mantic:resolvesAmbiguity mantic:Deadlock ;
+    mantic:rightLeg "Ogunda" .
+
+mantic:Odu154 a mantic:IfaOdu ;
+    rdfs:label "Osa Meji" ;
+    mantic:figureIndex 154 ;
+    mantic:hasBinaryVector "00110011" ;
+    mantic:leftLeg "Osa" ;
+    mantic:parable "The multitude arrives at once: choose the emissary or be swept by the crowd." ;
+    mantic:rightLeg "Osa" .
+
+mantic:Odu171 a mantic:IfaOdu ;
+    rdfs:label "Ika Meji" ;
+    mantic:figureIndex 171 ;
+    mantic:hasBinaryVector "01010101" ;
+    mantic:leftLeg "Ika" ;
+    mantic:parable "The coiled serpent: delay woven into the path - unwind by patience, never by force." ;
+    mantic:rightLeg "Ika" .
+
+mantic:Odu188 a mantic:IfaOdu ;
+    rdfs:label "Oturupon Meji" ;
+    mantic:figureIndex 188 ;
+    mantic:hasBinaryVector "10101010" ;
+    mantic:leftLeg "Oturupon" ;
+    mantic:parable "The burdened back: endurance past fatigue; share the load or it shares you." ;
+    mantic:rightLeg "Oturupon" .
+
+mantic:Odu205 a mantic:IfaOdu ;
+    rdfs:label "Otura Meji" ;
+    mantic:figureIndex 205 ;
+    mantic:hasBinaryVector "11011101" ;
+    mantic:leftLeg "Otura" ;
+    mantic:parable "The calm sky: peace is earned and defended - protect the quiet deliberately." ;
+    mantic:rightLeg "Otura" .
+
+mantic:Odu222 a mantic:IfaOdu ;
+    rdfs:label "Irete Meji" ;
+    mantic:figureIndex 222 ;
+    mantic:hasBinaryVector "10111011" ;
+    mantic:leftLeg "Irete" ;
+    mantic:parable "The bent reed reaching heaven: negotiate with power; humility is the tactic, not the defeat." ;
+    mantic:resolvesAmbiguity mantic:ParetoFlat ;
+    mantic:rightLeg "Irete" .
+
+mantic:Odu256 a mantic:IfaOdu ;
+    rdfs:label "Ofun Meji" ;
+    mantic:figureIndex 256 ;
+    mantic:hasBinaryVector "10001000" ;
+    mantic:leftLeg "Ofun" ;
+    mantic:parable "The full gourd poured: abundance in circulation; give the stream its bed or it digs its own." ;
+    mantic:rightLeg "Ofun" .
+
+mantic:Odu001 a mantic:IfaOdu ;
+    rdfs:label "Ogbe Meji" ;
+    mantic:figureIndex 1 ;
+    mantic:hasBinaryVector "11111111" ;
+    mantic:leftLeg "Ogbe" ;
+    mantic:parable "Light at fullness: destiny aligned - proceed without arrogance; the bright road punishes pride." ;
+    mantic:rightLeg "Ogbe" .
+
+mantic:Odu018 a mantic:IfaOdu ;
+    rdfs:label "Oyeku Meji" ;
+    mantic:figureIndex 18 ;
+    mantic:hasBinaryVector "00000000" ;
+    mantic:leftLeg "Oyeku" ;
+    mantic:parable "Darkness at fullness: the ancestor road closes a cycle - retreat honors what opens next." ;
+    mantic:rightLeg "Oyeku" .
+
+mantic:Odu035 a mantic:IfaOdu ;
+    rdfs:label "Iwori Meji" ;
+    mantic:figureIndex 35 ;
+    mantic:hasBinaryVector "10011001" ;
+    mantic:leftLeg "Iwori" ;
+    mantic:parable "The eye turned inward: verify the seer before the seeing; the answer observes the asker." ;
+    mantic:rightLeg "Iwori" .
+
+mantic:Odu239 a mantic:IfaOdu ;
+    rdfs:label "Ose Meji" ;
+    mantic:figureIndex 239 ;
+    mantic:hasBinaryVector "00010001" ;
+    mantic:leftLeg "Ose" ;
+    mantic:parable "The winning whisper: victory through the small - bless the source of the stream." ;
+    mantic:rightLeg "Ose" .
+
+mantic:Hex03 a mantic:IChingHexagram ;
+    rdfs:label "Zhun (Difficulty at the Beginning)" ;
+    mantic:dominatesElement mantic:ElemWater ;
+    mantic:element "Water" ;
+    mantic:figureIndex 3 ;
+    mantic:generatesTransitionTo mantic:Hex08,
+        mantic:Hex17,
+        mantic:Hex24,
+        mantic:Hex42,
+        mantic:Hex60,
+        mantic:Hex63 ;
+    mantic:hasBinaryVector "100010" ;
+    mantic:lowerTrigram "Zhen" ;
+    mantic:parable "Birth-sprouts in mud: the new thing stalls by its own roots. Steadfastness, not force; sort allies before roads." ;
+    mantic:upperTrigram "Kan" .
+
+mantic:Hex04 a mantic:IChingHexagram ;
+    rdfs:label "Meng (Youthful Folly)" ;
+    mantic:dominatesElement mantic:ElemMountain ;
+    mantic:element "Mountain" ;
+    mantic:figureIndex 4 ;
+    mantic:generatesTransitionTo mantic:Hex07,
+        mantic:Hex18,
+        mantic:Hex23,
+        mantic:Hex41,
+        mantic:Hex59,
+        mantic:Hex64 ;
+    mantic:hasBinaryVector "010001" ;
+    mantic:lowerTrigram "Kan" ;
+    mantic:parable "The unripe ask. Answer the sincere question once - the second asking is the answer." ;
+    mantic:upperTrigram "Gen" .
+
+mantic:Hex05 a mantic:IChingHexagram ;
+    rdfs:label "Xu (Waiting)" ;
+    mantic:dominatesElement mantic:ElemWater ;
+    mantic:element "Water" ;
+    mantic:figureIndex 5 ;
+    mantic:generatesTransitionTo mantic:Hex09,
+        mantic:Hex11,
+        mantic:Hex43,
+        mantic:Hex48,
+        mantic:Hex60,
+        mantic:Hex63 ;
+    mantic:hasBinaryVector "111010" ;
+    mantic:lowerTrigram "Qian" ;
+    mantic:parable "Meat on the fire, danger not yet ripe. Nourish certainty in place; the crossing opens by itself." ;
+    mantic:upperTrigram "Kan" .
+
+mantic:Hex06 a mantic:IChingHexagram ;
+    rdfs:label "Song (Conflict)" ;
+    mantic:dominatesElement mantic:ElemHeaven ;
+    mantic:element "Heaven" ;
+    mantic:figureIndex 6 ;
+    mantic:generatesTransitionTo mantic:Hex10,
+        mantic:Hex12,
+        mantic:Hex44,
+        mantic:Hex47,
+        mantic:Hex59,
+        mantic:Hex64 ;
+    mantic:hasBinaryVector "010111" ;
+    mantic:lowerTrigram "Kan" ;
+    mantic:parable "Heaven and water run opposite. Do not drive the case to verdict - settle midway or cede the field." ;
+    mantic:upperTrigram "Qian" .
+
+mantic:Hex07 a mantic:IChingHexagram ;
+    rdfs:label "Shi (The Army)" ;
+    mantic:dominatesElement mantic:ElemEarth ;
+    mantic:element "Earth" ;
+    mantic:figureIndex 7 ;
+    mantic:generatesTransitionTo mantic:Hex02,
+        mantic:Hex04,
+        mantic:Hex19,
+        mantic:Hex29,
+        mantic:Hex40,
+        mantic:Hex46 ;
+    mantic:hasBinaryVector "010000" ;
+    mantic:lowerTrigram "Kan" ;
+    mantic:parable "The multitude needs a worthy general and a lawful cause; discipline is the permit for mass." ;
+    mantic:upperTrigram "Kun" .
+
+mantic:Hex08 a mantic:IChingHexagram ;
+    rdfs:label "Bi (Holding Together)" ;
+    mantic:dominatesElement mantic:ElemWater ;
+    mantic:element "Water" ;
+    mantic:figureIndex 8 ;
+    mantic:generatesTransitionTo mantic:Hex02,
+        mantic:Hex03,
+        mantic:Hex20,
+        mantic:Hex29,
+        mantic:Hex39,
+        mantic:Hex45 ;
+    mantic:hasBinaryVector "000010" ;
+    mantic:lowerTrigram "Kun" ;
+    mantic:parable "Water seeks the low places. Bind early to the right center; late binding meets a closed gate." ;
+    mantic:upperTrigram "Kan" .
+
+mantic:Hex09 a mantic:IChingHexagram ;
+    rdfs:label "Xiao Chu (Small Taming)" ;
+    mantic:dominatesElement mantic:ElemWind ;
+    mantic:element "Wind" ;
+    mantic:figureIndex 9 ;
+    mantic:generatesTransitionTo mantic:Hex01,
+        mantic:Hex05,
+        mantic:Hex26,
+        mantic:Hex37,
+        mantic:Hex57,
+        mantic:Hex61 ;
+    mantic:hasBinaryVector "111011" ;
+    mantic:lowerTrigram "Qian" ;
+    mantic:parable "Dense clouds, no rain: the small gentles the strong without toppling it. Prepare; do not launch." ;
+    mantic:upperTrigram "Xun" .
+
+mantic:Hex10 a mantic:IChingHexagram ;
+    rdfs:label "Lu (Treading)" ;
+    mantic:dominatesElement mantic:ElemHeaven ;
+    mantic:element "Heaven" ;
+    mantic:figureIndex 10 ;
+    mantic:generatesTransitionTo mantic:Hex01,
+        mantic:Hex06,
+        mantic:Hex25,
+        mantic:Hex38,
+        mantic:Hex58,
+        mantic:Hex61 ;
+    mantic:hasBinaryVector "110111" ;
+    mantic:lowerTrigram "Dui" ;
+    mantic:parable "Step on the tiger's tail: conduct, not courage, survives proximity to power." ;
+    mantic:upperTrigram "Qian" .
+
+mantic:Hex13 a mantic:IChingHexagram ;
+    rdfs:label "Tong Ren (Fellowship)" ;
+    mantic:dominatesElement mantic:ElemHeaven ;
+    mantic:element "Heaven" ;
+    mantic:figureIndex 13 ;
+    mantic:generatesTransitionTo mantic:Hex01,
+        mantic:Hex25,
+        mantic:Hex30,
+        mantic:Hex33,
+        mantic:Hex37,
+        mantic:Hex49 ;
+    mantic:hasBinaryVector "101111" ;
+    mantic:lowerTrigram "Li" ;
+    mantic:parable "Fire climbs toward heaven: fellowship by purpose, not kin - such company can cross the river." ;
+    mantic:upperTrigram "Qian" .
+
+mantic:Hex15 a mantic:IChingHexagram ;
+    rdfs:label "Qian (Modesty)" ;
+    mantic:dominatesElement mantic:ElemEarth ;
+    mantic:element "Earth" ;
+    mantic:figureIndex 15 ;
+    mantic:generatesTransitionTo mantic:Hex02,
+        mantic:Hex36,
+        mantic:Hex39,
+        mantic:Hex46,
+        mantic:Hex52,
+        mantic:Hex62 ;
+    mantic:hasBinaryVector "001000" ;
+    mantic:lowerTrigram "Gen" ;
+    mantic:parable "The mountain bows under the earth: what is full tilts, what is empty receives - modesty finishes the work." ;
+    mantic:upperTrigram "Kun" .
+
+mantic:Hex16 a mantic:IChingHexagram ;
+    rdfs:label "Yu (Enthusiasm)" ;
+    mantic:dominatesElement mantic:ElemThunder ;
+    mantic:element "Thunder" ;
+    mantic:figureIndex 16 ;
+    mantic:generatesTransitionTo mantic:Hex02,
+        mantic:Hex35,
+        mantic:Hex40,
+        mantic:Hex45,
+        mantic:Hex51,
+        mantic:Hex62 ;
+    mantic:hasBinaryVector "000100" ;
+    mantic:lowerTrigram "Kun" ;
+    mantic:parable "Thunder rolls out of the earth: enthusiasm moves the many - set the direction before the drums." ;
+    mantic:upperTrigram "Zhen" .
+
+mantic:Hex17 a mantic:IChingHexagram ;
+    rdfs:label "Sui (Following)" ;
+    mantic:dominatesElement mantic:ElemLake ;
+    mantic:element "Lake" ;
+    mantic:figureIndex 17 ;
+    mantic:generatesTransitionTo mantic:Hex03,
+        mantic:Hex25,
+        mantic:Hex45,
+        mantic:Hex49,
+        mantic:Hex51,
+        mantic:Hex58 ;
+    mantic:hasBinaryVector "100110" ;
+    mantic:lowerTrigram "Zhen" ;
+    mantic:parable "The joyous follows the moving: follow what is correct, not merely what is strong." ;
+    mantic:upperTrigram "Dui" .
+
+mantic:Hex18 a mantic:IChingHexagram ;
+    rdfs:label "Gu (Work on the Decayed)" ;
+    mantic:dominatesElement mantic:ElemMountain ;
+    mantic:element "Mountain" ;
+    mantic:figureIndex 18 ;
+    mantic:generatesTransitionTo mantic:Hex04,
+        mantic:Hex26,
+        mantic:Hex46,
+        mantic:Hex50,
+        mantic:Hex52,
+        mantic:Hex57 ;
+    mantic:hasBinaryVector "011001" ;
+    mantic:lowerTrigram "Xun" ;
+    mantic:parable "The mildew has reached the beam: repair at the root. Three days before, three days after - name what rotted." ;
+    mantic:upperTrigram "Gen" .
+
+mantic:Hex19 a mantic:IChingHexagram ;
+    rdfs:label "Lin (Approach)" ;
+    mantic:dominatesElement mantic:ElemEarth ;
+    mantic:element "Earth" ;
+    mantic:figureIndex 19 ;
+    mantic:generatesTransitionTo mantic:Hex07,
+        mantic:Hex11,
+        mantic:Hex24,
+        mantic:Hex41,
+        mantic:Hex54,
+        mantic:Hex60 ;
+    mantic:hasBinaryVector "110000" ;
+    mantic:lowerTrigram "Dui" ;
+    mantic:parable "The great approaches the small: administer generously; the window is generous but counted." ;
+    mantic:upperTrigram "Kun" .
+
+mantic:Hex22 a mantic:IChingHexagram ;
+    rdfs:label "Bi (Grace)" ;
+    mantic:dominatesElement mantic:ElemMountain ;
+    mantic:element "Mountain" ;
+    mantic:figureIndex 22 ;
+    mantic:generatesTransitionTo mantic:Hex26,
+        mantic:Hex27,
+        mantic:Hex30,
+        mantic:Hex36,
+        mantic:Hex37,
+        mantic:Hex52 ;
+    mantic:hasBinaryVector "101001" ;
+    mantic:lowerTrigram "Li" ;
+    mantic:parable "Fire below the mountain: form lit from within. Adorn the essential; polish never replaces bone." ;
+    mantic:upperTrigram "Gen" .
+
+mantic:Hex25 a mantic:IChingHexagram ;
+    rdfs:label "Wu Wang (Integrity)" ;
+    mantic:dominatesElement mantic:ElemHeaven ;
+    mantic:element "Heaven" ;
+    mantic:figureIndex 25 ;
+    mantic:generatesTransitionTo mantic:Hex10,
+        mantic:Hex12,
+        mantic:Hex13,
+        mantic:Hex17,
+        mantic:Hex21,
+        mantic:Hex42 ;
+    mantic:hasBinaryVector "100111" ;
+    mantic:lowerTrigram "Zhen" ;
+    mantic:parable "Thunder under heaven: act from nature, not scheming - the unexpected is not permission." ;
+    mantic:upperTrigram "Qian" .
+
+mantic:Hex26 a mantic:IChingHexagram ;
+    rdfs:label "Da Xu (Great Taming)" ;
+    mantic:dominatesElement mantic:ElemMountain ;
+    mantic:element "Mountain" ;
+    mantic:figureIndex 26 ;
+    mantic:generatesTransitionTo mantic:Hex09,
+        mantic:Hex11,
+        mantic:Hex14,
+        mantic:Hex18,
+        mantic:Hex22,
+        mantic:Hex41 ;
+    mantic:hasBinaryVector "111001" ;
+    mantic:lowerTrigram "Qian" ;
+    mantic:parable "Heaven penned by the mountain: stockpile strength and virtue, not momentum." ;
+    mantic:upperTrigram "Gen" .
+
+mantic:Hex27 a mantic:IChingHexagram ;
+    rdfs:label "Yi (Nourishment)" ;
+    mantic:dominatesElement mantic:ElemMountain ;
+    mantic:element "Mountain" ;
+    mantic:figureIndex 27 ;
+    mantic:generatesTransitionTo mantic:Hex21,
+        mantic:Hex22,
+        mantic:Hex23,
+        mantic:Hex24,
+        mantic:Hex41,
+        mantic:Hex42 ;
+    mantic:hasBinaryVector "100001" ;
+    mantic:lowerTrigram "Zhen" ;
+    mantic:parable "The mouth's two corners: watch intake and outflow - speech is also food." ;
+    mantic:upperTrigram "Gen" .
+
+mantic:Hex28 a mantic:IChingHexagram ;
+    rdfs:label "Da Guo (Great Excess)" ;
+    mantic:dominatesElement mantic:ElemLake ;
+    mantic:element "Lake" ;
+    mantic:figureIndex 28 ;
+    mantic:generatesTransitionTo mantic:Hex31,
+        mantic:Hex32,
+        mantic:Hex43,
+        mantic:Hex44,
+        mantic:Hex47,
+        mantic:Hex48 ;
+    mantic:hasBinaryVector "011110" ;
+    mantic:lowerTrigram "Xun" ;
+    mantic:parable "The ridgepole sags under abnormal load. Extraordinary measures, taken early, right the beam." ;
+    mantic:upperTrigram "Dui" .
+
+mantic:Hex29 a mantic:IChingHexagram ;
+    rdfs:label "Kan (The Abysmal)" ;
+    mantic:dominatesElement mantic:ElemWater ;
+    mantic:element "Water" ;
+    mantic:figureIndex 29 ;
+    mantic:generatesTransitionTo mantic:Hex07,
+        mantic:Hex08,
+        mantic:Hex47,
+        mantic:Hex48,
+        mantic:Hex59,
+        mantic:Hex60 ;
+    mantic:hasBinaryVector "010010" ;
+    mantic:lowerTrigram "Kan" ;
+    mantic:parable "Water doubled: danger repeated like heartbeats. Keep the line true through every repetition." ;
+    mantic:upperTrigram "Kan" .
+
+mantic:Hex30 a mantic:IChingHexagram ;
+    rdfs:label "Li (The Clinging)" ;
+    mantic:dominatesElement mantic:ElemFire ;
+    mantic:element "Fire" ;
+    mantic:figureIndex 30 ;
+    mantic:generatesTransitionTo mantic:Hex13,
+        mantic:Hex14,
+        mantic:Hex21,
+        mantic:Hex22,
+        mantic:Hex55,
+        mantic:Hex56 ;
+    mantic:hasBinaryVector "101101" ;
+    mantic:lowerTrigram "Li" ;
+    mantic:parable "Fire doubled: clarity needs fuel. Radiance borrows; tend what you burn upon." ;
+    mantic:upperTrigram "Li" .
+
+mantic:Hex31 a mantic:IChingHexagram ;
+    rdfs:label "Xian (Influence)" ;
+    mantic:dominatesElement mantic:ElemLake ;
+    mantic:element "Lake" ;
+    mantic:figureIndex 31 ;
+    mantic:generatesTransitionTo mantic:Hex28,
+        mantic:Hex33,
+        mantic:Hex39,
+        mantic:Hex45,
+        mantic:Hex49,
+        mantic:Hex62 ;
+    mantic:hasBinaryVector "001110" ;
+    mantic:lowerTrigram "Gen" ;
+    mantic:parable "The lake above the mountain: attraction by stillness. Courtship precedes fusion; the small moves the great." ;
+    mantic:upperTrigram "Dui" .
+
+mantic:Hex32 a mantic:IChingHexagram ;
+    rdfs:label "Heng (Duration)" ;
+    mantic:dominatesElement mantic:ElemThunder ;
+    mantic:element "Thunder" ;
+    mantic:figureIndex 32 ;
+    mantic:generatesTransitionTo mantic:Hex28,
+        mantic:Hex34,
+        mantic:Hex40,
+        mantic:Hex46,
+        mantic:Hex50,
+        mantic:Hex62 ;
+    mantic:hasBinaryVector "011100" ;
+    mantic:lowerTrigram "Xun" ;
+    mantic:parable "Thunder over wind: persistence in motion, not in stance. Endure as rivers do." ;
+    mantic:upperTrigram "Zhen" .
+
+mantic:Hex35 a mantic:IChingHexagram ;
+    rdfs:label "Jin (Progress)" ;
+    mantic:dominatesElement mantic:ElemFire ;
+    mantic:element "Fire" ;
+    mantic:figureIndex 35 ;
+    mantic:generatesTransitionTo mantic:Hex12,
+        mantic:Hex16,
+        mantic:Hex21,
+        mantic:Hex23,
+        mantic:Hex56,
+        mantic:Hex64 ;
+    mantic:hasBinaryVector "000101" ;
+    mantic:lowerTrigram "Kun" ;
+    mantic:parable "The sun rises over the earth: advance like the prince thrice received in one day - brightness earns speed." ;
+    mantic:upperTrigram "Li" .
+
+mantic:Hex36 a mantic:IChingHexagram ;
+    rdfs:label "Ming Yi (Darkening of the Light)" ;
+    mantic:dominatesElement mantic:ElemEarth ;
+    mantic:element "Earth" ;
+    mantic:figureIndex 36 ;
+    mantic:generatesTransitionTo mantic:Hex11,
+        mantic:Hex15,
+        mantic:Hex22,
+        mantic:Hex24,
+        mantic:Hex55,
+        mantic:Hex63 ;
+    mantic:hasBinaryVector "101000" ;
+    mantic:lowerTrigram "Li" ;
+    mantic:parable "Light wounded beneath the earth: conceal the brilliance, keep the inner dawn, endure outward dusk." ;
+    mantic:upperTrigram "Kun" .
+
+mantic:Hex37 a mantic:IChingHexagram ;
+    rdfs:label "Jia Ren (The Family)" ;
+    mantic:dominatesElement mantic:ElemWind ;
+    mantic:element "Wind" ;
+    mantic:figureIndex 37 ;
+    mantic:generatesTransitionTo mantic:Hex09,
+        mantic:Hex13,
+        mantic:Hex22,
+        mantic:Hex42,
+        mantic:Hex53,
+        mantic:Hex63 ;
+    mantic:hasBinaryVector "101011" ;
+    mantic:lowerTrigram "Li" ;
+    mantic:parable "Wind issues from fire: order kindles inside first; hold each role and the house orders itself." ;
+    mantic:upperTrigram "Xun" .
+
+mantic:Hex38 a mantic:IChingHexagram ;
+    rdfs:label "Kui (Opposition)" ;
+    mantic:dominatesElement mantic:ElemFire ;
+    mantic:element "Fire" ;
+    mantic:figureIndex 38 ;
+    mantic:generatesTransitionTo mantic:Hex10,
+        mantic:Hex14,
+        mantic:Hex21,
+        mantic:Hex41,
+        mantic:Hex54,
+        mantic:Hex64 ;
+    mantic:hasBinaryVector "110101" ;
+    mantic:lowerTrigram "Dui" ;
+    mantic:parable "Fire rises, the lake sinks: divergent natures on shared ground. In small matters, meet anyway." ;
+    mantic:upperTrigram "Li" .
+
+mantic:Hex39 a mantic:IChingHexagram ;
+    rdfs:label "Jian (Obstruction)" ;
+    mantic:dominatesElement mantic:ElemWater ;
+    mantic:element "Water" ;
+    mantic:figureIndex 39 ;
+    mantic:generatesTransitionTo mantic:Hex08,
+        mantic:Hex15,
+        mantic:Hex31,
+        mantic:Hex48,
+        mantic:Hex53,
+        mantic:Hex63 ;
+    mantic:hasBinaryVector "001010" ;
+    mantic:lowerTrigram "Gen" ;
+    mantic:parable "Water below the mountain: the road dams. Turn inward, seek the southwest ally, refuse the blind north." ;
+    mantic:upperTrigram "Kan" .
+
+mantic:Hex40 a mantic:IChingHexagram ;
+    rdfs:label "Xie (Deliverance)" ;
+    mantic:dominatesElement mantic:ElemThunder ;
+    mantic:element "Thunder" ;
+    mantic:figureIndex 40 ;
+    mantic:generatesTransitionTo mantic:Hex07,
+        mantic:Hex16,
+        mantic:Hex32,
+        mantic:Hex47,
+        mantic:Hex54,
+        mantic:Hex64 ;
+    mantic:hasBinaryVector "010100" ;
+    mantic:lowerTrigram "Kan" ;
+    mantic:parable "Thunder breaks the storm: the knot loosens. Forgive quickly, return to the plain road." ;
+    mantic:upperTrigram "Zhen" .
+
+mantic:Hex42 a mantic:IChingHexagram ;
+    rdfs:label "Yi (Increase)" ;
+    mantic:dominatesElement mantic:ElemWind ;
+    mantic:element "Wind" ;
+    mantic:figureIndex 42 ;
+    mantic:generatesTransitionTo mantic:Hex03,
+        mantic:Hex20,
+        mantic:Hex25,
+        mantic:Hex27,
+        mantic:Hex37,
+        mantic:Hex61 ;
+    mantic:hasBinaryVector "100011" ;
+    mantic:lowerTrigram "Zhen" ;
+    mantic:parable "Wind and thunder compound each other: see good and copy it, see fault and mend it; ride surplus outward." ;
+    mantic:upperTrigram "Xun" .
+
+mantic:Hex43 a mantic:IChingHexagram ;
+    rdfs:label "Guai (Breakthrough)" ;
+    mantic:dominatesElement mantic:ElemLake ;
+    mantic:element "Lake" ;
+    mantic:figureIndex 43 ;
+    mantic:generatesTransitionTo mantic:Hex01,
+        mantic:Hex05,
+        mantic:Hex28,
+        mantic:Hex34,
+        mantic:Hex49,
+        mantic:Hex58 ;
+    mantic:hasBinaryVector "111110" ;
+    mantic:lowerTrigram "Qian" ;
+    mantic:parable "Five yang resolve the last yin: proclaim the corrupt at court, win without war, then disarm." ;
+    mantic:upperTrigram "Dui" .
+
+mantic:Hex44 a mantic:IChingHexagram ;
+    rdfs:label "Gou (Coming to Meet)" ;
+    mantic:dominatesElement mantic:ElemHeaven ;
+    mantic:element "Heaven" ;
+    mantic:figureIndex 44 ;
+    mantic:generatesTransitionTo mantic:Hex01,
+        mantic:Hex06,
+        mantic:Hex28,
+        mantic:Hex33,
+        mantic:Hex50,
+        mantic:Hex57 ;
+    mantic:hasBinaryVector "011111" ;
+    mantic:lowerTrigram "Xun" ;
+    mantic:parable "The unexpected yin slips beneath five yang: do not marry the first insinuation - contain it at the door." ;
+    mantic:upperTrigram "Qian" .
+
+mantic:Hex45 a mantic:IChingHexagram ;
+    rdfs:label "Cui (Gathering)" ;
+    mantic:dominatesElement mantic:ElemLake ;
+    mantic:element "Lake" ;
+    mantic:figureIndex 45 ;
+    mantic:generatesTransitionTo mantic:Hex08,
+        mantic:Hex12,
+        mantic:Hex16,
+        mantic:Hex17,
+        mantic:Hex31,
+        mantic:Hex47 ;
+    mantic:hasBinaryVector "000110" ;
+    mantic:lowerTrigram "Kun" ;
+    mantic:parable "The lake gathers over the earth: assemble the many around the great sacrifice, not the raid." ;
+    mantic:upperTrigram "Dui" .
+
+mantic:Hex47 a mantic:IChingHexagram ;
+    rdfs:label "Kun (Oppression)" ;
+    mantic:dominatesElement mantic:ElemLake ;
+    mantic:element "Lake" ;
+    mantic:figureIndex 47 ;
+    mantic:generatesTransitionTo mantic:Hex06,
+        mantic:Hex28,
+        mantic:Hex29,
+        mantic:Hex40,
+        mantic:Hex45,
+        mantic:Hex58 ;
+    mantic:hasBinaryVector "010110" ;
+    mantic:lowerTrigram "Kan" ;
+    mantic:parable "The lake is drained: words are not believed now. Endure outwardly, keep the hidden joy." ;
+    mantic:upperTrigram "Dui" .
+
+mantic:Hex48 a mantic:IChingHexagram ;
+    rdfs:label "Jing (The Well)" ;
+    mantic:dominatesElement mantic:ElemWater ;
+    mantic:element "Water" ;
+    mantic:figureIndex 48 ;
+    mantic:generatesTransitionTo mantic:Hex05,
+        mantic:Hex28,
+        mantic:Hex29,
+        mantic:Hex39,
+        mantic:Hex46,
+        mantic:Hex57 ;
+    mantic:hasBinaryVector "011010" ;
+    mantic:lowerTrigram "Xun" ;
+    mantic:parable "Towns move, the well does not: draw from the common depth - the jug matters at the rope's end." ;
+    mantic:upperTrigram "Kan" .
+
+mantic:Hex49 a mantic:IChingHexagram ;
+    rdfs:label "Ge (Revolution)" ;
+    mantic:dominatesElement mantic:ElemLake ;
+    mantic:element "Lake" ;
+    mantic:figureIndex 49 ;
+    mantic:generatesTransitionTo mantic:Hex13,
+        mantic:Hex17,
+        mantic:Hex31,
+        mantic:Hex43,
+        mantic:Hex55,
+        mantic:Hex63 ;
+    mantic:hasBinaryVector "101110" ;
+    mantic:lowerTrigram "Li" ;
+    mantic:parable "Fire and lake cancel each other: the mandate changes when the day ripens - declare what is already true." ;
+    mantic:upperTrigram "Dui" .
+
+mantic:Hex50 a mantic:IChingHexagram ;
+    rdfs:label "Ding (The Cauldron)" ;
+    mantic:dominatesElement mantic:ElemFire ;
+    mantic:element "Fire" ;
+    mantic:figureIndex 50 ;
+    mantic:generatesTransitionTo mantic:Hex14,
+        mantic:Hex18,
+        mantic:Hex32,
+        mantic:Hex44,
+        mantic:Hex56,
+        mantic:Hex64 ;
+    mantic:hasBinaryVector "011101" ;
+    mantic:lowerTrigram "Xun" ;
+    mantic:parable "Wind feeds fire beneath the vessel: refine the raw into nourishment; feed the worthy." ;
+    mantic:upperTrigram "Li" .
+
+mantic:Hex51 a mantic:IChingHexagram ;
+    rdfs:label "Zhen (The Arousing)" ;
+    mantic:dominatesElement mantic:ElemThunder ;
+    mantic:element "Thunder" ;
+    mantic:figureIndex 51 ;
+    mantic:generatesTransitionTo mantic:Hex16,
+        mantic:Hex17,
+        mantic:Hex21,
+        mantic:Hex24,
+        mantic:Hex54,
+        mantic:Hex55 ;
+    mantic:hasBinaryVector "100100" ;
+    mantic:lowerTrigram "Zhen" ;
+    mantic:parable "Shock upon shock: the centered laugh after the first terror; survey while others reel." ;
+    mantic:upperTrigram "Zhen" .
+
+mantic:Hex52 a mantic:IChingHexagram ;
+    rdfs:label "Gen (Stillness)" ;
+    mantic:dominatesElement mantic:ElemMountain ;
+    mantic:element "Mountain" ;
+    mantic:figureIndex 52 ;
+    mantic:generatesTransitionTo mantic:Hex15,
+        mantic:Hex18,
+        mantic:Hex22,
+        mantic:Hex23,
+        mantic:Hex53,
+        mantic:Hex56 ;
+    mantic:hasBinaryVector "001001" ;
+    mantic:lowerTrigram "Gen" ;
+    mantic:parable "Mountain on mountain: still the back so the courtyard empties; stop where stopping is right." ;
+    mantic:upperTrigram "Gen" .
+
+mantic:Hex53 a mantic:IChingHexagram ;
+    rdfs:label "Jian (Development)" ;
+    mantic:dominatesElement mantic:ElemWind ;
+    mantic:element "Wind" ;
+    mantic:figureIndex 53 ;
+    mantic:generatesTransitionTo mantic:Hex20,
+        mantic:Hex33,
+        mantic:Hex37,
+        mantic:Hex39,
+        mantic:Hex52,
+        mantic:Hex57 ;
+    mantic:hasBinaryVector "001011" ;
+    mantic:lowerTrigram "Gen" ;
+    mantic:parable "The tree on the mountain: gradual advance; the maiden walks the rites to the full term." ;
+    mantic:upperTrigram "Xun" .
+
+mantic:Hex54 a mantic:IChingHexagram ;
+    rdfs:label "Gui Mei (Marrying Maiden)" ;
+    mantic:dominatesElement mantic:ElemThunder ;
+    mantic:element "Thunder" ;
+    mantic:figureIndex 54 ;
+    mantic:generatesTransitionTo mantic:Hex19,
+        mantic:Hex34,
+        mantic:Hex38,
+        mantic:Hex40,
+        mantic:Hex51,
+        mantic:Hex58 ;
+    mantic:hasBinaryVector "110100" ;
+    mantic:lowerTrigram "Dui" ;
+    mantic:parable "Thunder over the willing lake: a role taken as second best; know what union this is or the position erodes." ;
+    mantic:upperTrigram "Zhen" .
+
+mantic:Hex55 a mantic:IChingHexagram ;
+    rdfs:label "Feng (Abundance)" ;
+    mantic:dominatesElement mantic:ElemThunder ;
+    mantic:element "Thunder" ;
+    mantic:figureIndex 55 ;
+    mantic:generatesTransitionTo mantic:Hex30,
+        mantic:Hex34,
+        mantic:Hex36,
+        mantic:Hex49,
+        mantic:Hex51,
+        mantic:Hex62 ;
+    mantic:hasBinaryVector "101100" ;
+    mantic:lowerTrigram "Li" ;
+    mantic:parable "Thunder and lightning at noon: fullness is a passing zenith - act within the light while it lasts." ;
+    mantic:upperTrigram "Zhen" .
+
+mantic:Hex56 a mantic:IChingHexagram ;
+    rdfs:label "Lu (The Wanderer)" ;
+    mantic:dominatesElement mantic:ElemFire ;
+    mantic:element "Fire" ;
+    mantic:figureIndex 56 ;
+    mantic:generatesTransitionTo mantic:Hex30,
+        mantic:Hex33,
+        mantic:Hex35,
+        mantic:Hex50,
+        mantic:Hex52,
+        mantic:Hex62 ;
+    mantic:hasBinaryVector "001101" ;
+    mantic:lowerTrigram "Gen" ;
+    mantic:parable "Fire on the mountain: the stranger survives by courtesy, not assertion; petty gains cost the road." ;
+    mantic:upperTrigram "Li" .
+
+mantic:Hex57 a mantic:IChingHexagram ;
+    rdfs:label "Xun (The Gentle)" ;
+    mantic:dominatesElement mantic:ElemWind ;
+    mantic:element "Wind" ;
+    mantic:figureIndex 57 ;
+    mantic:generatesTransitionTo mantic:Hex09,
+        mantic:Hex18,
+        mantic:Hex44,
+        mantic:Hex48,
+        mantic:Hex53,
+        mantic:Hex59 ;
+    mantic:hasBinaryVector "011011" ;
+    mantic:lowerTrigram "Xun" ;
+    mantic:parable "Wind doubled: penetration by small returns; the gentle enters where force cannot." ;
+    mantic:upperTrigram "Xun" .
+
+mantic:Hex59 a mantic:IChingHexagram ;
+    rdfs:label "Huan (Dispersion)" ;
+    mantic:dominatesElement mantic:ElemWind ;
+    mantic:element "Wind" ;
+    mantic:figureIndex 59 ;
+    mantic:generatesTransitionTo mantic:Hex04,
+        mantic:Hex06,
+        mantic:Hex20,
+        mantic:Hex29,
+        mantic:Hex57,
+        mantic:Hex61 ;
+    mantic:hasBinaryVector "010011" ;
+    mantic:lowerTrigram "Kan" ;
+    mantic:parable "Wind over water: dissolve the ice, gather the scattered - row the shared boat across." ;
+    mantic:upperTrigram "Xun" .
+
+mantic:Hex62 a mantic:IChingHexagram ;
+    rdfs:label "Xiao Guo (Small Excess)" ;
+    mantic:dominatesElement mantic:ElemThunder ;
+    mantic:element "Thunder" ;
+    mantic:figureIndex 62 ;
+    mantic:generatesTransitionTo mantic:Hex15,
+        mantic:Hex16,
+        mantic:Hex31,
+        mantic:Hex32,
+        mantic:Hex55,
+        mantic:Hex56 ;
+    mantic:hasBinaryVector "001100" ;
+    mantic:lowerTrigram "Gen" ;
+    mantic:parable "Thunder under the mountain: the bird flies low. In small matters exceed; in great matters, echo." ;
+    mantic:upperTrigram "Zhen" .
+
+mantic:Hex63 a mantic:IChingHexagram ;
+    rdfs:label "Ji Ji (After Completion)" ;
+    mantic:dominatesElement mantic:ElemWater ;
+    mantic:element "Water" ;
+    mantic:figureIndex 63 ;
+    mantic:generatesTransitionTo mantic:Hex03,
+        mantic:Hex05,
+        mantic:Hex36,
+        mantic:Hex37,
+        mantic:Hex39,
+        mantic:Hex49 ;
+    mantic:hasBinaryVector "101010" ;
+    mantic:lowerTrigram "Li" ;
+    mantic:parable "Water over fire: the work stands done - guard the seals at the joints; endings decay first." ;
+    mantic:upperTrigram "Kan" .
+
+mantic:Hex64 a mantic:IChingHexagram ;
+    rdfs:label "Wei Ji (Before Completion)" ;
+    mantic:dominatesElement mantic:ElemFire ;
+    mantic:element "Fire" ;
+    mantic:figureIndex 64 ;
+    mantic:generatesTransitionTo mantic:Hex04,
+        mantic:Hex06,
+        mantic:Hex35,
+        mantic:Hex38,
+        mantic:Hex40,
+        mantic:Hex50 ;
+    mantic:hasBinaryVector "010101" ;
+    mantic:lowerTrigram "Kan" ;
+    mantic:parable "Fire over water: the fox nearly across - lift the tail at the last step, not before it." ;
+    mantic:upperTrigram "Li" .
+
+mantic:Hex01 a mantic:IChingHexagram ;
+    rdfs:label "Qian (The Creative)" ;
+    mantic:dominatesElement mantic:ElemHeaven ;
+    mantic:element "Heaven" ;
+    mantic:figureIndex 1 ;
+    mantic:generatesTransitionTo mantic:Hex09,
+        mantic:Hex10,
+        mantic:Hex13,
+        mantic:Hex14,
+        mantic:Hex43,
+        mantic:Hex44 ;
+    mantic:hasBinaryVector "111111" ;
+    mantic:lowerTrigram "Qian" ;
+    mantic:parable "Unbroken yang: creative force at full voltage. Initiate - but as the dragon that knows when not to fly." ;
+    mantic:sharesArchetypeWith mantic:Odu001 ;
+    mantic:upperTrigram "Qian" .
+
+mantic:Hex02 a mantic:IChingHexagram ;
+    rdfs:label "Kun (The Receptive)" ;
+    mantic:dominatesElement mantic:ElemEarth ;
+    mantic:element "Earth" ;
+    mantic:figureIndex 2 ;
+    mantic:generatesTransitionTo mantic:Hex07,
+        mantic:Hex08,
+        mantic:Hex15,
+        mantic:Hex16,
+        mantic:Hex23,
+        mantic:Hex24 ;
+    mantic:hasBinaryVector "000000" ;
+    mantic:lowerTrigram "Kun" ;
+    mantic:parable "Unbroken yin: pure carrying capacity. Yield and gather; what serves without claiming inherits the outcome." ;
+    mantic:sharesArchetypeWith mantic:Odu018 ;
+    mantic:upperTrigram "Kun" .
+
+mantic:Hex11 a mantic:IChingHexagram ;
+    rdfs:label "Tai (Peace)" ;
+    mantic:dominatesElement mantic:ElemEarth ;
+    mantic:element "Earth" ;
+    mantic:figureIndex 11 ;
+    mantic:generatesTransitionTo mantic:Hex05,
+        mantic:Hex19,
+        mantic:Hex26,
+        mantic:Hex34,
+        mantic:Hex36,
+        mantic:Hex46 ;
+    mantic:hasBinaryVector "111000" ;
+    mantic:lowerTrigram "Qian" ;
+    mantic:parable "Heaven under earth: full exchange. Peak flow - bank some of it for the turning wheel." ;
+    mantic:upperTrigram "Kun" .
+
+mantic:Hex12 a mantic:IChingHexagram ;
+    rdfs:label "Pi (Standstill)" ;
+    mantic:dominatesElement mantic:ElemHeaven ;
+    mantic:element "Heaven" ;
+    mantic:figureIndex 12 ;
+    mantic:generatesTransitionTo mantic:Hex06,
+        mantic:Hex20,
+        mantic:Hex25,
+        mantic:Hex33,
+        mantic:Hex35,
+        mantic:Hex45 ;
+    mantic:hasBinaryVector "000111" ;
+    mantic:lowerTrigram "Kun" ;
+    mantic:parable "Earth under heaven: exchange blocked. The unworthy rise; keep the inner merit and the small duty." ;
+    mantic:upperTrigram "Qian" .
+
+mantic:Hex14 a mantic:IChingHexagram ;
+    rdfs:label "Da You (Great Possession)" ;
+    mantic:dominatesElement mantic:ElemFire ;
+    mantic:element "Fire" ;
+    mantic:figureIndex 14 ;
+    mantic:generatesTransitionTo mantic:Hex01,
+        mantic:Hex26,
+        mantic:Hex30,
+        mantic:Hex34,
+        mantic:Hex38,
+        mantic:Hex50 ;
+    mantic:hasBinaryVector "111101" ;
+    mantic:lowerTrigram "Qian" ;
+    mantic:parable "Fire high in heaven: abundance visible to all. Hold it with modesty and share to legitimize it." ;
+    mantic:upperTrigram "Li" .
+
+mantic:Hex20 a mantic:IChingHexagram ;
+    rdfs:label "Guan (Contemplation)" ;
+    mantic:dominatesElement mantic:ElemWind ;
+    mantic:element "Wind" ;
+    mantic:figureIndex 20 ;
+    mantic:generatesTransitionTo mantic:Hex08,
+        mantic:Hex12,
+        mantic:Hex23,
+        mantic:Hex42,
+        mantic:Hex53,
+        mantic:Hex59 ;
+    mantic:hasBinaryVector "000011" ;
+    mantic:lowerTrigram "Kun" ;
+    mantic:parable "Wind moves over the land: watch as one watched; the view decides the act." ;
+    mantic:upperTrigram "Xun" .
+
+mantic:Hex21 a mantic:IChingHexagram ;
+    rdfs:label "Shi He (Biting Through)" ;
+    mantic:dominatesElement mantic:ElemFire ;
+    mantic:element "Fire" ;
+    mantic:figureIndex 21 ;
+    mantic:generatesTransitionTo mantic:Hex25,
+        mantic:Hex27,
+        mantic:Hex30,
+        mantic:Hex35,
+        mantic:Hex38,
+        mantic:Hex51 ;
+    mantic:hasBinaryVector "100101" ;
+    mantic:lowerTrigram "Zhen" ;
+    mantic:parable "Obstruction between the teeth: bite through with firm, visible law - separation reunites." ;
+    mantic:upperTrigram "Li" .
+
+mantic:Hex23 a mantic:IChingHexagram ;
+    rdfs:label "Bo (Splitting Apart)" ;
+    mantic:dominatesElement mantic:ElemMountain ;
+    mantic:element "Mountain" ;
+    mantic:figureIndex 23 ;
+    mantic:generatesTransitionTo mantic:Hex02,
+        mantic:Hex04,
+        mantic:Hex20,
+        mantic:Hex27,
+        mantic:Hex35,
+        mantic:Hex52 ;
+    mantic:hasBinaryVector "000001" ;
+    mantic:lowerTrigram "Kun" ;
+    mantic:parable "The great is peeled by the small: rest quiet while the rotten strips away - do not rebuild mid-fall." ;
+    mantic:upperTrigram "Gen" .
+
+mantic:Hex24 a mantic:IChingHexagram ;
+    rdfs:label "Fu (Return)" ;
+    mantic:dominatesElement mantic:ElemEarth ;
+    mantic:element "Earth" ;
+    mantic:figureIndex 24 ;
+    mantic:generatesTransitionTo mantic:Hex02,
+        mantic:Hex03,
+        mantic:Hex19,
+        mantic:Hex27,
+        mantic:Hex36,
+        mantic:Hex51 ;
+    mantic:hasBinaryVector "100000" ;
+    mantic:lowerTrigram "Zhen" ;
+    mantic:parable "One yang under five yin: the turning point. Return arrives in seven days; the way renews itself." ;
+    mantic:sharesArchetypeWith mantic:Odu239 ;
+    mantic:upperTrigram "Kun" .
+
+mantic:Hex33 a mantic:IChingHexagram ;
+    rdfs:label "Dun (Retreat)" ;
+    mantic:dominatesElement mantic:ElemHeaven ;
+    mantic:element "Heaven" ;
+    mantic:figureIndex 33 ;
+    mantic:generatesTransitionTo mantic:Hex12,
+        mantic:Hex13,
+        mantic:Hex31,
+        mantic:Hex44,
+        mantic:Hex53,
+        mantic:Hex56 ;
+    mantic:hasBinaryVector "001111" ;
+    mantic:lowerTrigram "Gen" ;
+    mantic:parable "The strong steps back from the small: withdrawal in good order preserves the whole campaign." ;
+    mantic:upperTrigram "Qian" .
+
+mantic:Hex34 a mantic:IChingHexagram ;
+    rdfs:label "Da Zhuang (Great Power)" ;
+    mantic:dominatesElement mantic:ElemThunder ;
+    mantic:element "Thunder" ;
+    mantic:figureIndex 34 ;
+    mantic:generatesTransitionTo mantic:Hex11,
+        mantic:Hex14,
+        mantic:Hex32,
+        mantic:Hex43,
+        mantic:Hex54,
+        mantic:Hex55 ;
+    mantic:hasBinaryVector "111100" ;
+    mantic:lowerTrigram "Qian" ;
+    mantic:parable "The ram butts the fence. True power stops at correctness; force past it breaks horns." ;
+    mantic:upperTrigram "Zhen" .
+
+mantic:Hex41 a mantic:IChingHexagram ;
+    rdfs:label "Sun (Decrease)" ;
+    mantic:dominatesElement mantic:ElemMountain ;
+    mantic:element "Mountain" ;
+    mantic:figureIndex 41 ;
+    mantic:generatesTransitionTo mantic:Hex04,
+        mantic:Hex19,
+        mantic:Hex26,
+        mantic:Hex27,
+        mantic:Hex38,
+        mantic:Hex61 ;
+    mantic:hasBinaryVector "110001" ;
+    mantic:lowerTrigram "Dui" ;
+    mantic:parable "Two plates offered below: sincere decrease generates - sacrifice the small to keep the covenant." ;
+    mantic:upperTrigram "Gen" .
+
+mantic:Hex46 a mantic:IChingHexagram ;
+    rdfs:label "Sheng (Pushing Upward)" ;
+    mantic:dominatesElement mantic:ElemEarth ;
+    mantic:element "Earth" ;
+    mantic:figureIndex 46 ;
+    mantic:generatesTransitionTo mantic:Hex07,
+        mantic:Hex11,
+        mantic:Hex15,
+        mantic:Hex18,
+        mantic:Hex32,
+        mantic:Hex48 ;
+    mantic:hasBinaryVector "011000" ;
+    mantic:lowerTrigram "Xun" ;
+    mantic:parable "Trees grow from low earth: ascend by stages; small works done well lift the whole." ;
+    mantic:upperTrigram "Kun" .
+
+mantic:Hex58 a mantic:IChingHexagram ;
+    rdfs:label "Dui (The Joyous)" ;
+    mantic:dominatesElement mantic:ElemLake ;
+    mantic:element "Lake" ;
+    mantic:figureIndex 58 ;
+    mantic:generatesTransitionTo mantic:Hex10,
+        mantic:Hex17,
+        mantic:Hex43,
+        mantic:Hex47,
+        mantic:Hex54,
+        mantic:Hex60 ;
+    mantic:hasBinaryVector "110110" ;
+    mantic:lowerTrigram "Dui" ;
+    mantic:parable "Lakes joined: joy that exchanges; the firm center keeps pleasure from spilling." ;
+    mantic:upperTrigram "Dui" .
+
+mantic:Hex60 a mantic:IChingHexagram ;
+    rdfs:label "Jie (Limitation)" ;
+    mantic:dominatesElement mantic:ElemWater ;
+    mantic:element "Water" ;
+    mantic:figureIndex 60 ;
+    mantic:generatesTransitionTo mantic:Hex03,
+        mantic:Hex05,
+        mantic:Hex19,
+        mantic:Hex29,
+        mantic:Hex58,
+        mantic:Hex61 ;
+    mantic:hasBinaryVector "110010" ;
+    mantic:lowerTrigram "Dui" ;
+    mantic:parable "Water held by the lake banks: measure with accepted form; sweet limits empower, bitter limits break." ;
+    mantic:upperTrigram "Kan" .
+
+mantic:Hex61 a mantic:IChingHexagram ;
+    rdfs:label "Zhong Fu (Inner Truth)" ;
+    mantic:dominatesElement mantic:ElemWind ;
+    mantic:element "Wind" ;
+    mantic:figureIndex 61 ;
+    mantic:generatesTransitionTo mantic:Hex09,
+        mantic:Hex10,
+        mantic:Hex41,
+        mantic:Hex42,
+        mantic:Hex59,
+        mantic:Hex60 ;
+    mantic:hasBinaryVector "110011" ;
+    mantic:lowerTrigram "Dui" ;
+    mantic:parable "Wind over the lake: the empty center registers the invisible - even pigs and fish are reached." ;
+    mantic:sharesArchetypeWith mantic:Odu035 ;
+    mantic:upperTrigram "Xun" .
+

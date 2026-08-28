@@ -1,0 +1,82 @@
+@prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix mantic: <https://w3id.org/mantic/core#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# Base shape: every ManticFigure carries exactly one binary
+# vector and one seniority index.
+#################################################################
+
+mantic:ManticFigureShape a sh:NodeShape ;
+    # target the three concrete classes directly (sh:targetClass does not
+    # walk rdfs:subClassOf unless RDFS inference is enabled)
+    sh:targetClass mantic:GeomanticSign , mantic:IChingHexagram , mantic:IfaOdu ;
+    sh:property [
+        sh:path mantic:hasBinaryVector ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path mantic:figureIndex ;
+        sh:datatype xsd:integer ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] .
+
+#################################################################
+# Width-locked shapes: strictly enforce binary width per system.
+#################################################################
+
+mantic:GeomanticSignShape a sh:NodeShape ;
+    sh:targetClass mantic:GeomanticSign ;
+    sh:property [
+        sh:path mantic:hasBinaryVector ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:pattern "^[01]{4}$" ;
+        sh:message "A GeomanticSign must carry exactly one 4-digit binary vector." ;
+    ] .
+
+mantic:IChingHexagramShape a sh:NodeShape ;
+    sh:targetClass mantic:IChingHexagram ;
+    sh:property [
+        sh:path mantic:hasBinaryVector ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:pattern "^[01]{6}$" ;   # Strictly enforces exactly 6 binary digits
+        sh:message "An IChingHexagram must carry exactly one 6-digit binary vector." ;
+    ] .
+
+mantic:IfaOduShape a sh:NodeShape ;
+    sh:targetClass mantic:IfaOdu ;
+    sh:property [
+        sh:path mantic:hasBinaryVector ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:pattern "^[01]{8}$" ;   # Strictly enforces exactly 8 binary digits
+        sh:message "An IfaOdu must carry exactly one 8-digit binary vector." ;
+    ] .
+
+#################################################################
+# Archetype edges must connect ManticFigures to ManticFigures.
+#################################################################
+
+mantic:SharesArchetypeEdgeShape a sh:NodeShape ;
+    sh:targetSubjectsOf mantic:sharesArchetypeWith ;
+    sh:class mantic:ManticFigure ;
+    sh:property [
+        sh:path mantic:sharesArchetypeWith ;
+        sh:class mantic:ManticFigure ;
+    ] .
+
+mantic:TransitionEdgeShape a sh:NodeShape ;
+    sh:targetSubjectsOf mantic:generatesTransitionTo ;
+    sh:class mantic:IChingHexagram ;
+    sh:property [
+        sh:path mantic:generatesTransitionTo ;
+        sh:class mantic:IChingHexagram ;
+    ] .
