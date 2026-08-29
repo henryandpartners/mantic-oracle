@@ -14,8 +14,8 @@ services:
       NEO4J_server_memory_pagecache_size: 512M
       NEO4J_server_jvm_additional: "-DXX:+UnlockExperimentalVMOptions -XX:+UseG1GC"
     ports:
-      - "7474:7474"   # HTTP / Cypher browser
-      - "7687:7687"   # Bolt
+      - "127.0.0.1:7474:7474"   # HTTP / Cypher browser (localhost only - never expose)
+      - "127.0.0.1:7687:7687"   # Bolt (localhost only - never expose)
     volumes:
       - neo4j_data:/data
       - ./ontology:/var/lib/neo4j/import   # ttl files reachable via file:/// URIs

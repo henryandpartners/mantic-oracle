@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "builds": [
+    { "src": "api/mcp.py", "use": "@vercel/python" },
+    { "src": "api/guardian.py", "use": "@vercel/python" },
+    { "src": "public/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/docs", "dest": "/public/docs.html" },
+    { "src": "/", "dest": "/public/index.html" }
+  ]
+}

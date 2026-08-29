@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Oracle — DVSystoE</title>
+<meta name="description" content="The Guardian holds the door. The Oracle sees. A multi-system mantic oracle for humans and AI agents.">
+<style>
+  :root{
+    --bg:#0d0b09; --panel:#15110c; --line:#2a231a;
+    --text:#e9ddc6; --dim:#9a8b6e; --faint:#5e5340;
+    --amber:#d9a441; --amber-soft:rgba(217,164,65,.14);
+    --cookie:#c97b3d;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background:
+      radial-gradient(1200px 600px at 50% -10%, rgba(217,164,65,.07), transparent 60%),
+      var(--bg);
+    color:var(--text);
+    font:17px/1.65 Georgia,'Times New Roman',serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{max-width:720px;margin:0 auto;padding:64px 24px 96px}
+  .kicker{font:600 11px/1 ui-monospace,Menlo,monospace;letter-spacing:.34em;color:var(--dim);text-transform:uppercase;text-align:center}
+  /* ---------- The Door ---------- */
+  .door-stage{display:flex;justify-content:center;margin:44px 0 10px}
+  .door{
+    position:relative;width:150px;height:220px;border-radius:76px 76px 8px 8px;
+    background:linear-gradient(180deg,#1d1710,#120e09);
+    border:1px solid var(--line);
+    box-shadow:0 0 0 1px rgba(0,0,0,.6), 0 24px 60px -20px rgba(0,0,0,.9), inset 0 0 44px rgba(0,0,0,.55);
+    transition:opacity 1.2s ease, transform 1.2s ease;
+  }
+  .door::after{ /* the light through the crack */
+    content:"";position:absolute;top:14%;bottom:14%;left:calc(50% - 1.5px);width:3px;border-radius:2px;
+    background:linear-gradient(180deg, transparent, var(--amber), transparent);
+    box-shadow:0 0 18px 2px rgba(217,164,65,.5);
+    animation:breathe 4.2s ease-in-out infinite;
+  }
+  @keyframes breathe{0%,100%{opacity:.45;filter:blur(.4px)}50%{opacity:1;filter:blur(0)}}
+  body.open .door{opacity:0;transform:translateY(-14px) scale(.96);pointer-events:none}
+  h1{font-size:34px;font-weight:400;letter-spacing:.02em;text-align:center;margin-top:26px}
+  h1 em{font-style:italic;color:var(--amber)}
+  .tagline{text-align:center;color:var(--dim);font-style:italic;margin-top:10px;font-size:15.5px}
+  /* ---------- Guardian ---------- */
+  #gate{margin-top:56px;text-align:center}
+  .knock{
+    font:600 12px/1 ui-monospace,Menlo,monospace;letter-spacing:.28em;text-transform:uppercase;
+    color:var(--amber);background:var(--amber-soft);border:1px solid rgba(217,164,65,.4);
+    padding:15px 34px;border-radius:3px;cursor:pointer;transition:.25s;
+  }
+  .knock:hover{background:rgba(217,164,65,.24);box-shadow:0 0 34px -6px rgba(217,164,65,.35)}
+  .guardian{margin-top:36px;display:none}
+  .guardian.live{display:block;animation:fade .5s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1}}
+  .g-name{font:600 11px ui-monospace,Menlo,monospace;letter-spacing:.3em;color:var(--dim);text-transform:uppercase}
+  .g-speech{margin:14px auto 0;max-width:520px;font-size:19px;font-style:italic;color:var(--text)}
+  .g-form{display:flex;gap:10px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+  .g-form input{
+    background:#0a0806;border:1px solid var(--line);color:var(--text);
+    font:17px Georgia,serif;font-style:italic;padding:12px 18px;border-radius:3px;width:min(320px,80vw);
+    outline:none;transition:.2s;
+  }
+  .g-form input:focus{border-color:rgba(217,164,65,.55)}
+  .g-form button{
+    font:600 11px ui-monospace,Menlo,monospace;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--text);background:#1d1710;border:1px solid var(--line);padding:0 22px;border-radius:3px;cursor:pointer;
+  }
+  .g-form button:hover{border-color:var(--amber);color:var(--amber)}
+  .g-verdict{margin-top:16px;min-height:24px;color:var(--dim);font-style:italic;font-size:15px}
+  .g-verdict.no{color:#b06a4a}
+  /* ---------- After the door ---------- */
+  #sanctum{display:none}
+  body.open #sanctum{display:block;animation:fade 1s ease .5s both}
+  body.open #gate{display:none}
+  .cookie{
+    margin:8px auto 0;max-width:560px;text-align:center;color:var(--cookie);font-style:italic;font-size:16.5px;
+    padding:20px 26px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  }
+  /* consult */
+  .consult{margin-top:52px}
+  .label{font:600 11px ui-monospace,Menlo,monospace;letter-spacing:.3em;color:var(--dim);text-transform:uppercase}
+  textarea{
+    width:100%;margin-top:14px;background:#0a0806;border:1px solid var(--line);color:var(--text);
+    font:17px/1.6 Georgia,serif;font-style:italic;padding:16px 18px;border-radius:3px;min-height:96px;resize:vertical;outline:none;
+  }
+  textarea:focus{border-color:rgba(217,164,65,.55)}
+  .ask{
+    margin-top:16px;font:600 11px ui-monospace,Menlo,monospace;letter-spacing:.26em;text-transform:uppercase;
+    color:var(--amber);background:transparent;border:1px solid rgba(217,164,65,.4);padding:14px 30px;border-radius:3px;cursor:pointer;transition:.25s;
+  }
+  .ask:hover{background:var(--amber-soft)}
+  .ask:disabled{opacity:.4;cursor:wait}
+  /* reading */
+  .reading{margin-top:40px;display:none}
+  .reading.live{display:block;animation:fade .8s ease}
+  .figures{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-top:16px}
+  .fig{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:18px 18px 16px}
+  .fig .bits{font:600 15px ui-monospace,Menlo,monospace;color:var(--amber);letter-spacing:.32em}
+  .fig .bits i{font-style:normal;color:var(--faint)}
+  .fig h3{font-size:19px;font-weight:400;margin-top:8px}
+  .fig .kind{font:600 9.5px ui-monospace,Menlo,monospace;letter-spacing:.26em;color:var(--dim);text-transform:uppercase;margin-top:2px}
+  .fig p{margin-top:10px;font-size:14.5px;color:var(--dim);line-height:1.55}
+  .fig .arch{margin-top:10px;font-size:13px;color:var(--faint);font-style:italic}
+  .counsel{
+    margin-top:26px;padding:18px 22px;border-left:2px solid var(--amber);
+    background:linear-gradient(90deg, rgba(217,164,65,.06), transparent 70%);
+    font-style:italic;font-size:16.5px;
+  }
+  details{margin-top:26px;color:var(--faint)}
+  details summary{cursor:pointer;font:600 11px ui-monospace,Menlo,monospace;letter-spacing:.24em;text-transform:uppercase}
+  details pre{margin-top:12px;font:12.5px/1.55 ui-monospace,Menlo,monospace;color:var(--dim);overflow:auto;white-space:pre-wrap;word-break:break-word}
+  /* agent path */
+  .agents{margin-top:64px;padding-top:36px;border-top:1px solid var(--line)}
+  .agents p{color:var(--dim);font-size:15px;margin-top:12px}
+  pre.code{
+    margin-top:14px;background:#0a0806;border:1px solid var(--line);border-radius:4px;padding:16px 18px;overflow:auto;
+    font:12.5px/1.7 ui-monospace,Menlo,monospace;color:#cdbf9f;
+  }
+  pre.code .c{color:var(--faint)}
+  footer{margin-top:80px;text-align:center;color:var(--faint);font-size:13.5px;font-style:italic}
+  footer a{color:var(--dim);text-decoration:none;border-bottom:1px dotted var(--faint)}
+  footer a:hover{color:var(--amber)}
+</style>
+</head>
+<body>
+<main>
+  <div class="kicker">DVSystoE · The Mantic Oracle Engine</div>
+
+  <div class="door-stage"><div class="door" id="door"></div></div>
+  <h1>You seek <em>the Oracle</em>.</h1>
+  <p class="tagline">She does not answer. She bakes, she listens, and she tells you what you need to hear.</p>
+
+  <!-- ============ THE GUARDIAN ============ -->
+  <section id="gate">
+    <button class="knock" id="knock">Knock on the door</button>
+    <div class="guardian" id="guardian">
+      <div class="g-name">The Guardian</div>
+      <p class="g-speech" id="g-speech"></p>
+      <form class="g-form" id="g-form">
+        <input id="g-answer" autocomplete="off" spellcheck="false" placeholder="answer…" aria-label="your answer">
+        <button type="submit">Answer</button>
+      </form>
+      <div class="g-verdict" id="g-verdict"></div>
+    </div>
+  </section>
+
+  <!-- ============ THE SANCTUM ============ -->
+  <section id="sanctum">
+    <div class="kicker">The door is open</div>
+    <p class="cookie" id="cookie"></p>
+
+    <div class="consult">
+      <div class="label">Bring her your deadlock</div>
+      <textarea id="ctx" placeholder="Describe the choice you have already made…"></textarea>
+      <button class="ask" id="ask">Consult the Oracle</button>
+    </div>
+
+    <div class="reading" id="reading">
+      <div class="label">The reading</div>
+      <div class="figures" id="figures"></div>
+      <div class="counsel" id="counsel" style="display:none"></div>
+      <details><summary>Raw consultation · JSON-LD</summary><pre id="raw"></pre></details>
+    </div>
+
+    <div class="agents">
+      <div class="label">For the machines that knock</div>
+      <p>AI agents may meet the Guardian the same way — she keeps no favorites between flesh and silicon.
+         Answer her challenge to receive a pass (24h, signed). Then speak MCP.</p>
+      <pre class="code"><span class="c"># 1 · meet the Guardian</span>
+curl -s https://ORACLE-HOST/api/guardian
+
+<span class="c"># 2 · answer, receive the pass</span>
+curl -s -X POST https://ORACLE-HOST/api/guardian \
+  -H 'content-type: application/json' \
+  -d '{"seeker":"my-agent-id","answer":"..."}'
+
+<span class="c"># 3 · consult via MCP (streamable HTTP)</span>
+<span class="c">#    url:   https://ORACLE-HOST/api/mcp</span>
+<span class="c">#    auth:  Authorization: Bearer &lt;the pass&gt;</span>
+<span class="c">#    tools: consult_mantic_oracle, lookup_figure</span></pre>
+      <p>The Oracle's tools are read-only. Her knowledge is rebuilt from source on every cold
+         start — there is nothing behind the door that can be stolen, and nothing that can be broken.</p>
+    </div>
+  </section>
+
+  <footer>Temet nosce · <a href="/docs">study the system →</a></footer>
+</main>
+
+<script>
+const $ = id => document.getElementById(id);
+let PASS = sessionStorage.getItem('oracle-pass') || null;
+
+const COOKIES = [
+  '“Here — have a cookie. I promise, by the time you’re done eating it, you’ll feel right as rain.”',
+  '“You didn’t come here to make the choice. You’ve already made it. You’re here to try to understand why.”',
+  '“Temet nosce. It is nailed to the kitchen door for a reason.”',
+  '“Everything that has a beginning has an end. Make peace with that, and every ending becomes a gift.”',
+  '“I can only show you the door. You’re the one that has to walk through it.”',
+  '“The best cookies are baked by someone who already knows who is coming.”'
+];
+$('cookie').textContent = COOKIES[Math.floor(Math.random()*COOKIES.length)];
+
+if (PASS) enter();
+
+/* ---------- Guardian ---------- */
+$('knock').addEventListener('click', async () => {
+  $('knock').style.display = 'none';
+  $('guardian').classList.add('live');
+  try{
+    const r = await fetch('/api/guardian');
+    const d = await r.json();
+    $('g-speech').textContent = d.greeting + ' ' + d.question;
+    $('g-form').dataset.id = d.id;
+  }catch(e){
+    $('g-speech').textContent = 'The Guardian does not answer. (the door is asleep — try again shortly)';
+  }
+  $('g-answer').focus();
+});
+
+$('g-form').addEventListener('submit', async ev => {
+  ev.preventDefault();
+  const verdict = $('g-verdict');
+  verdict.className = 'g-verdict';
+  verdict.textContent = '…';
+  try{
+    const r = await fetch('/api/guardian', {
+      method:'POST',
+      headers:{'content-type':'application/json'},
+      body: JSON.stringify({id:+$('g-form').dataset.id||0, seeker:'web-seeker', answer:$('g-answer').value})
+    });
+    const d = await r.json();
+    if (r.ok && d.pass){ PASS = d.pass; sessionStorage.setItem('oracle-pass', PASS); enter(); }
+    else { verdict.className='g-verdict no'; verdict.textContent = d.verdict || 'No. Not yet.'; }
+  }catch(e){
+    verdict.className='g-verdict no'; verdict.textContent='The door is asleep. Try again shortly.';
+  }
+});
+
+function enter(){ document.body.classList.add('open'); }
+
+/* ---------- MCP client (browser) ---------- */
+async function mcp(tool, args){
+  const H = {
+    'Authorization':'Bearer '+PASS,
+    'Content-Type':'application/json',
+    'Accept':'application/json, text/event-stream'
+  };
+  const init = await fetch('/api/mcp',{method:'POST',headers:H,body:JSON.stringify({
+    jsonrpc:'2.0',id:1,method:'initialize',
+    params:{protocolVersion:'2024-11-05',capabilities:{},clientInfo:{name:'seeker-browser',version:'1'}}
+  })});
+  if(!init.ok) throw new Error('gate refused ('+init.status+')');
+  const sid = init.headers.get('mcp-session-id');
+  const H2 = {...H, ...(sid?{'mcp-session-id':sid}:{})};
+  await fetch('/api/mcp',{method:'POST',headers:H2,body:JSON.stringify({jsonrpc:'2.0',method:'notifications/initialized'})});
+  const r = await fetch('/api/mcp',{method:'POST',headers:H2,body:JSON.stringify({
+    jsonrpc:'2.0',id:2,method:'tools/call',params:{name:tool,arguments:args}
+  })});
+  const t = await r.text();
+  const m = (t.startsWith('event:')||t.startsWith('data:'))
+    ? JSON.parse(t.split('\n').find(l=>l.startsWith('data:')).slice(5))
+    : JSON.parse(t);
+  if (m.error) throw new Error(m.error.message||'the oracle stayed silent');
+  return JSON.parse(m.result.content[0].text);
+}
+
+/* ---------- Consult + render ---------- */
+$('ask').addEventListener('click', async () => {
+  const ctx = $('ctx').value.trim();
+  if(!ctx){ $('ctx').focus(); return; }
+  $('ask').disabled = true; $('ask').textContent = 'She is casting…';
+  try{
+    const out = await mcp('consult_mantic_oracle', {agent_id:'web-seeker', decision_context:ctx});
+    render(out, ctx);
+  }catch(e){
+    alert('The Oracle stayed silent: '+e.message+' — your pass may have cooled. Reload to meet the Guardian again.');
+    sessionStorage.removeItem('oracle-pass');
+  }
+  $('ask').disabled = false; $('ask').textContent = 'Consult the Oracle';
+});
+
+function pretty(bits){ return (bits||'').replace(/(.)(?=.)/g,'$1 '); }
+
+function render(out, ctx){
+  $('reading').classList.add('live');
+  $('raw').textContent = JSON.stringify(out,null,2);
+  const figs = [];
+  (function walk(n){
+    if (Array.isArray(n)) return n.forEach(walk);
+    if (n && typeof n === 'object'){
+      const l = n.label || n['@id'] || n.name;
+      if (l && (n.parable || n.hasBinaryVector || n.bits || n.binaryVector || n.vector))
+        figs.push(n);
+      Object.values(n).forEach(walk);
+    }
+  })(out);
+  const seen = new Set(), cards = [];
+  for (const f of figs){
+    const key = (f.label||'') + (f.hasBinaryVector||f.bits||f.binaryVector||'');
+    if (seen.has(key)) continue; seen.add(key);
+    const bits = f.hasBinaryVector || f.bits || f.binaryVector || '';
+    const kind = (f['@type']||f.kind||'').toString().split(/[\/#:]/).pop().replace(/^(IChing|Ifa|Geomantic)?/,'$&');
+    const arch = (f.archetypes||f.sharesArchetypeWith||[]);
+    const archTxt = Array.isArray(arch)&&arch.length
+      ? 'echoes: ' + arch.map(a=>typeof a==='string'?a:(a.label||a['@id']||'')).filter(Boolean).join(' · ') : '';
+    cards.push(`<div class="fig">
+      <div class="bits">${pretty(bits)||'·'}</div>
+      <h3>${f.label||l(f)}</h3>
+      <div class="kind">${kind}</div>
+      ${f.parable?`<p>${f.parable}</p>`:''}
+      ${archTxt?`<div class="arch">${archTxt}</div>`:''}
+    </div>`);
+    function l(x){ return ''; }
+  }
+  $('figures').innerHTML = cards.join('') || '<div class="fig"><p>The cast was silent.</p></div>';
+  let counsel = '';
+  (function wc(n){
+    if (Array.isArray(n)) return n.forEach(wc);
+    if (n && typeof n === 'object') return Object.entries(n).forEach(([k,v])=>{
+      if (/counsel|refram|advice|strateg|read/i.test(k) && typeof v === 'string' && v.length>20) counsel = v;
+      else wc(v);
+    });
+  })(out);
+  const c = $('counsel');
+  if (counsel){ c.style.display='block'; c.textContent = counsel; }
+  $('reading').scrollIntoView({behavior:'smooth', block:'start'});
+}
+</script>
+</body>
+</html>

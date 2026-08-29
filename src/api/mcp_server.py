@@ -86,7 +86,17 @@ except ImportError:  # allow module import without the MCP SDK installed
     FastMCP = None  # type: ignore[assignment]
 
 if FastMCP is not None:
-    mcp: Any = FastMCP("mantic-oracle")
+    try:
+        from mcp.server.transport_security import TransportSecuritySettings
+
+        # Public deployments sit behind a proxy (Vercel) whose Host header
+        # varies; access control is enforced by our own Bearer gate.
+        _transport_security = TransportSecuritySettings(
+            enable_dns_rebinding_protection=False
+        )
+        mcp: Any = FastMCP("mantic-oracle", transport_security=_transport_security)
+    except (ImportError, TypeError):
+        mcp: Any = FastMCP("mantic-oracle")  # type: ignore[no-redef]
 
     @mcp.tool()
     def consult_mantic_oracle(

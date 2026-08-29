@@ -9,7 +9,7 @@ pydantic>=2.6
 neo4j>=5.20
 
 # Agent protocols (MCP + optional REST adapter)
-mcp>=1.2
+mcp>=1.2,<2   # v2 renames FastMCP -> MCPServer; code targets the 1.x API
 fastapi>=0.110
 uvicorn>=0.29
 

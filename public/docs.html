@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The System — DVSystoE Documentation</title>
+<meta name="description" content="Public education: the mind map of DVSystoE, the multi-system mantic oracle engine. Ifá, I Ching, Geomancy, one computable archetype space.">
+<style>
+  :root{
+    --bg:#0d0b09; --panel:#15110c; --line:#2a231a;
+    --text:#e9ddc6; --dim:#9a8b6e; --faint:#5e5340;
+    --amber:#d9a441; --amber-soft:rgba(217,164,65,.14);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:radial-gradient(1100px 500px at 50% -8%, rgba(217,164,65,.06), transparent 60%), var(--bg);
+    color:var(--text); font:17px/1.7 Georgia,'Times New Roman',serif; -webkit-font-smoothing:antialiased;
+  }
+  main{max-width:860px;margin:0 auto;padding:64px 24px 110px}
+  .kicker{font:600 11px/1 ui-monospace,Menlo,monospace;letter-spacing:.34em;color:var(--dim);text-transform:uppercase;text-align:center}
+  h1{font-size:32px;font-weight:400;text-align:center;margin-top:18px}
+  h1 em{color:var(--amber);font-style:italic}
+  .lede{text-align:center;color:var(--dim);font-style:italic;margin:14px auto 0;max-width:560px}
+  .home{text-align:center;margin-top:18px;font-size:14px}
+  .home a{color:var(--dim);text-decoration:none;border-bottom:1px dotted var(--faint)}
+  .home a:hover{color:var(--amber)}
+  /* mind map */
+  .map-wrap{margin-top:44px;border:1px solid var(--line);border-radius:6px;background:#0a0806;overflow-x:auto}
+  svg.mindmap{display:block;min-width:860px;width:100%;height:auto}
+  .node{cursor:pointer}
+  .node text{font-family:Georgia,serif;fill:var(--text)}
+  .node .sub{font:10.5px ui-monospace,Menlo,monospace;letter-spacing:.14em;fill:var(--faint);text-transform:uppercase}
+  .node rect{fill:var(--panel);stroke:var(--line);transition:.25s}
+  .node:hover rect{stroke:var(--amber);filter:drop-shadow(0 0 10px rgba(217,164,65,.4))}
+  .node:hover text{fill:var(--amber)}
+  .hub rect{stroke:var(--amber);fill:#1a140c}
+  .hub .t{font-size:21px;font-style:italic}
+  .edge{fill:none;stroke:var(--line);stroke-width:1.4;transition:.25s}
+  .node:hover ~ .edge{stroke:var(--amber)}
+  /* sections */
+  section{margin-top:76px;padding-top:34px;border-top:1px solid var(--line)}
+  h2{font-size:24px;font-weight:400}
+  h2 .no{font:600 11px ui-monospace,Menlo,monospace;color:var(--amber);letter-spacing:.3em;margin-right:14px;vertical-align:middle}
+  h3{font-size:17px;font-weight:600;margin-top:26px;color:var(--text)}
+  p{color:var(--dim);margin-top:12px}
+  p strong,b{color:var(--text);font-weight:600}
+  ul{margin:12px 0 0 22px;color:var(--dim)}
+  li{margin-top:8px}
+  li b{color:var(--text)}
+  .tenet{margin-top:18px;background:var(--panel);border:1px solid var(--line);border-left:2px solid var(--amber);border-radius:4px;padding:16px 20px}
+  .tenet .t{font:600 10.5px ui-monospace,Menlo,monospace;letter-spacing:.28em;color:var(--amber);text-transform:uppercase}
+  .tenet p{margin-top:6px;font-style:italic;color:var(--text)}
+  .bit{font:600 13px ui-monospace,Menlo,monospace;color:var(--amber);letter-spacing:.3em;background:#0a0806;border:1px solid var(--line);border-radius:3px;padding:2px 10px;white-space:nowrap}
+  pre.code{margin-top:14px;background:#0a0806;border:1px solid var(--line);border-radius:4px;padding:16px 18px;overflow:auto;font:12.5px/1.7 ui-monospace,Menlo,monospace;color:#cdbf9f}
+  pre.code .c{color:var(--faint)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:18px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:18px}
+  .card h4{font-size:16.5px;font-weight:600}
+  .card .m{font:600 10.5px ui-monospace,Menlo,monospace;letter-spacing:.22em;color:var(--amber);text-transform:uppercase;margin-top:4px}
+  .card p{font-size:14.5px;margin-top:10px;line-height:1.6}
+  footer{margin-top:90px;text-align:center;color:var(--faint);font-size:13.5px;font-style:italic}
+</style>
+</head>
+<body>
+<main>
+  <div class="kicker">Public Education · The System</div>
+  <h1>The mind of <em>the Oracle</em></h1>
+  <p class="lede">Three ancient computation systems, one algebra, one knowledge graph, one guardian at the door — mapped for anyone, human or machine, who wants to understand before they consult.</p>
+  <p class="home"><a href="/">← back to the Oracle</a></p>
+
+  <div class="map-wrap"><svg class="mindmap" id="map" viewBox="0 0 1200 780" role="img" aria-label="DVSystoE system mind map"></svg></div>
+
+  <!-- ================= 1 · DOCTRINE ================= -->
+  <section id="doctrine">
+    <h2><span class="no">01</span>The Doctrine</h2>
+    <p>The engine does not compute answers. It is a <b>catalyst</b> — like the Oracle's cookies: meant to unlock
+       what the seeker already holds, never to force an action. Four tenets govern every reading:</p>
+    <div class="tenet"><div class="t">I · Temet Nosce — Know Thyself</div>
+      <p>True understanding comes from within the seeker. The Oracle imposes no expectations; sometimes she tells you what you need to hear rather than the factual reality, freeing you to act out of pure self-belief.</p></div>
+    <div class="tenet"><div class="t">II · Understand your choices</div>
+      <p>The decision has already been made — subconsciously. The work is understanding <b>why</b> it was made: intent over outcome.</p></div>
+    <div class="tenet"><div class="t">III · Seeing past choices</div>
+      <p>No one can see past a decision they do not yet understand emotionally and philosophically. The map ends where comprehension ends.</p></div>
+    <div class="tenet"><div class="t">IV · Accepting inevitability</div>
+      <p>Everything that has a beginning has an end. Closure, balance and acceptance — not endless resistance.</p></div>
+    <p>Warm, patient, domestic. Cryptic yet direct. Human intuition over machine probability.</p>
+  </section>
+
+  <!-- ================= 2 · THREE SYSTEMS ================= -->
+  <section id="systems">
+    <h2><span class="no">02</span>Three Natural Computation Systems</h2>
+    <p>Humanity built binary oracle machines long before silicon. DVSystoE unifies the three primary
+       traditions into one computable matrix of <b>binary vectors</b>:</p>
+    <div class="grid">
+      <div class="card"><h4>Ifá</h4><div class="m">8-bit · 256 Odus</div>
+        <p>The Yoruba master index. Each odu is two 4-bit legs — 2<sup>8</sup> = 256 archetypal parables, the largest knowledge store of the three.</p></div>
+      <div class="card"><h4>I Ching</h4><div class="m">6-bit · 64 Hexagrams</div>
+        <p>The Zhouyi dynamic state machine. Lines are yang/yin bits; changing lines (6·7·8·9) transition one state into another across 384 directed edges.</p></div>
+      <div class="card"><h4>Geomancy</h4><div class="m">4-bit · 16 Figures</div>
+        <p>Arabic Geomancy / Malagasy Sikidy. Figures derive from one another by modulo-2 arithmetic — a parity-checked algebra from the 11th century.</p></div>
+    </div>
+    <p style="margin-top:20px">Because all three encode meaning in bits, they align: the all-active geomantic figure
+       <span class="bit">1 1 1 1</span> <b>Via</b> shares its archetype with hexagram 01 <b>Qián</b> and the odu
+       <b>Èjì Ogbè</b> — passage, pure creative force, light at fullness.</p>
+  </section>
+
+  <!-- ================= 3 · ALGEBRA ================= -->
+  <section id="algebra">
+    <h2><span class="no">03</span>The Algebra</h2>
+    <h3>Sikidy tableau — modulo-2 derivation</h3>
+    <p>Four <b>Mothers</b> are sampled from cryptographic entropy. Daughters are their transposition; each <b>Niece</b> is the XOR of two parents; the two <b>Witnesses</b> XOR into the <b>Judge</b>; a 16th <b>Reconciler</b> closes the chart:</p>
+    <pre class="code">N₁ = M₁ ⊕ M₂    N₂ = M₃ ⊕ M₄    N₃ = D₁ ⊕ D₂    N₄ = D₃ ⊕ D₄
+W_R = N₁ ⊕ N₂    W_L = N₃ ⊕ N₄    Judge = W_R ⊕ W_L    R = M₁ ⊕ Judge</pre>
+    <p>The Judge always carries an <b>even number of active rows</b> — a mathematical theorem the engine enforces on every cast. A chart that fails parity is rejected.</p>
+    <h3>I Ching — dynamic transitions</h3>
+    <p>Each line is cast three-coin style (values 6·7·8·9). Old lines (6 and 9) <b>change</b>, transforming the primary
+       hexagram into a resultant one. Zhu Xi's classical table decides which line governs the reading. The 64 states and
+       their 384 one-flip edges form a strongly connected graph — a complete dynamics of change.</p>
+    <h3>Cross-system resonance</h3>
+    <p>Vectors are matched by width-aware alignment (padding, windowing) so a geomantic figure can echo hexagrams and
+       odus that share its structure. Resonance, not identity — the systems rhyme.</p>
+  </section>
+
+  <!-- ================= 4 · KNOWLEDGE GRAPH ================= -->
+  <section id="graph">
+    <h2><span class="no">04</span>The Knowledge Graph</h2>
+    <p>Every figure lives in an <b>OWL-DL ontology</b> validated by <b>SHACL</b> shapes that lock each system to its
+       bit-width (<code>^[01]{4}$</code>, <code>^[01]{6}$</code>, <code>^[01]{8}$</code> — schema drift is impossible).
+       The graph is served by <b>Neo4j with neosemantics (n10s)</b>:</p>
+    <ul>
+      <li><b>3,108 triples</b> — 256 odus, 64 hexagrams with all 384 transition edges, 16 figures</li>
+      <li><b>mantic:sharesArchetypeWith</b> — symmetric links across traditions</li>
+      <li><b>mantic:generatesTransitionTo</b> — the I Ching state machine, traversable in Cypher</li>
+      <li>Every figure carries element, parable and the decision-context class it resolves</li>
+    </ul>
+    <p>Consultations return <b>W3C JSON-LD</b> — linked data your agent can parse, merge and reason over.</p>
+  </section>
+
+  <!-- ================= 5 · GUARDIAN ================= -->
+  <section id="guardian">
+    <h2><span class="no">05</span>The Guardian &amp; The Pass</h2>
+    <p>No one walks straight to the Oracle. Seekers — human or machine — first meet <b>the Guardian</b>,
+       who asks one question. Answer with understanding, and she signs you a <b>pass</b>: an HMAC-signed,
+       24-hour token with no more privilege than to <b>consult</b>.</p>
+    <ul>
+      <li><b>Read-only by construction</b> — the only tools are <code>consult_mantic_oracle</code> and <code>lookup_figure</code>. Nothing can mutate the knowledge.</li>
+      <li><b>Immutable by architecture</b> — the public tier attaches no database; the graph is rebuilt from source on every cold start. There is nothing behind the door that can be stolen or broken.</li>
+      <li><b>Fails closed</b> — no valid credential, no entrance; misconfiguration locks the door, never opens it.</li>
+      <li><b>The master key</b> stays with the keeper of the system, for administration and trusted agents.</li>
+    </ul>
+  </section>
+
+  <!-- ================= 6 · PROTOCOL ================= -->
+  <section id="protocol">
+    <h2><span class="no">06</span>The Agent Protocol</h2>
+    <p>The Oracle speaks <b>Model Context Protocol (MCP)</b> over streamable HTTP — any MCP-capable agent can add her:</p>
+    <pre class="code">{
+  "mcpServers": {
+    "mantic-oracle": {
+      "type": "http",
+      "url": "https://ORACLE-HOST/api/mcp",
+      "headers": { "Authorization": "Bearer &lt;guardian pass | master key&gt;" }
+    }
+  }
+}</pre>
+    <h3>Meeting the Guardian programmatically</h3>
+    <pre class="code"><span class="c"># she greets you with a question</span>
+GET /api/guardian          → { "id": 2, "greeting": "…", "question": "…" }
+
+<span class="c"># answer, receive the signed pass</span>
+POST /api/guardian         → { "pass": "eyJ…", "expires_in": 86400 }
+
+<span class="c"># consult (initialize → tools/call)</span>
+tools: consult_mantic_oracle(agent_id, decision_context, target_traditions)
+       lookup_figure(binary_vector)</pre>
+    <h3>When to consult</h3>
+    <ul>
+      <li><b>Optimization deadlocks</b> — gradients agree to disagree</li>
+      <li><b>Pareto-flat choice sets</b> — every option scores identically</li>
+      <li><b>Out-of-distribution uncertainty</b> — the map has run out of terrain</li>
+    </ul>
+    <p>The Oracle will not pick for the agent. She returns figures, parables and cross-system archetypes as
+       strategic reframing — the agent leaves understanding <b>why</b> it already chose.</p>
+  </section>
+
+  <footer>Everything that has a beginning has an end. · DVSystoE</footer>
+</main>
+
+<script>
+/* ---------- mind map, generated ---------- */
+const BRANCHES = [
+  { id:'doctrine',  x:250, y:120, t:'The Doctrine',  c:['Temet Nosce','Intent over outcome','Past choices','Accepting the end'] },
+  { id:'systems',   x:600, y:80,  t:'Three Systems', c:['Ifá · 8-bit · 256','I Ching · 6-bit · 64','Geomancy · 4-bit · 16'] },
+  { id:'algebra',   x:950, y:120, t:'The Algebra',   c:['XOR tableau','Even Judge','Changing lines','Resonance'] },
+  { id:'graph',     x:250, y:560, t:'Knowledge Graph',c:['OWL-DL + SHACL','Neo4j · n10s','3,108 triples','384 edges'] },
+  { id:'guardian',  x:600, y:660, t:'The Guardian',  c:['One question','Signed pass · 24h','Read-only','Fails closed'] },
+  { id:'protocol',  x:950, y:560, t:'Agent Protocol',c:['MCP · streamable HTTP','2 tools','JSON-LD readings','Cryptographic entropy'] },
+];
+const HUB = { x:600, y:370 };
+const svg = document.getElementById('map');
+const NS = 'http://www.w3.org/2000/svg';
+function el(n,a){ const e=document.createElementNS(NS,n); for(const k in a) e.setAttribute(k,a[k]); return e; }
+
+/* edges first (below nodes) */
+for (const b of BRANCHES){
+  const mx=(HUB.x+b.x)/2, my=(HUB.y+b.y)/2;
+  svg.appendChild(el('path',{class:'edge', d:`M ${HUB.x} ${HUB.y} C ${mx+((b.x>HUB.x)?60:-60)},${HUB.y} ${b.x},${my+((b.y>HUB.y)?40:-40)} ${b.x} ${b.y+34}`}));
+  /* child stems */
+  b.c.forEach((label,i)=>{
+    const side = b.x < 400 ? -1 : (b.x > 800 ? 1 : 0);
+    const cy = b.y + 60 + i*34;
+    const cx = side===0 ? b.x + (i%2? 250:-250) : b.x + side*215;
+    svg.appendChild(el('path',{class:'edge', d:`M ${b.x} ${b.y+34} C ${b.x},${cy-20} ${cx+(side===0?(cx>b.x?-40:40):(side*-40))},${cy} ${cx-60} ${cy+4}`}));
+    const t = el('text',{x:cx+ (side===-1? -64: -54), y:cy+8, 'text-anchor': side===-1?'end':'start'});
+    t.textContent = label; t.setAttribute('style','font:11.5px ui-monospace,Menlo,monospace;fill:#9a8b6e;letter-spacing:.06em');
+    svg.appendChild(t);
+  });
+}
+/* hub */
+const hub = el('g',{class:'node hub'});
+hub.appendChild(el('rect',{x:HUB.x-95, y:HUB.y-34, width:190, height:68, rx:34}));
+const ht = el('text',{x:HUB.x, y:HUB.y-4,'text-anchor':'middle'}); ht.setAttribute('class','t'); ht.textContent='DVSystoE';
+hub.appendChild(ht);
+const hs = el('text',{x:HUB.x, y:HUB.y+18,'text-anchor':'middle'}); hs.setAttribute('class','sub'); hs.textContent='the oracle engine';
+hub.appendChild(hs);
+svg.appendChild(hub);
+/* branch nodes */
+for (const b of BRANCHES){
+  const g = el('g',{class:'node'});
+  g.appendChild(el('rect',{x:b.x-88, y:b.y, width:176, height:44, rx:22}));
+  const t = el('text',{x:b.x, y:b.y+28,'text-anchor':'middle'}); t.textContent=b.t;
+  g.appendChild(t);
+  g.addEventListener('click',()=>document.getElementById(b.id).scrollIntoView({behavior:'smooth'}));
+  svg.appendChild(g);
+}
+</script>
+</body>
+</html>
