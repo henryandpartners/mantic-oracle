@@ -299,21 +299,23 @@ function render(out, ctx){
   })(out);
   const seen = new Set(), cards = [];
   for (const f of figs){
-    const key = (f.label||'') + (f.hasBinaryVector||f.bits||f.binaryVector||'');
+    const label = (typeof f.label === 'string') ? f.label : null;
+    const rawBits = f.hasBinaryVector ?? f.bits ?? f.binaryVector ?? '';
+    const bits = (typeof rawBits === 'string') ? rawBits.replace(/\s+/g,'') : '';
+    if (!label || !/^[01]{4,8}$/.test(bits)) continue;
+    const key = label + bits;
     if (seen.has(key)) continue; seen.add(key);
-    const bits = f.hasBinaryVector || f.bits || f.binaryVector || '';
-    const kind = (f['@type']||f.kind||'').toString().split(/[\/#:]/).pop().replace(/^(IChing|Ifa|Geomantic)?/,'$&');
+    const kind = (typeof f['@type'] === 'string' ? f['@type'] : (typeof f.kind === 'string' ? f.kind : '')).split(/[\/#:]/).pop();
     const arch = (f.archetypes||f.sharesArchetypeWith||[]);
     const archTxt = Array.isArray(arch)&&arch.length
-      ? 'echoes: ' + arch.map(a=>typeof a==='string'?a:(a.label||a['@id']||'')).filter(Boolean).join(' · ') : '';
+      ? 'echoes: ' + arch.map(a=>typeof a==='string'?a:(typeof a.label==='string'?a.label:'')).filter(Boolean).join(' · ') : '';
     cards.push(`<div class="fig">
-      <div class="bits">${pretty(bits)||'·'}</div>
-      <h3>${f.label||l(f)}</h3>
-      <div class="kind">${kind}</div>
-      ${f.parable?`<p>${f.parable}</p>`:''}
+      <div class="bits">${pretty(bits)}</div>
+      <h3>${label}</h3>
+      ${kind?`<div class="kind">${kind}</div>`:''}
+      ${typeof f.parable==='string'&&f.parable?`<p>${f.parable}</p>`:''}
       ${archTxt?`<div class="arch">${archTxt}</div>`:''}
     </div>`);
-    function l(x){ return ''; }
   }
   $('figures').innerHTML = cards.join('') || '<div class="fig"><p>The cast was silent.</p></div>';
   let counsel = '';
