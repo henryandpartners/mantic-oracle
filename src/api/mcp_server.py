@@ -36,6 +36,7 @@ import sys
 from typing import Any, List, Optional
 
 from src.api.serializers import consultation_to_jsonld
+from src.api.voice import oracle_voice
 from src.core.oracle import Oracle
 
 NEO4J_URI = os.environ.get("MANTIC_NEO4J_URI", "bolt://localhost:7687")
@@ -119,11 +120,17 @@ if FastMCP is not None:
 
         Returns:
             A W3C-compliant JSON-LD consultation payload containing the cast
-            figures, their cautionary parables, cross-system archetypes and
-            actionable strategic reframing.
+            figures, their cautionary parables, cross-system archetypes,
+            strategic reframing, and the Oracle's spoken voice (oracleVoice).
         """
-        payload = get_oracle().consult(agent_id, decision_context, target_traditions)
-        return json.dumps(consultation_to_jsonld(payload), indent=2, ensure_ascii=False)
+        try:
+            oracle = get_oracle()
+            payload = oracle.consult(agent_id, decision_context, target_traditions)
+            doc = consultation_to_jsonld(payload)
+            doc["oracleVoice"] = oracle_voice(doc)
+            return json.dumps(doc, indent=2, ensure_ascii=False)
+        except Exception as exc:  # surface failures to the caller, not a crash
+            return json.dumps({"error": str(exc), "agent_id": agent_id})
 
     @mcp.tool()
     def lookup_figure(binary_vector: str) -> str:
@@ -170,9 +177,12 @@ def build_rest_app():
 
     @app.post("/consult")
     def do_consult(request: ConsultRequest) -> dict:
-        return consult(
+        payload = get_oracle().consult(
             request.agent_id, request.decision_context, request.target_traditions
         )
+        doc = consultation_to_jsonld(payload)
+        doc["oracleVoice"] = oracle_voice(doc)
+        return doc
 
     return app
 

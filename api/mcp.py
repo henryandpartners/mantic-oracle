@@ -34,6 +34,14 @@ class BearerGate(BaseHTTPMiddleware):
     """Bearer-token gate + Vercel path routing. Fails closed."""
 
     async def dispatch(self, request, call_next):
+        # per-IP throttle first: stops brute-force hammering before auth
+        try:
+            from api.guardian import rate_limited, rate_ok
+
+            if not rate_ok(request, per_minute=60):
+                return rate_limited()
+        except Exception:
+            pass  # limiter is best-effort; never lock the door because of it
         path = request.url.path
 
         # Unauthenticated liveness probe only.

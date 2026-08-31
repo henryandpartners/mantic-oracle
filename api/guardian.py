@@ -31,6 +31,42 @@ from starlette.routing import Route
 
 PASS_TTL_SECONDS = 24 * 60 * 60
 
+# ---------------------------------------------------------------------------
+# Rate limiting — per-instance token window. Serverless instances are
+# ephemeral, so this throttles burst traffic per function instance rather
+# than globally; Vercel's attack-mode protection covers the DDoS end.
+# ---------------------------------------------------------------------------
+
+import collections
+
+_RATE: Dict[str, Any] = {}
+
+
+def _client_ip(request: Request) -> str:
+    fwd = request.headers.get("x-forwarded-for", "")
+    if fwd:
+        return fwd.split(",")[0].strip()
+    return request.client.host if request.client else "anon"
+
+
+def rate_ok(request: Request, per_minute: int = 24) -> bool:
+    """Sliding-window limiter. True = allowed."""
+    now = time.time()
+    q = _RATE.setdefault(_client_ip(request), collections.deque())
+    while q and now - q[0] > 60:
+        q.popleft()
+    if len(q) >= per_minute:
+        return False
+    q.append(now)
+    return True
+
+
+def rate_limited() -> JSONResponse:
+    return JSONResponse(
+        {"error": "the Oracle's kitchen is busy — come back in a minute"},
+        status_code=429,
+    )
+
 # (question, accepted answers after normalization)
 QUESTIONS: List[Tuple[str, List[str]]] = [
     (
@@ -113,6 +149,8 @@ def _normalize(text: str) -> str:
 
 
 async def challenge(request: Request) -> JSONResponse:
+    if not rate_ok(request, per_minute=24):
+        return rate_limited()
     if not _secret():
         return JSONResponse({"error": "the guardian is asleep (no key configured)"}, status_code=503)
     idx = int(time.time() // 600) % len(QUESTIONS)  # rotates every 10 minutes
@@ -128,6 +166,8 @@ async def challenge(request: Request) -> JSONResponse:
 
 
 async def answer(request: Request) -> JSONResponse:
+    if not rate_ok(request, per_minute=12):
+        return rate_limited()
     if not _secret():
         return JSONResponse({"error": "the guardian is asleep (no key configured)"}, status_code=503)
     try:

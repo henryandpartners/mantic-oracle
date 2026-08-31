@@ -43,6 +43,7 @@ MANTIC_CONTEXT: Dict[str, Any] = {
     "movingCounsel": "mantic:movingCounsel",
     "judge": "mantic:judgeFigure",
     "reconciler": "mantic:reconcilerFigure",
+    "oracleVoice": {"@id": "mantic:oracleVoice", "@type": "@json"},
 }
 
 

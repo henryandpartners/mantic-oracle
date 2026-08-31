@@ -104,6 +104,14 @@
   .fig .kind{font:600 9.5px ui-monospace,Menlo,monospace;letter-spacing:.26em;color:var(--dim);text-transform:uppercase;margin-top:2px}
   .fig p{margin-top:10px;font-size:14.5px;color:var(--dim);line-height:1.55}
   .fig .arch{margin-top:10px;font-size:13px;color:var(--faint);font-style:italic}
+
+/* ---------- the Oracle's voice ---------- */
+.voice{margin:34px 0 10px;padding:26px 28px;border-left:2px solid var(--amber);background:linear-gradient(90deg,rgba(217,164,65,.09),transparent 70%)}
+.voice .addr{font-style:italic;color:var(--amber);margin-bottom:14px}
+.voice p{margin:0 0 12px;max-width:58ch;line-height:1.6}
+.voice .vq{color:var(--amber)}
+.voice .vc{color:var(--dim);font-style:italic}
+.voice .vclose{color:var(--dim);font-size:.85em;margin-bottom:0}
   .counsel{
     margin-top:26px;padding:18px 22px;border-left:2px solid var(--amber);
     background:linear-gradient(90deg, rgba(217,164,65,.06), transparent 70%);
@@ -157,6 +165,8 @@
       <textarea id="ctx" placeholder="Describe the choice you have already made…"></textarea>
       <button class="ask" id="ask">Consult the Oracle</button>
     </div>
+
+    <div class="voice" id="voice" style="display:none"></div>
 
     <div class="reading" id="reading">
       <div class="label">The reading</div>
@@ -286,6 +296,17 @@ function pretty(bits){ return (bits||'').replace(/(.)(?=.)/g,'$1 '); }
 
 function render(out, ctx){
   $('reading').classList.add('live');
+  const v = out.oracleVoice;
+  const voice = $('voice');
+  if (v && v.full) {
+    voice.innerHTML =
+      `<div class="addr">${v.address}</div>` +
+      `<p>${v.words}</p>` +
+      `<p class="vq">${v.question}</p>` +
+      `<p class="vc">🍪 ${v.cookie}</p>` +
+      `<p class="vclose">${v.closer}</p>`;
+    voice.style.display = '';
+  } else { voice.style.display = 'none'; }
   $('raw').textContent = JSON.stringify(out,null,2);
   const figs = [];
   (function walk(n){
