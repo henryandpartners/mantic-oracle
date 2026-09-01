@@ -157,14 +157,23 @@ def _extract(doc: Dict[str, Any]) -> Dict[str, Any]:
     }
 
 
-def oracle_voice(doc: Dict[str, Any]) -> Dict[str, str]:
-    """Render the Oracle's spoken response for a consultation document."""
+def oracle_voice(doc: Dict[str, Any], memory: Optional[Dict[str, Any]] = None) -> Dict[str, str]:
+    """Render the Oracle's spoken response for a consultation document.
+
+    With `memory` (the seeker's previous visit, when they opted in),
+    she opens by remembering them — the way an old friend does.
+    """
     seed = _seed(doc)
     d = _extract(doc)
 
     address = ADDRESSES[seed % len(ADDRESSES)]
 
     sentences: List[str] = []
+    if memory and memory.get("lastJudge"):
+        sentences.append(
+            f"Last time you sat in this kitchen, the chart judged through "
+            f"{memory['lastJudge']}. Sit — let us see what has baked since."
+        )
     judge_words = JUDGE_WORDS.get(d["judge"])
     if judge_words:
         sentences.append(f"The chart judges through {d['judge']}. {judge_words}")

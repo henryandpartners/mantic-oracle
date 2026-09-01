@@ -124,10 +124,13 @@ def transition_neighbors(hex_bits: str) -> List[Dict[str, object]]:
 
 def cross_report(bits: str) -> Dict[str, object]:
     """Full cross-system resonance report for any binary vector."""
+    from .reasoner import inferred_report
+
     bits = normalize(bits)
     report: Dict[str, object] = {
         "vector": bits,
         "width": len(bits),
+        "inferredEchoes": inferred_report(bits)["inferredEchoes"],
     }
     if len(bits) == 4:
         report["exact_matches"] = geomantic_matches(bits)

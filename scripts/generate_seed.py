@@ -78,6 +78,8 @@ def build_graph() -> Graph:
     # ------------------------------------------------------------------
     # I Ching: 64 hexagrams
     # ------------------------------------------------------------------
+    from src.core.corpus import HEXAGRAM_IMAGES, compound_parable
+
     for spec in KING_WEN:
         node = hexagram_uri(spec.number)
         graph.add((node, RDF.type, MANTIC.IChingHexagram))
@@ -86,6 +88,9 @@ def build_graph() -> Graph:
         graph.add((node, MANTIC.figureIndex, Literal(spec.number)))
         graph.add((node, MANTIC.element, Literal(spec.element)))
         graph.add((node, MANTIC.parable, Literal(spec.judgment)))
+        image = HEXAGRAM_IMAGES.get(spec.number)
+        if image:
+            graph.add((node, MANTIC.imageText, Literal(image)))
         graph.add((node, MANTIC.lowerTrigram, Literal(spec.lower)))
         graph.add((node, MANTIC.upperTrigram, Literal(spec.upper)))
         if spec.element in ELEMENT_INDIVIDUAL:
@@ -135,10 +140,7 @@ def build_graph() -> Graph:
                 parable = left.parable
             else:
                 label = f"{left.name}-{right.name}"
-                parable = (
-                    f"Left leg {left.name} leads: {left.parable} "
-                    f"|| Right leg {right.name} modifies: {right.parable}"
-                )
+                parable = compound_parable(left.name, right.name)
             graph.add((node, RDFS.label, Literal(label)))
             graph.add((node, MANTIC.parable, Literal(parable)))
             graph.add((node, MANTIC.leftLeg, Literal(left.name)))

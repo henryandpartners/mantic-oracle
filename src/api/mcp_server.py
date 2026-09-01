@@ -104,6 +104,7 @@ if FastMCP is not None:
         agent_id: str,
         decision_context: str,
         target_traditions: List[str] = ["all"],
+        remember: bool = False,
     ) -> str:
         """Consult the multi-system mantic oracle (DVSystoE).
 
@@ -117,6 +118,9 @@ if FastMCP is not None:
             agent_id: Identifier of the consulting agent.
             decision_context: Description of the deadlock or ambiguous state.
             target_traditions: Subset of ["iching", "ifa", "geomancy"], or ["all"].
+            remember: Opt-in consultation memory. When True (and memory is
+                configured), this visit is remembered and the Oracle will
+                reference your last visit in her words.
 
         Returns:
             A W3C-compliant JSON-LD consultation payload containing the cast
@@ -127,7 +131,40 @@ if FastMCP is not None:
             oracle = get_oracle()
             payload = oracle.consult(agent_id, decision_context, target_traditions)
             doc = consultation_to_jsonld(payload)
-            doc["oracleVoice"] = oracle_voice(doc)
+
+            # opt-in memory: reference the last visit, then remember this one
+            if remember:
+                from src.api import memory
+
+                prior = memory.last_visit(agent_id)
+                if prior:
+                    doc["oracleMemory"] = {
+                        "lastCastAt": prior.get("cast_at"),
+                        "lastJudge": prior.get("judge"),
+                        "lastDecision": (prior.get("decision") or "")[:280],
+                    }
+                doc["oracleVoice"] = oracle_voice(doc, memory=doc.get("oracleMemory"))
+                chart = doc.get("geomanticChart") or {}
+                hexa = next(
+                    (f.get("label") for f in doc.get("figure", [])
+                     if f.get("role") == "primary"),
+                    "",
+                )
+                odu = next(
+                    (f.get("label") for f in doc.get("figure", [])
+                     if "Odu" in str(f.get("@type", ""))),
+                    "",
+                )
+                memory.remember_consultation(
+                    agent_id=agent_id,
+                    decision=decision_context,
+                    judge=(chart.get("judge") or {}).get("label", ""),
+                    hexagram=hexa,
+                    odu=odu,
+                    voice=doc.get("oracleVoice") or {},
+                )
+            else:
+                doc["oracleVoice"] = oracle_voice(doc)
             return json.dumps(doc, indent=2, ensure_ascii=False)
         except Exception as exc:  # surface failures to the caller, not a crash
             return json.dumps({"error": str(exc), "agent_id": agent_id})
